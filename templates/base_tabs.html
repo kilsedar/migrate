@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="{% static "libraries/jquery-1.12.4.min.js" %}"></script>
+  <link rel="stylesheet" href="{% static "libraries/bootstrap-3.3.6-dist/css/bootstrap.min.css" %}">
+  <script src="{% static "libraries/bootstrap-3.3.6-dist/js/bootstrap.min.js" %}"></script>
+
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+  <div id="content">
+    <div id="topbar">
+      <img src="{% static "css/images/logo.png" %}"/>
+    </div>
+
+    {% block content %}{% endblock %}
+  </div>
+
+  <div id="bottombar">
+    <a href={% url 'about' %}><button id="tab" type='button'>About</button></a>
+    <a href={% url 'map' %}><button id="tab" type='button'>Game</button></a>
+    <a href={% url 'team' %}><button id="tab" type='button'>Team</button></a>
+    <a href={% url 'data' %}><button id="tab" type='button'>Data</button></a>
+  </div>
+
+  <div id="footer">Copyright MIGRATE 2016 © - <a id="mailto" href="mailto:candaneylul.kilsedar@polimi.it">Contact the webmaster</a></div>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static "css/tabs.css" %}">
+</body>
+</html>

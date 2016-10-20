@@ -1,0 +1,32 @@
+{% extends "base_tabs.html" %}
+{% load staticfiles %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<div id="register_login">
+  <b><a href={% url 'register' %}>Register</a> | <a href={% url 'login' %}>Log in</a></b>
+</div>
+<br>
+<div class="row" id="about">
+  <div class="col-xs-12">
+    <p style="text-align: justify;"><b>MIGRATE – MIGRation pATterns in Europe</b> is a Web mapping application aimed at educating and raising awareness about the phenomenon of migration in Europe. This goal is achieved using a gamification approach, that means you will interact with the application by playing a map-based game, where questions are asked and answers are provided and explained about a number of topics related to migration. Your answers will help to understand the current knowledge and perception of migration-related issues. The source code of MIGRATE can be accessed <a href="https://bitbucket.org/kilsedar/migrate/" target="_blank">here</a>.</p>
+    <p style="text-align: justify;">Each time you play, you will be asked 6 questions of different types: true/false questions, multiple choice questions, text-based questions (where you are required to enter a numerical value) and map-based questions (where you are required to select a country on the map). You will have only 20 seconds to answer each question. Questions will be focused on Europe. If you come from Europe, parts of the questions are customized according to the country you come from. To play the application, you need a user account.</p>
+    <p style="text-align: justify;">Click <a href={% url 'register' %}>here</a> to create a new user account; if you already have an account, click <a href={% url 'login' %}>here</a> to login.</p>
+  </div>
+</div>
+<div class="row" id="logos">
+  <div class="col-xs-12">
+    <a href="http://digitalearthlab.jrc.ec.europa.eu/mygeoss" target="_blank"><img id="mygeoss" src="{% static "css/images/mygeoss.png" %}"/></a>
+    <a href="https://ec.europa.eu/jrc/en" target="_blank"><img id="jrc" src="{% static "css/images/jrc.png" %}"/></a>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-xs-12">
+    <p style="text-align: justify;"><i>This application has been developed within the <a href="http://digitalearthlab.jrc.ec.europa.eu/mygeoss/" target="_blank">MYGEOSS</a> project, which has received funding from the <a href="https://ec.europa.eu/programmes/horizon2020/" target="_blank">European Union's Horizon 2020 research and innovation programme</a>. The JRC, or as the case may be the European Commission, shall not be held liable for any direct or indirect, incidental, consequential or other damages, including but not limited to the loss of data, loss of profits, or any other financial loss arising from the use of this application, or inability to use it, even if the JRC is notified of the possibility of such damages.</i></p>
+  </div>
+</div>
+{% endblock %}

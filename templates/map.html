@@ -1,0 +1,86 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="{% static "libraries/jquery-1.12.4.min.js" %}"></script>
+  <link rel="stylesheet" href="{% static "libraries/bootstrap-3.3.6-dist/css/bootstrap.min.css" %}">
+  <script src="{% static "libraries/bootstrap-3.3.6-dist/js/bootstrap.min.js" %}"></script>
+  <link rel="stylesheet" href="{% static "libraries/ol3-v3.16.0-dist/ol.css" %}" type="text/css">
+  <script src="{% static "libraries/ol3-v3.16.0-dist/ol.js" %}"></script>
+
+  <title>MIGRATE</title>
+</head>
+<body>
+  <div id="map" style="height: calc(100vh - 80px);"></div>
+
+  <div id="bottombar">
+    <a href={% url 'about' %}><button id="tab" type='button'>About</button></a>
+    <a href={% url 'map' %}><button id="tab" type='button'>Game</button></a>
+    <a href={% url 'team' %}><button id="tab" type='button'>Team</button></a>
+    <a href={% url 'data' %}><button id="tab" type='button'>Data</button></a>
+  </div>
+
+  <div id="footer">Copyright MIGRATE 2016 © - <a id="mailto" href="mailto:candaneylul.kilsedar@polimi.it">Contact the webmaster</a></div>
+
+  <div class="box" id="start" style="top: calc(50vh - 40px);">
+    <div id="startInstructions">
+      <b>How to play?</b><br>
+      <b>1.</b> You will be asked 6 questions and 20 seconds will be given for each.<br>
+      <b>2.</b> The questions can be map-based, multiple choice, true/false or free text.<br>
+      <b>3.</b> Each right answer will give you 1 point.<br>
+    </div>
+    <button id='startButton' type='button'>Start the game</button>
+  </div>
+
+  <div id="questionnaire" style="max-height: calc(100vh - 240px);" class="col-xs-8 col-sm-6 col-md-4">
+    <p></p>
+  </div>
+
+  <div class="box" id="end" style="top: calc(50vh - 40px);">
+    <p id="pFirst"></p>
+    <img id="imgEnd" src="">
+    <p id="pSecond"></p>
+    <a><div id="closeButton">x</div></a>
+  </div>
+
+  <div id="timer">20</div>
+
+  <div id="logos">
+    <a href="http://digitalearthlab.jrc.ec.europa.eu/mygeoss" target="_blank"><img id="mygeoss" src="{% static "css/images/mygeoss.png" %}"></a>
+    <a href="https://ec.europa.eu/jrc/en" target="_blank"><img id="jrc" src="{% static "css/images/jrc.png" %}"></a>
+  </div>
+
+  <div id="links">
+    <!--<a href="">Ranking</a>
+    <a href="">User profile</a>-->
+    <a href={% url 'logout' %}>Log out</a>
+  </div>
+
+  <script type="text/javascript">
+    {% for country in alpha3 %}
+       var source = "{{ country }}" + "_source";
+       {% with country|upper as c %}
+       {% with 'js/countriesGeoJSON_simplified/'|add:c|add:'.geojson' as url %}
+         window[source] = "{% static url %}";
+       {% endwith %}
+       {% endwith %}
+    {% endfor %}
+
+    var alpha3_js = {{ alpha3|safe }};
+    var badge_zero_one_source = "{% static "css/images/badges/zero_one.png" %}";
+    var badge_two_three_source = "{% static "css/images/badges/two_three.png" %}";
+    var badge_four_five_source = "{% static "css/images/badges/four_five.png" %}";
+    var badge_six_source = "{% static "css/images/badges/six.png" %}";
+    var thumb_up_source = "{% static "css/images/thumbs/thumb_up_green_small.png" %}";
+    var thumb_down_source = "{% static "css/images/thumbs/thumb_down_red_small.png" %}";
+    //var questions = {{ questions|safe }};
+  </script>
+
+  <script src="{% static "js/map.js" %}"></script>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static "css/map.css" %}">
+</body>
+</html>

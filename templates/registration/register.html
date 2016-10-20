@@ -1,0 +1,20 @@
+{% extends "registration/base_register-login.html" %}
+
+{% block title %}Registration{% endblock %}
+
+{% block h2 %}Registration{% endblock %}
+
+{% block content %}
+<form action={% url 'register' %} method="post">
+  {% csrf_token %}
+
+  {{uform.as_p}}
+  {{form.as_p}}
+
+  <input id="register" type="submit" value="Register"></input>
+
+  <div id="warning">*** Please note that your e-mail address is not required for the registration in order to protect your privacy. This means that there is no way for you to reset your password later, so please take note of your password now.</div>
+
+  <p id=login_redirect>Have an account? Login <a href={% url 'login' %}>here</a>.</p>
+</form>
+{% endblock %}

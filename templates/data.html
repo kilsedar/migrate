@@ -1,0 +1,71 @@
+{% extends "base_tabs.html" %}
+{% load staticfiles %}
+
+{% block title %}Data{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<div id="register_login">
+  <b><a href={% url 'register' %}>Register</a> | <a href={% url 'login' %}>Log in</a></b>
+</div>
+<br>
+<div class="row">
+  <div class="col-xs-12">
+    <p style="text-align: justify;">A number of data sources are used within the MIGRATE application which are in full compliance with the guidelines of the <a href="http://digitalearthlab.jrc.ec.europa.eu/mygeoss/info_thirdcall.cfm" target="_blank">MYGEOSS Third Call</a>, i.e. all the data are available under the conditions of full and open access with no restrictions for reuse except for the obligation to mention the source of the input data.</p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-xs-12">
+    <h4><b>OpenStreetMap</b></h4>
+    <p style="text-align: justify;"><a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap (OSM)</a> is a free and open geospatial database of the whole world which is created and regularly updated by volunteers. The whole OSM database is available under the <a href="http://opendatacommons.org/licenses/odbl/" target="_blank">Open Data Commons Open Database License (OdbL)</a>.</p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-xs-12">
+    <h4><b>United Nations High Commissioner for Refugees (UNHCR) – The UN Refugee Agency</b></h4>
+    <p style="text-align: justify;">The <a href="http://www.unhcr.org/" target="_blank">United Nations High Commissioner for Refugees (UNHCR)</a> is the UN agency which protects the rights and well-being of refugees all over the world. UNHCR provides and maintains up-to-date an impressive amount of datasets containing population statistics on migration for any country in the world. UNHCR datasets are accessible from the <a href="https://data.humdata.org/" target="_blank">Humanitarian Data Exchange (HDX) portal</a> and they can also be accessed and browsed from the <a href="http://popstats.unhcr.org/en/overview" target="_blank">UNHRC Population Statistics page</a> as well as from an Application Programming Interface (API) available <a href="http://data.unhcr.org/wiki/index.php/API_Documentation" target="_blank">here</a>. They are available under the following open licenses, listed at <a href="https://data.humdata.org/about/license" target="_blank">this page</a>:</p>
+    <ul>
+      <li><a href="https://creativecommons.org/licenses/by/3.0/igo/legalcode" target="_blank">Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)</a></li>
+      <li><a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">Creative Commons Attribution (CC BY)</a></li>
+      <li><a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank">Creative Commons Attribution-ShareAlike (CC BY-SA)</a></li>
+      <li><a href="http://opendatacommons.org/licenses/odbl/1.0/" target="_blank">Open Database License (ODC-ODbL)</a></li>
+      <li><a href="http://opendatacommons.org/licenses/by/1.0/" target="_blank">Open Data Commons Attribution License (ODC-BY)</a></li>
+      <li><a href="http://opendatacommons.org/licenses/pddl/1.0/" target="_blank">Open Data Commons Public Domain Dedication and License (PDDL)</a></li>
+      <li><a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode" target="_blank">Public Domain/No restrictions (CC0)</a></li>
+    </ul>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-xs-12">
+    <h4><b>International Organization for Migration (IOM)</b></h4>
+    <p style="text-align: justify;">The <a href="https://www.iom.int/" target="_blank">International Organization for Migration (IOM)</a> is the leading inter-governmental organization in the field of migration. IOM provides and maintains up-to-date datasets about migration flows throughout the world. IOM datasets are accessible and downloadable from the <a href="https://data.humdata.org/" target="_blank">Humanitarian Data Exchange (HDX) portal</a>. Again, they are available under the following open licenses, listed at <a href="https://data.humdata.org/about/license" target="_blank">this page</a>:</p>
+    <ul>
+      <li><a href="https://creativecommons.org/licenses/by/3.0/igo/legalcode" target="_blank">Creative Commons Attribution for Intergovernmental Organisations (CC BY-IGO)</a></li>
+      <li><a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">Creative Commons Attribution (CC BY)</a></li>
+      <li><a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank">Creative Commons Attribution-ShareAlike (CC BY-SA)</a></li>
+      <li><a href="http://opendatacommons.org/licenses/odbl/1.0/" target="_blank">Open Database License (ODC-ODbL)</a></li>
+      <li><a href="http://opendatacommons.org/licenses/by/1.0/" target="_blank">Open Data Commons Attribution License (ODC-BY)</a></li>
+      <li><a href="http://opendatacommons.org/licenses/pddl/1.0/" target="_blank">Open Data Commons Public Domain Dedication and License (PDDL)</a></li>
+      <li><a href="https://creativecommons.org/publicdomain/zero/1.0/legalcode" target="_blank">Public Domain/No restrictions (CC0)</a></li>
+    </ul>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-xs-12">
+    <h4><b>The Migrants' Files</b></h4>
+    <p style="text-align: justify;"><a href="http://www.themigrantsfiles.com/" target="_blank">The Migrants’ Files</a> is a consortium of journalists from over 15 European countries who have built a detailed database on migrants’ deaths in their attempt to reach or stay in Europe from 2000 to 2016. The project was discontinued at the end of June 2016. The whole Migrants’ Files database is made available under the <a href="http://opendatacommons.org/licenses/odbl/1.0/" target="_blank">Open Database License (OdbL).</a></p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-xs-12">
+    <h4><b>Eurostat</b></h4>
+    <p style="text-align: justify;"><a href="http://ec.europa.eu/eurostat" target="_blank">Eurostat</a> is the statistical office of the European Union (EU). Its task is to provide the EU with reliable and objective statistics at European level that enable comparisons between countries and regions. The <a href="http://ec.europa.eu/eurostat/data/database" target="_blank">Eurostat database</a> is provided under a <a href="http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy" target="_blank">copyright/license policy</a> which grants permission for data download, reproduction, adaptation, modification, dissemination and reuse for any purpose.</p>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,5 @@
+*.pyc
+migrate/settings.py
+migrate/urls.py
+*.csv
+migrate/secret_key.txt

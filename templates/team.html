@@ -1,0 +1,83 @@
+{% extends "base_tabs.html" %}
+{% load staticfiles %}
+
+{% block title %}Team{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<div id="register_login">
+  <b><a href={% url 'register' %}>Register</a> | <a href={% url 'login' %}>Log in</a></b>
+</div>
+<br>
+<div class="row">
+  <div class="col-xs-12">
+    <p style="text-align: justify;"><b>MIGRATE – MIGRation pATterns in Europe</b> is created and maintained by a team of people from <a href="http://www.polimi.it/" target="_blank">Politecnico di Milano</a>, Italy.</p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-2 col-sm-4">
+    <a href="https://it.linkedin.com/in/martina-aiello-61b5655a/en" target="_blank"><img src="{% static "css/images/team/martina.jpg" %}"></a>
+  </div>
+  <div class="col-md-10 col-sm-8">
+    <a href="https://it.linkedin.com/in/martina-aiello-61b5655a/en" target="_blank"><p style="font-size:120%"><b>Eng. Martina Aiello</b></p></a>
+    <p id="p_role">Role: data analysis</p>
+    <p style="text-align: justify;">Eng. Martina Aiello obtained a BSc degree in Environmental and Land Planning Engineering at Politecnico di Milano in 2011 with a thesis on the standards created by the Open Geospatial Consortium (OGC) to foster interoperability among the available geographic data. In 2014 she received a MSc degree in Environmental and Land Planning Engineering, specializing in Environmental Monitoring and Diagnostics, with a thesis about retrieving bottom coverage and bathymetry properties in marine shallow waters from high resolution satellite images through a bio-optical model. Since november 2014, she is a PhD student in Environmental and Infrastructure Engineering and a research assistant at the Laboratory of Remote Sensing of the Milano Leonardo Campus of Politecnico di Milano. Her research activity focuses on object based classification techniques for water environments through high and medium resolution satellite images.</p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-2 col-sm-4">
+    <a href="http://wiki.osgeo.org/wiki/User:Maria" target="_blank"><img src="{% static "css/images/team/brovelli.jpg" %}"></a>
+  </div>
+  <div class="col-md-10 col-sm-8">
+    <a href="http://wiki.osgeo.org/wiki/User:Maria" target="_blank"><p style="font-size:120%"><b>Prof. Maria Antonia Brovelli</b></p></a>
+    <p id="p_role">Role: idea, scientific consultancy, supervision of data and questions</p>
+    <p style="text-align: justify;">Degree with honors in Physics, PhD in Geodesy. Currently Professor of GIS at Politecnico di Milano. From 2006 to 2011 she lectured GIS at the ETH – Zurich. From 2001 to 2011 she was the Director of the Geomatics Laboratory of the Politecnico di Milano. Since 2011 she is Vice Rector of the Como Campus of Politecnico di Milano. She is Charter Member of <a href="http://www.osgeo.org/" target="_blank">OSGeo</a>, Member of the Advisory Board of the <a href="http://www.geoforall.org/" target="_blank">GeoForAll</a> network, co-chair of <a href="http://www2.isprs.org/commissions/comm4/wg5.html" target="_blank">ISPRS WG IV/5</a> “Web and Cloud Based Geospatial Services and Applications”, Associate Editor of <a href="http://link.springer.com/journal/12518" target="_blank">Applied Geomatics</a> (Springer) and  Member of the Advisory Board of the Italian Photogrammetric and Surveying Society (<a href="http://sifet.org/" target="_blank">SIFET</a>). She organized in Como (Italy) in 2000 the First GRASS User Meeting and was in the Organizing Committee of the First International Open Source Free Software GIS – GRASS users conference held in 2002 in Trento (Italy). She is the Chair of <a href="http://europe.foss4g.org/2015/" target="_blank">FOSS4G Europe 2015</a>.</p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-2 col-sm-4">
+    <a href="https://it.linkedin.com/in/marco-gianinetto-15104360/en" target="_blank"><img src="{% static "css/images/team/gianinetto_s.png" %}"></a>
+  </div>
+  <div class="col-md-10 col-sm-8">
+    <a href="https://it.linkedin.com/in/marco-gianinetto-15104360/en" target="_blank"><p style="font-size:120%"><b>Prof. Marco Gianinetto</b></p></a>
+    <p id="p_role">Role: scientific consultancy</p>
+    <p style="text-align: justify;">Degree in Engineering, PhD with honors in Geomatics. Currently Associate Professor of Remote Sensing and Photogrammetry at Politecnico di Milano. Since 2009 head the Laboratory of Remote Sensing of Politecnico di Milano. Co-Editor-in-Chief of the <a href="http://www.aitjournal.com/" target="_blank">European Journal of Remote Sensing</a> (AIT), Associate Editor of <a href="http://www.tandfonline.com/toc/tres20/current" target="_blank">International Journal of Remote Sensing</a> (Taylor & Francis), Associate Editor of <a href="https://spie.org/publications/journals/journal-of-applied-remote-sensing" target="_blank">Journal of Applied Remote Sensing</a> (SPIE), Associate Editor of <a href="https://www.hindawi.com/journals/ijno/" target="_blank">International Journal of Navigation and Observation</a> (Hindawi). Evaluator and referee for national agencies (<a href="http://www.istruzione.it/" target="_blank">Italian Ministry of Education University and Research</a>, <a href="http://www.anvur.org/index.php?lang=it" target="_blank">Italian National Agency for the Evaluation of the University and Research Systems</a>) and international agencies (<a href="http://www.agence-nationale-recherche.fr/" target="_blank">French National Research Agency</a>, <a href="https://www.belspo.be/" target="_blank">Belgian Science Policy Office</a>, <a href="https://www.isf.org.il/#/" target="_blank">Israel Science Foundation</a>, <a href="http://www.cncs-nrc.ro/" target="_blank">National Research Council of Romania</a>). Scientific advisory for the study “<a href="http://www.europarl.europa.eu/thinktank/en/document.html?reference=IPOL_STU%282016%29569984" target="_blank">Space Market Uptake</a>” commissioned by the Directorate General for Internal Policies-Policy Department A for the European Parliament.</p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-2 col-sm-4">
+    <a href="https://it.linkedin.com/pub/candan-eylül-kilsedar/65/380/976" target="_blank"><img src="{% static "css/images/team/eylul.jpg" %}"></a>
+  </div>
+  <div class="col-md-10 col-sm-8">
+    <a href="https://it.linkedin.com/pub/candan-eylül-kilsedar/65/380/976" target="_blank"><p style="font-size:120%"><b>Eng. Candan Eylül Kilsedar</b></p></a>
+    <p id="p_role">Role: technical manager, development of the application</p>
+    <p style="text-align: justify;">Eng. Candan Eylül Kilsedar obtained her BSc degree in Computer Science and Engineering from Sabancı University-Istanbul/Turkey in 2012. She obtaibed MSc degree in Informatics Engineering from Politecnico di Milano in 2014. Her MSc thesis focused on deriving insightful data regarding user interactions on web through analyzing logs of web applications. She is strongly interested in web technologies and started working on geospatial data visualization on web during her Master of Science degree. Since November 2015, she is a PhD student in Enviromental and Infrastructure Engineering and temporary research fellow at the GEOlab of the Como Campus at Politecnico di Milano.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2 col-sm-4">
+    <a href="https://it.linkedin.com/pub/marco-minghini/a8/3b6/198/en" target="_blank"><img src="{% static "css/images/team/minghini.jpg" %}"></a>
+  </div>
+  <div class="col-md-10 col-sm-8">
+    <a href="https://it.linkedin.com/pub/marco-minghini/a8/3b6/198/en" target="_blank"><p style="font-size:120%"><b>Dr. Marco Minghini</b></p></a>
+    <p id="p_role">Role: project manager, data analysis, questions and answers</p>
+    <p style="text-align: justify;">Dr. Marco Minghini obtained a BSc degree with honors in Environmental Engineering at Politecnico di Milano (2008) with a thesis on the ortho-rectification of satellite images using LiDAR DTM. In 2010 he obtained an MSc degree with honors in Environmental and Geomatic Engineering at Politecnico di Milano with a <a href="https://www.politesi.polimi.it/handle/10589/5883" target="_blank">thesis</a> on the georeferencing and WebGIS publishing of historical maps. In 2014 he obtained his PhD with merit in Environmental and Infrastructures Engineering with a <a href="https://www.politesi.polimi.it/handle/10589/89726" target="_blank">thesis</a> on the use of open source software, including mobile data collection and virtual globes for VGI and citizen science applications. Since 2014, he is a temporary research fellow at the GEOlab of the Como Campus of Politecnico di Milano. Driven by the use of open source software, his current research focuses on geoWeb services and geoWeb applications, citizen science and VGI. He is an active member of <a href="http://www.citizensensor-cost.eu/" target="_blank">COST Action TD1202</a> "Mapping and the Citizen Sensor", a Charter Member of <a href="http://www.osgeo.org/" target="_blank">OSGeo</a> and the Secretary of <a href="http://europe.foss4g.org/2015/" target="_blank">FOSS4G Europe 2015</a>.</p>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-2 col-sm-4">
+    <a href="https://co.linkedin.com/in/mayra-zurbaran-969440a0" target="_blank"><img src="{% static "css/images/team/mayra.png" %}"></a>
+  </div>
+  <div class="col-md-10 col-sm-8">
+    <a href="https://co.linkedin.com/in/mayra-zurbaran-969440a0" target="_blank"><p style="font-size:120%"><b>Eng. Mayra Alejandra Zurbaran Nucci</b></p></a>
+    <p id="p_role">Role: technical manager, development of the application</p>
+    <p style="text-align: justify;">Eng. Mayra A. Zurbaran Nucci BSc degree in Computer Science at Universidad del Norte in 2006, she is currently a PhD student at the same university doing a research internship at Politecnico di Milano thanks to the awarded grant under the Erasmus Mundus program under the Sustain-T project. Her PhD thesis is about privacy on Location-Based Services (LBS) and location data protection mechanisms. She taught algorithm and programing I & II at Universidad del norte during 2013 and 2015. Since November of 2015 she is a PhD researcher at the GEOLab of the Como Campus of Politecnico di Milano. Her research activity is focused on Volunteer Geographic Information (VGI) and the privacy measures applicable to such data. She is also a python & django enthusiast and a <a href="https://github.com/mazucci" target="_blank">contributor</a> to FOSS community. On her PhD thesis she is focusing on exploring the impact of privacy preserving algorithms on spatial analysis. She is a active member Member of <a href="http://www.uninorte.edu.co/web/observaeduca/grupos-adscritos/-/asset_publisher/ssS7/content/id/187138" target="_blank">GReCIS</a>.</p>
+  </div>
+</div>
+{% endblock %}
