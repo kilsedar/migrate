@@ -60,28 +60,28 @@ function mapCountryUpdate_remove(){
 var styleNotClicked = new ol.style.Style({
   stroke: new ol.style.Stroke({
     color: '#6ab6d4',
-    width: 2
+    width: 3
   })
 });
 
 var styleClicked = new ol.style.Style({
   stroke: new ol.style.Stroke({
-    color: '#0097d4',
-    width: 2
+    color: '#025dab',
+    width: 3
   })
 });
 
 var styleWrong = new ol.style.Style({
   stroke: new ol.style.Stroke({
     color: 'rgba(224, 0, 0, 1)',
-    width: 2
+    width: 3
   })
 });
 
 var styleRight = new ol.style.Style({
   stroke: new ol.style.Stroke({
     color: 'rgba(0, 205, 0, 1)',
-    width: 2
+    width: 3
   })
 });
 
@@ -195,8 +195,15 @@ function htmlGenerator(){
     //console.log(right_answer);
   }
   else if (type == "MB"){
-    html = "Select one of the countries below on the map, then press the <i>Submit</i> button.";
-    html += "<ul><li>" + questionnaire.questions[i].ans_cnt_names[0]  + "</li><li>" + questionnaire.questions[i].ans_cnt_names[1] + "</li><li>" + questionnaire.questions[i].ans_cnt_names[2] + "</li><li>" + questionnaire.questions[i].ans_cnt_names[3] + "</li></ul><span id='thumb'></span>"
+    html = "<form id='mbForm'>" +
+    "Select one of the countries " +
+    "<i>" + questionnaire.questions[i].ans_cnt_names[0] + "</i>" +
+    "<i>" + questionnaire.questions[i].ans_cnt_names[1] + "</i>" +
+    "<i>" + questionnaire.questions[i].ans_cnt_names[2] + "</i>" +
+    "<i>" + questionnaire.questions[i].ans_cnt_names[3] + "</i>" +
+    " <b>on the map</b>, then press the <i>Submit</i> button." +
+    "<span id='thumb'></span>" +
+    "</form>";
   }
   else {
     answers = questionnaire.questions[i].answers;
@@ -269,7 +276,7 @@ function questionGenerator(){
 }
 
 function startGame(){
-  duration = 20;
+  duration = 30;
   $('#timer').text(duration);
   i++;
   if(i < counter){

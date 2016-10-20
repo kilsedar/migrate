@@ -54,7 +54,7 @@ p {
   left: 8px;
   top: 80px;
   overflow-y: auto;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   visibility: hidden;
 }
 #closeButton {
@@ -101,7 +101,7 @@ p {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
 }
-#tfForm, #mcForm {
+#tfForm, #mcForm, #mbForm {
   padding: 10px 0px 10px 0px;
   width: 100%;
 }
