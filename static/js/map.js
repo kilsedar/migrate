@@ -197,9 +197,9 @@ function htmlGenerator(){
   else if (type == "MB"){
     html = "<form id='mbForm'>" +
     "Select one of the countries " +
-    "<i>" + questionnaire.questions[i].ans_cnt_names[0] + "</i>" +
-    "<i>" + questionnaire.questions[i].ans_cnt_names[1] + "</i>" +
-    "<i>" + questionnaire.questions[i].ans_cnt_names[2] + "</i>" +
+    "<i>" + questionnaire.questions[i].ans_cnt_names[0] + "</i>, " +
+    "<i>" + questionnaire.questions[i].ans_cnt_names[1] + "</i>, " +
+    "<i>" + questionnaire.questions[i].ans_cnt_names[2] + "</i>, " +
     "<i>" + questionnaire.questions[i].ans_cnt_names[3] + "</i>" +
     " <b>on the map</b>, then press the <i>Submit</i> button." +
     "<span id='thumb'></span>" +
