@@ -3,10 +3,11 @@ import json
 from django.shortcuts import render, redirect
 from django.core.urlresolvers import reverse
 from django.views.decorators.csrf import csrf_protect
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
 from forms import PlayerForm, UserForm
 from questionnaire.models import Question
-from models import Profile
+from models import Profile, Player
 
 # Create your views here.
 @csrf_protect
@@ -30,3 +31,9 @@ def register(request):
         return redirect(reverse('login'))
     #register invalid.. go back to register (test registration errors!! probably fix css for errors)
     return render(request, 'registration/register.html', context={'form': form, 'uform': uform})
+
+
+@login_required
+def player_profile(request):
+    player = Player.objects.get(user=request.user)
+    return render(request, 'registration/profile.html', context={'player': player})

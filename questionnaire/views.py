@@ -1,5 +1,6 @@
 import ast
 import json
+from ipware.ip import get_trusted_ip
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
@@ -11,6 +12,8 @@ def map(request, json_req=None):
     user = request.user
     player = Player.objects.get(user=user)
     country = player.country
+    ip = get_trusted_ip(request, trusted_proxies=['nat-vrf-como.rete.polimi.it'])
+    print "country was %s but ip is %s" % (country, ip)
     ct = dict()
     #ct['alpha3'] = ["gmb", "afg", "cub", "hun", "mng", "swe", "alb", "cyp", "ind", "mrt", "syr", "arg", "cze", "irn", "ner", "tcd", "aut", "deu", "irq", "nga", "tha", "bdi", "dnk", "isr", "nic", "tun", "bel", "dza", "ita", "nld", "tur", "bgr", "egy", "jor", "nor", "tza", "bih", "eri", "kaz", "pak", "uga", "bra", "esp", "ken", "pol", "ukr", "caf", "eth", "lbn", "rou", "usa", "can", "fin", "lby", "rus", "ven", "che", "fra", "mar", "sdn", "vnm", "chn", "gbr", "mex", "sen", "xxk", "civ", "gib", "mkd", "som", "yem", "cmr", "grc", "mli", "srb", "zaf", "cod", "gtm", "mlt", "ssd", "col", "hrv", "mmr", "svn"]
     ct['alpha3'] = ["aaaaaa", "cpv", "ind", "moz", "ssd", "afg", "cri", "iot", "mrt", "sssss", "ago", "cub", "irl", "msr", "stp", "aia", "cym", "irn", "mus", "sur", "alb", "cyp", "irq", "mwi", "svk", "and", "cze", "isl", "mys", "svn", "are", "deu", "isr", "nam", "swe", "arg", "dji", "ita", "ner", "swz", "arm", "dma", "jam", "nga", "syc", "atg", "dnk", "jey", "nic", "syr", "aus", "dom", "jjjjj", "niu", "tca", "aut", "dza", "jor", "nld", "tcd", "aze", "ecu", "jpn", "nor", "tgo", "bbbbb", "egy", "kaz", "npl", "tha", "bdi", "eri", "ken", "nru", "tjk", "bel", "esp", "kgz", "nzl", "tkl", "ben", "est", "khm", "omn", "tkm", "bfa", "eth", "kir", "ooooo", "tls", "bgd", "fin", "kna", "pak", "ton", "bgr", "fji", "kor", "pan", "tto", "bhr", "flk", "kwt", "pcn", "ttttt", "bhs", "fra", "lao", "per", "tun", "bih", "fro", "lbn", "phl", "tur", "blr", "fsm", "lbr", "plw", "tuv", "blz", "gab", "lby", "png", "twn", "bmu", "gbr", "lca", "pol", "tza", "bol", "ggy", "lie", "prk", "uga", "bra", "gha", "lka", "prt", "ukr", "brb", "gib", "lso", "pry", "ury", "brn", "gin", "ltu", "qat", "usa", "btn", "gmb", "lux", "rou", "bwa", "gnb", "lva", "rus", "uzb", "caf", "gnq", "mar", "rwa", "vat", "can", "grc", "mco", "sau", "vct", "che", "grd", "mdg", "sdn", "ven", "chl", "grl", "mdv", "sen", "vgb", "chn", "gtm", "mex", "sgp", "vnm", "civ", "guy", "mhl", "shn", "vut", "cmr", "hnd", "mkd", "slb", "wsm", "cod", "hrv", "mli", "sle", "xxk", "cog", "hti", "mlt", "slv", "yem", "cok", "hun", "mmr", "smr", "zaf", "col", "idn", "mne", "som", "zmb", "com", "imn", "mng", "srb", "zwe"]
