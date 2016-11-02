@@ -11,7 +11,6 @@ class UserForm(ModelForm):
         fields = ['username', 'password']
         widgets = {
             'password': forms.PasswordInput(),
-            #'password2': forms.PasswordInput(),
         }
         labels = {
             'username': _("Nickname"),

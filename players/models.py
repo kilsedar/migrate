@@ -83,11 +83,13 @@ class Profile(models.Model):
 
 class Player(models.Model):
     GENDER = (
+    (None, '---------'),
     ('f', 'Female'),
     ('m', 'Male'),
     ('ns', "Not specified"),
     )
     AGE_RANGES = (
+    (None, '---------'),
     ('18_24', '18 - 24'),
     ('25_34', '25 - 34'),
     ('35_44', '35 - 44'),
@@ -96,6 +98,7 @@ class Player(models.Model):
     ('more_65', '65 or more'),
     )
     EDUCATION_LEVELS = (
+    (None, '---------'),
     ('ps', u'Primary school'),
     ('ss', u'Secondary school'),
     ('college', u'College degree'),
@@ -106,11 +109,11 @@ class Player(models.Model):
     )
 
     user = models.OneToOneField(User, unique=True, verbose_name='player') #Find out how to display as nickname!! :) MZ
-    gender = models.CharField(max_length=10, blank=False, choices=GENDER, default='f', verbose_name=u'gender')
-    age = models.CharField(max_length=10, blank=False, choices=AGE_RANGES, default='18_24', verbose_name=u'age range (years)',
+    gender = models.CharField(max_length=10, blank=False, choices=GENDER, default=None, verbose_name=u'gender')
+    age = models.CharField(max_length=10, blank=False, choices=AGE_RANGES, default=None, verbose_name=u'age range (years)',
                            help_text="I hereby certify that I am 18 years of age or older.")
     education = models.CharField(max_length=20, blank=False, choices=EDUCATION_LEVELS, default='ps', verbose_name=u'education level')
-    country = models.ForeignKey(Country, default=1, verbose_name=u'country of origin')
+    country = models.ForeignKey(Country, default=None, verbose_name=u'country of origin')
     profile = models.OneToOneField(Profile, unique=True, verbose_name='profile')
 
     def __unicode__(self):
