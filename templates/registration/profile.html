@@ -6,16 +6,16 @@
 
 	<h2>{{ request.user.username }}<h2>
 	<p><b>Ranked score:</b> 
-		{% if player.profile.avg_score %}
+		{% if player.profile.avg_score != None %}
 			{{ player.profile.avg_score }}
 		{% else %}
 			No score yet (You should <a href={% url 'map' %}>start playing</a> to initialize your score!)
 		{% endif %}
 
 	</p>
-	<p><b>Gender:</b> {{ player.gender }}</p>
+	<p><b>Gender:</b> {{ player.get_gender_display }}</p>
 	<p><b>Country:</b> {{ player.country }}</p>
-	<p><b>Age range:</b> {{ player.age }}</p>
+	<p><b>Age range:</b> {{ player.get_age_display }}</p>
 	{% if request.user.email %}
 		<p><b>e-mail:</b> {{ request.user.email }}</p>
 	{% endif %}
