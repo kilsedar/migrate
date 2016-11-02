@@ -5,11 +5,13 @@ from django.contrib.auth.models import User
 from players.models import Player
 
 class UserForm(ModelForm):
+    password2 = forms.CharField(widget=forms.PasswordInput(), label="Confirm password")
     class Meta:
         model = User
         fields = ['username', 'password']
         widgets = {
             'password': forms.PasswordInput(),
+            #'password2': forms.PasswordInput(),
         }
         labels = {
             'username': _("Nickname"),
@@ -22,6 +24,16 @@ class UserForm(ModelForm):
         if commit:
             user.save()
         return user
+
+    def clean_password2(self):
+        password = self.cleaned_data.get('password')
+        password2 = self.cleaned_data.get('password2')
+
+        if not password2:
+            raise forms.ValidationError("You must confirm your password")
+        if password != password2:
+            raise forms.ValidationError("Your passwords do not match")
+        return password2
 
 class PlayerForm(ModelForm):
 	class Meta:
