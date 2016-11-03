@@ -1,8 +1,11 @@
 import ast
 import json
+from cStringIO import StringIO
 #from ipware.ip import get_trusted_ip
+from django.core import management
 from django.shortcuts import render
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
+from django.utils.encoding import smart_str
 from django.contrib.auth.decorators import login_required
 from players.models import Player, Country
 from questionnaire.models import Question, Game, AnsweredQuestion
@@ -72,3 +75,15 @@ def data(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def free_data(request):
+    buf = StringIO()
+    management.call_command('dumpdata', 'questionnaire', stdout=buf)
+    buf.seek(0)
+    fname = 'questionnaire_fix.txt'
+    with open(fname, 'w') as f:
+        f.write(buf.read())
+    response = HttpResponse(open(fname), content_type='application/force-download')
+    response['Content-Disposition'] = 'attachment; filename=%s' % smart_str(fname)
+    response['X-Sendfile'] = smart_str(fname)
+    return response
