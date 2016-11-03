@@ -3,6 +3,7 @@ import json
 from django.shortcuts import render, redirect
 from django.core.urlresolvers import reverse
 from django.views.decorators.csrf import csrf_protect
+from django.views.generic.list import ListView
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
 from forms import PlayerForm, UserForm
@@ -37,3 +38,9 @@ def register(request):
 def player_profile(request):
     player = Player.objects.get(user=request.user)
     return render(request, 'registration/profile.html', context={'player': player})
+
+
+class RankingView(ListView):
+
+    queryset = Player.objects.filter(profile__isnull=False, profile__avg_score__gt = 0).order_by('-profile__avg_score')[:10]
+    template_name = 'ranking.html'

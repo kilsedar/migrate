@@ -1,0 +1,13 @@
+{% extends "registration/base_register-login.html" %}
+{% load staticfiles %}
+
+{% block title %}Ranking{% endblock %}
+{% block content %}
+
+<h1>Ranking</h1>
+<ol>
+{% for player in object_list %}
+    <li>{{ player.user.username }} - {{ player.profile.avg_score }}</li>
+{% endfor %}
+</ol>
+{% endblock %}
