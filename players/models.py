@@ -112,7 +112,7 @@ class Player(models.Model):
     gender = models.CharField(max_length=10, blank=False, choices=GENDER, default=None, verbose_name=u'gender')
     age = models.CharField(max_length=10, blank=False, choices=AGE_RANGES, default=None, verbose_name=u'age range (years)',
                            help_text="I hereby certify that I am 18 years of age or older.")
-    education = models.CharField(max_length=20, blank=False, choices=EDUCATION_LEVELS, default='ps', verbose_name=u'education level')
+    education = models.CharField(max_length=20, blank=False, choices=EDUCATION_LEVELS, default=None, verbose_name=u'education level')
     country = models.ForeignKey(Country, default=None, verbose_name=u'country of origin')
     profile = models.OneToOneField(Profile, unique=True, verbose_name='profile')
 
