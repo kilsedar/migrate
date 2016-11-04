@@ -1,10 +1,10 @@
-{% extends "registration/base_register-login.html" %}
+{% extends "registration/base_registration_profile_ranking.html" %}
+{% load staticfiles %}
 
 {% block title %}Registration{% endblock %}
 
-{% block h2 %}Registration{% endblock %}
-
 {% block content %}
+<h2>Registration</h2>
 <form action={% url 'register' %} method="post">
   {% csrf_token %}
 
@@ -15,6 +15,8 @@
 
   <div id="warning">*** Please note that your e-mail address is not required for the registration in order to protect your privacy. This means that there is no way for you to reset your password later, so please take note of your password now.</div>
 
-  <p id=login_redirect>Have an account? Login <a href={% url 'login' %}>here</a>.</p>
+  <div id="privacy_statement">By signing up for and by signing in to this service you accept our <a href="{% static "Privacy_Statement_MIGRATE.pdf" %}" target="_blank">Privacy Statement.</a></div>
+
+  <p id=login_redirect>Have an account? Log in <a href={% url 'login' %}>here</a>.</p>
 </form>
 {% endblock %}

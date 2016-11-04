@@ -37,10 +37,10 @@ def register(request):
 @login_required
 def player_profile(request):
     player = Player.objects.get(user=request.user)
-    return render(request, 'registration/profile.html', context={'player': player})
+    return render(request, 'profile.html', context={'player': player})
 
 
 class RankingView(ListView):
-
-    queryset = Player.objects.filter(profile__isnull=False, profile__avg_score__gt = 0).order_by('-profile__avg_score')[:10]
+    #queryset = Player.objects.filter(profile__isnull=False, profile__avg_score__gt = 0).order_by('-profile__avg_score')[:10]
+    queryset = Player.objects.filter(profile__isnull=False, profile__avg_score__gt = 0).order_by('-profile__avg_score')
     template_name = 'ranking.html'

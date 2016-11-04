@@ -99,7 +99,13 @@ body {
 }
 #warning {
   font-size: 11px;
-  text-align:justify;
+  text-align: justify;
+  clear: right;
+  padding-bottom: 15px;
+}
+#privacy_statement {
+  font-size: 11px;
+  text-align: center;
   clear: right;
   padding-bottom: 15px;
 }
@@ -126,6 +132,25 @@ a {
   display: block;
   width: 100%;
 }
+#ranking_table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+th {
+  text-align: center;
+}
+#ranking_profile_logout {
+  text-align: right;
+  clear: both;
+  margin-top: 10px;
+}
+#profile {
+  text-align: center;
+}
+#username {
+  font-size: 40px;
+}
 /*Bigger than small devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   p, #tab {
@@ -134,7 +159,10 @@ a {
   label {
     font-size: 16px;
   }
-  #footer, #warning {
+  #footer, #warning, #privacy_statement {
     font-size: 12px;
+  }
+  #ranking_table {
+    width: 60%;
   }
 }

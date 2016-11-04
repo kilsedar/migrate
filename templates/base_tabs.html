@@ -17,6 +17,17 @@
       <img src="{% static "css/images/logo.png" %}"/>
     </div>
 
+    <br>
+    <br>
+    <div id="register_login_logout">
+      {% if user.is_authenticated %}
+        <b><a href={% url 'register' %}>Register</a> | <a href={% url 'logout' %}>Log out</a></b>
+      {% else %}
+        <b><a href={% url 'register' %}>Register</a> | <a href={% url 'login' %}>Log in</a></b>
+      {% endif %}
+    </div>
+    <br>
+
     {% block content %}{% endblock %}
   </div>
 
