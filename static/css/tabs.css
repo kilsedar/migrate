@@ -47,34 +47,45 @@ p, li {
 #jrc, #mygeoss {
   height: 120px;
 }
- #about {
-   padding-bottom: 60px;
- }
- #register_login_logout {
-   text-align: right;
- }
- #footer {
-   height: 30px;
-   width: auto;
-   color: rgb(220, 220, 220);
-   background-color: rgba(2, 93, 171, 1);
-   line-height: 30px;
-   padding: 0px 10px 0px 10px;
-   font-size: 12px;
- }
- #mailto {
-   color: rgb(220, 220, 220);
- }
- /*Bigger than small devices (tablets, 768px and up)*/
- @media (min-width: 768px) {
-   p, li, #tab {
-     font-size: 14px;
-   }
-   #footer {
-     font-size: 11px;
-   }
- }
- #p_role {
-   font-weight: bold;
-   font-size: 120%;
- }
+#about {
+  padding-bottom: 60px;
+}
+#register_login_logout {
+  text-align: right;
+}
+#footer {
+  height: 30px;
+  width: auto;
+  color: rgb(220, 220, 220);
+  background-color: rgba(2, 93, 171, 1);
+  line-height: 30px;
+  padding: 0px 10px 0px 10px;
+  font-size: 12px;
+}
+#mailto {
+  color: rgb(220, 220, 220);
+}
+#team_member {
+  padding-bottom: 20px;
+}
+#team_member_name {
+  font-size: 140%;
+}
+#team_member_role {
+  font-weight: bold;
+  font-size: 120%;
+}
+/*Bigger than small devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  p, li, #tab {
+    font-size: 14px;
+  }
+  #footer {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .p_md_lg{
+    line-height: 70%;
+  }
+}
