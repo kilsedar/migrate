@@ -112,7 +112,7 @@ body {
 a {
   color: rgba(2,93,171,1);
 }
-#register, #login {
+#register, #login, #download {
   color: rgb(220,220,220);
   background-color: rgba(2,93,171,1);
   border: solid 1px #cbc9c9;

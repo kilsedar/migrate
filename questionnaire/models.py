@@ -128,13 +128,13 @@ class Question(models.Model):
             if self.random_factor:
                 return get_rnd_months(self.answer, rf = self.random_factor) + [self.answer]
             return get_rnd_months(self.answer) + [self.answer]
-        
+
         if self.answer_type == "NUM":
             """Generate options based on random numbers"""
             ans = list()
             context = self.get_context_num()
             ans.append(self.answer) #right answer
-            
+
             r = round(0.9999999-random.random(), 2)
             op = int(r * self.random_factor)
             found = re.search('\d+', self.answer)
@@ -145,16 +145,16 @@ class Question(models.Model):
                 r = round(0.9999999-random.random(), 2)
                 op = int(r * self.random_factor)
             ans.append(context[0]+str(op)+context[1])
-            
+
             for i in range(2):
                 while too_close(answer, op) == True or context[0]+str(op)+context[1] in ans:
                     r = round(0.9999999-random.random(), 2)
                     x = 0.1 if r > 0.5 else 10
                     op = int(r * self.random_factor * x)
                 ans.append(context[0]+str(op)+context[1])
-           
+
             return ans
-        
+
         if self.answer_type == "FIX" and self._type != 'MB':
             """If the answer is fixed but not a country"""
             if not self.fixedanswers:
@@ -182,7 +182,7 @@ class Question(models.Model):
             """Generates option when the answer is a percentage"""
             bef, aft = self.get_context_num()
             pos = [10, 20, 30, 40, 50, 60, 70, 80, 90]
-    
+
             while self.answer in pos[:3]:
                 random.shuffle(pos)
 
@@ -214,7 +214,6 @@ class FixedAnswers(models.Model):
         return self.question.question
 
 class Game(models.Model):
-
 
     player = models.ForeignKey(Player)
     score = models.IntegerField(null=True, blank=True)
