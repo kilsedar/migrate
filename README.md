@@ -32,6 +32,7 @@ Using pip:
 ```
 #!python
 pip install psycopg2
+pip install pycrypto
 ```
 
 Change the file migrate/settings.py to your server's details

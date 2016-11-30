@@ -27,6 +27,25 @@ function getCookie(name) {
   return cookieValue;
 }
 
+function decrypt(string) {
+  var ciphertext = CryptoJS.enc.Base64.parse(string);
+  var iv = ciphertext.clone();
+  iv.sigBytes = 16;
+  iv.clamp();
+  ciphertext.words.splice(0, 4); //delete 4 words = 16 bytes
+  ciphertext.sigBytes -= 16;
+
+  var key = CryptoJS.enc.Utf8.parse("1234567890123456");
+
+  //decryption
+  var decrypted = CryptoJS.AES.decrypt({ciphertext: ciphertext}, key, {
+    iv: iv,
+    mode: CryptoJS.mode.CFB
+  });
+  return decrypted.toString(CryptoJS.enc.Utf8);
+}
+
+
 var osm = new ol.layer.Tile({
   source: new ol.source.OSM({
     "url" : "http://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
@@ -147,7 +166,8 @@ function getFinalExtent(){
 
 function htmlGenerator(){
   var type = questionnaire.questions[i]._type;
-  var right_answer = questionnaire.questions[i].answer;
+  var right_answer = decrypt(questionnaire.questions[i].answer);
+  //console.log(right_answer);
   var cnt_list = questionnaire.questions[i].cnt_list;
   //console.log("cnt_list: " + cnt_list);
   //cnt_list = ["ITA", "AFG"];
@@ -357,7 +377,7 @@ function scoreUpdate() {
   var $thumb_down = ($("<img id='thumb_down' src='" + thumb_down_source + "'>"));
 
   if (type == "TF" || type == "MC"){
-    right_answer = capitalizeFirstLetter(questionnaire.questions[i].answer); //needed only in the case of MC, but TF are already in all capital.
+    right_answer = capitalizeFirstLetter(decrypt(questionnaire.questions[i].answer)); //needed only in the case of MC, but TF are already in all capital.
     given_answer = $('input[type="radio"]:checked').parent().text();
     //console.log(given_answer + " --- " + right_answer);
     if (given_answer == right_answer) {
@@ -383,7 +403,7 @@ function scoreUpdate() {
     }
   }
   else if (type == "MB") {
-    right_answer = questionnaire.questions[i].answer_code;
+    right_answer = decrypt(questionnaire.questions[i].answer_code);
     given_answer = alpha3_selected;
     //console.log("answers: " + questionnaire.questions[i].answers);
     //console.log("right answer: " + right_answer + " --- " + "alpha3_selected: " + alpha3_selected);
@@ -417,7 +437,7 @@ function scoreUpdate() {
     }
   }
   else {
-    right_answer = questionnaire.questions[i].answer;
+    right_answer = decrypt(questionnaire.questions[i].answer);
     given_answer = $("#textInput").val();
     var lowerBound, upperBound;
 

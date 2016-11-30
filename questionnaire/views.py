@@ -1,5 +1,8 @@
 import ast
 import json
+import base64
+from Crypto.Cipher import AES
+from Crypto import Random
 from cStringIO import StringIO
 #from ipware.ip import get_trusted_ip
 from django.core import management
@@ -9,6 +12,30 @@ from django.utils.encoding import smart_str
 from django.contrib.auth.decorators import login_required
 from players.models import Player, Country
 from questionnaire.models import Question, Game, AnsweredQuestion
+
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+BLOCK_SIZE = 16
+
+def pad(data):
+    length = 16 - (len(data) % 16)
+    return data + chr(length)*length
+
+def unpad(data):
+    return data[:-ord(data[-1])]
+
+def encrypt(message, passphrase):
+    IV = Random.new().read(BLOCK_SIZE)
+    aes = AES.new(passphrase, AES.MODE_CFB, IV, segment_size=128)
+    return base64.b64encode(IV + aes.encrypt(pad(message)))
+
+def decrypt(encrypted, passphrase):
+    encrypted = base64.b64decode(encrypted)
+    IV = encrypted[:BLOCK_SIZE]
+    aes = AES.new(passphrase, AES.MODE_CFB, IV, segment_size=128)
+    return unpad(aes.decrypt(encrypted[BLOCK_SIZE:]))
 
 @login_required
 def map(request, json_req=None):
@@ -35,6 +62,11 @@ def map(request, json_req=None):
             aq.option4 = answers[3]
             aq.save()
             qd = q.to_dict()
+
+            #encrypt the answer
+            qd_answer_encypted = encrypt(qd['answer'], "1234567890123456")
+            qd['answer'] = qd_answer_encypted
+
             qd['answers'] = answers
             qd['cnt_list'] = ast.literal_eval(q.cnt_list)
 
@@ -45,7 +77,7 @@ def map(request, json_req=None):
 
             qd['game_id'] = game.id
             if q._type == 'MB':
-                qd['answer_code'] = q.answer_code
+                qd['answer_code'] = encrypt(q.answer_code, "1234567890123456")
             q_list.append(qd)
         ct['questions'] = q_list
         return JsonResponse(ct)
