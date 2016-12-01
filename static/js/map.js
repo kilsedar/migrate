@@ -1,15 +1,7 @@
-var i=-1, intervalID, counter=6, score, duration, submitButtonRemoved, title="", extents=[], alpha3_countries=[], alpha3_selected="", mapClickKey, mapPointerMoveKey, ELdeactivated=true;
+var i=-1, intervalID, counter=6, duration, trem, submitButtonRemoved, title="", extents=[], alpha3_countries=[], alpha3_selected="", mapClickKey, mapPointerMoveKey, ELdeactivated=true;
 //var alpha3_countries = ["ITA", "TUR", "POL", "UGA", "UKR"];
 var questionnaire = {};
 var gameResults = new Object();
-
-/*var bingAerial = new ol.layer.Tile({
-visible: true,
-source: new ol.source.BingMaps({
-key: 'AoBGjR_hL31CvYYbkiVXXbuL24a5lu1eurrynYZgh86MXNfMy9mNC6v0RG9d1CRG',
-imagerySet: 'Aerial'
-})
-});*/
 
 function getCookie(name) {
   var cookieValue = null;
@@ -45,6 +37,17 @@ function decrypt(string) {
   return decrypted.toString(CryptoJS.enc.Utf8);
 }
 
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+/*var bingAerial = new ol.layer.Tile({
+  visible: true,
+  source: new ol.source.BingMaps({
+    key: 'AoBGjR_hL31CvYYbkiVXXbuL24a5lu1eurrynYZgh86MXNfMy9mNC6v0RG9d1CRG',
+    imagerySet: 'Aerial'
+  })
+});*/
 
 var osm = new ol.layer.Tile({
   source: new ol.source.OSM({
@@ -103,10 +106,6 @@ var styleRight = new ol.style.Style({
     width: 3
   })
 });
-
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-}
 
 function mapCountryUpdate_add(countries){
   alpha3_countries = countries
@@ -310,37 +309,13 @@ function startGame(){
       $('#timer').text(duration);
       if (duration < 1){
         window.clearInterval(intervalID);
-        scoreUpdate();
+        trem = 0;
+        evaluateAnswer();
         //startGame();
       }
     }, 1000);
   }
   else {
-    $("#questionnaire").css("visibility", "hidden");
-    $('#questionnaire').removeClass("bigEntrance");
-    $("#end #pFirst").html("Game is finished!<br>Your score is: " + score);
-    if (score < 2){
-      $('.box#end img').attr("src", badge_zero_one_source);
-      $("#end #pSecond").html("Come on, you can do better than this!");
-    }
-    else if (score < 4){
-      $('.box#end img').attr("src", badge_two_three_source);
-      $("#end #pSecond").html("Not so bad, keep on playing!");
-    }
-    else if (score < 6){
-      $('.box#end img').attr("src", badge_four_five_source);
-      $("#end #pSecond").html("You’re almost there!");
-    }
-    else{
-      $('.box#end img').attr("src", badge_six_source);
-      $("#end #pSecond").html("Your knowledge is impressive, congratulations!");
-    }
-    $("#end").css("visibility", "visible");
-
-    gameResults.score = score;
-    //console.log(gameResults);
-    //console.log(JSON.stringify(gameResults));
-
     var csrftoken = getCookie('csrftoken');
 
     function csrfSafeMethod(method) {
@@ -357,15 +332,41 @@ function startGame(){
 
     //sending the game results
     var gameResults_string = JSON.stringify(gameResults);
+    //console.log(gameResults_string);
     $.ajax({
       type: "POST",
       url: "/finish/",
-      data: gameResults_string
+      data: gameResults_string,
+      success: function(response){
+        //console.log("score: " + response.score);
+        var score = response.score;
+
+        $("#questionnaire").css("visibility", "hidden");
+        $('#questionnaire').removeClass("bigEntrance");
+        $("#end #pFirst").html("Game is finished!<br>Your score is: " + score);
+        if (score < 2){
+          $('.box#end img').attr("src", badge_zero_one_source);
+          $("#end #pSecond").html("Come on, you can do better than this!");
+        }
+        else if (score < 4){
+          $('.box#end img').attr("src", badge_two_three_source);
+          $("#end #pSecond").html("Not so bad, keep on playing!");
+        }
+        else if (score < 6){
+          $('.box#end img').attr("src", badge_four_five_source);
+          $("#end #pSecond").html("You’re almost there!");
+        }
+        else{
+          $('.box#end img').attr("src", badge_six_source);
+          $("#end #pSecond").html("Your knowledge is impressive, congratulations!");
+        }
+        $("#end").css("visibility", "visible");
+      }
     });
   }
 }
 
-function scoreUpdate() {
+function evaluateAnswer() {
   var right_answer;
   var given_answer = "";
   var given_answerJSON = new Object();
@@ -377,7 +378,7 @@ function scoreUpdate() {
   var $thumb_down = ($("<img id='thumb_down' src='" + thumb_down_source + "'>"));
 
   if (type == "TF" || type == "MC"){
-    right_answer = capitalizeFirstLetter(decrypt(questionnaire.questions[i].answer)); //needed only in the case of MC, but TF are already in all capital.
+    right_answer = capitalizeFirstLetter(decrypt(questionnaire.questions[i].answer)); //needed only in the case of MC, but TF are already in all capital
     given_answer = $('input[type="radio"]:checked').parent().text();
     //console.log(given_answer + " --- " + right_answer);
     if (given_answer == right_answer) {
@@ -387,7 +388,6 @@ function scoreUpdate() {
       $('input[type="radio"]:checked').parent().append($thumb_up);
       $('input[type="radio"]:checked').parent().css("width", "calc(100% - 32px)");
       //the answer is selected and it is right
-      score += 1;
     }
     else {
       //the answer is selected and wrong, so highlight both wrong and right
@@ -417,7 +417,6 @@ function scoreUpdate() {
       map.unByKey(mapPointerMoveKey);
       map.getTarget().style.cursor = '';
       ELdeactivated = true;
-      score += 1;
     }
     else {
       //console.log("wrong!");
@@ -441,14 +440,14 @@ function scoreUpdate() {
     given_answer = $("#textInput").val();
     var lowerBound, upperBound;
 
-    var isAnInteger = false;
-    if (given_answer == parseInt(given_answer, 10))
-    isAnInteger = true;
+    var isNumber = false;
+    if (isNaN(given_answer) == false)
+      isNumber = true;
 
     if (right_answer.indexOf("%") >= 0){
       lowerBound = right_answer.slice(0, -1)*9/10;
       upperBound = right_answer.slice(0, -1)*11/10;
-      if (lowerBound < 0) lowerBound = 0;
+      //if (lowerBound < 0) lowerBound = 0;
       if (upperBound > 100) upperBound = 100;
     }
     else if (right_answer.indexOf("%") < 0){
@@ -456,12 +455,11 @@ function scoreUpdate() {
       upperBound = right_answer*12/10;
     }
 
-    if (isAnInteger == false && given_answer != ""){
+    if (isNumber == false && given_answer != ""){
       alert("The answer is an integer!");
     }
 
-    if(isAnInteger && given_answer >= lowerBound && given_answer <= upperBound){
-      score += 1;
+    if(isNumber && given_answer >= lowerBound && given_answer <= upperBound){
       $("#textInput").css("color", "rgba(0, 205, 0, 1)");
       $("#textInput").css("font-weight", "bold");
       $('#spanTextInput').append($thumb_up);
@@ -473,6 +471,7 @@ function scoreUpdate() {
     }
   }
   given_answerJSON.answer = given_answer;
+  given_answerJSON.trem = trem;
   gameResults.questions.push(given_answerJSON);
 
   if (submitButtonRemoved == false){
@@ -484,15 +483,14 @@ function scoreUpdate() {
 }
 
 $("#startButton").click(function() {
-  score = 0;
   $("#start").css("visibility", "hidden");
   $("#questionnaire").css("visibility", "visible");
   $('#questionnaire').addClass("box bigEntrance");
 
-  $.getJSON("/game/restart/", function( data ) {
-    //console.log(data.questions);
+  $.getJSON("/game/restart/", function(data) {
+    //console.log(data);
     questionnaire.questions = data.questions;
-    console.log(questionnaire);
+    //console.log(questionnaire);
     gameResults.game_id = questionnaire.questions[0].game_id;
     gameResults.questions = [];
     startGame();
@@ -507,7 +505,8 @@ $("#closeButton").click(function() {
 
 $("#questionnaire").on('click', "#submitButton", function(){
   window.clearInterval(intervalID);
-  scoreUpdate();
+  trem = duration;
+  evaluateAnswer();
 });
 
 $("#questionnaire").on('click', "#nextButton", function(){

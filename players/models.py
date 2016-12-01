@@ -14,14 +14,15 @@ class Country(models.Model):
         verbose_name_plural = 'countries'
         ordering = ["country"]
 
-    REGIONS = (("ITA", "Italy"),
-               ("AFR", "Africa"),
-               ("EUR", "Europe"),
-               ("GRC", "Greece"),
-               ("ESP", "Spain"),
-               ("BLK", "Bulgaria, Hungary and Balkans"),
-               ("MDE", "Middle East"),
-              )
+    REGIONS = (
+     ("ITA", "Italy"),
+     ("AFR", "Africa"),
+     ("EUR", "Europe"),
+     ("GRC", "Greece"),
+     ("ESP", "Spain"),
+     ("BLK", "Bulgaria, Hungary and Balkans"),
+     ("MDE", "Middle East"),
+    )
 
     country = models.CharField(max_length=150, blank=True)
     country_code = models.CharField(unique=True, max_length=6, blank=True)
@@ -34,7 +35,6 @@ class Country(models.Model):
     @classmethod
     def get_country(cls, code):
         return Country.objects.get(country_code=code).country
-
 
     # @classmethod
     # def populate_countries(cls):
@@ -60,52 +60,69 @@ class Country(models.Model):
 
 class Profile(models.Model):
 
-    avg_score = models.IntegerField(null=True, blank=True, verbose_name='average score')
+    avg_score = models.FloatField(null=True, blank=True, default=0, verbose_name='average score')
 
     def __unicode__(self):
         try:
-            return self.player.user.username+"\t|\t average score:"+str(self.avg_score)
+            return self.player.user.username+"\t|\t average score: "+str(self.avg_score)
         except:
-            return "Profile not available for user"
+            return "profile not available for user"
 
     def update_avg_score(self):
         games = self.player.game_set.all()
-        if len(games) > 4:
-            games = games[:5]
+        #print "count of the games: %d" % len(games)
+        n_games = len(games)
         avg = 0
         cont = 0
+
         for game in games:
             avg += game.score or 0
             cont += 1
-        self.avg_score = avg/cont
+
+        avg_score = avg/cont
+
+        if n_games > 1 and n_games <= 5:
+            avg_score += (n_games-1)*0.5
+        elif n_games > 5 and n_games <= 15:
+            avg_score += 2 + (n_games-5)*0.2
+        elif n_games > 15 and n_games <= 55:
+            avg_score += 4 + (n_games-15)*0.1
+        elif n_games > 55 and n_games <= 135:
+            avg_score += 8 + (n_games-55)*0.05
+        elif n_games > 135 and n_games <= 535:
+            avg_score += 12 + (n_games-135)*0.01
+        elif n_games > 535:
+            avg_score += 16 + (n_games-535)*0.005
+
+        self.avg_score = avg_score
         self.save()
 
 
 class Player(models.Model):
     GENDER = (
-    (None, '---------'),
-    ('f', 'Female'),
-    ('m', 'Male'),
-    ('ns', "Not specified"),
+     (None, '---------'),
+     ('f', 'Female'),
+     ('m', 'Male'),
+     ('ns', "Not specified"),
     )
     AGE_RANGES = (
-    (None, '---------'),
-    ('18_24', '18 - 24'),
-    ('25_34', '25 - 34'),
-    ('35_44', '35 - 44'),
-    ('45_54', '45 - 54'),
-    ('55_64', '55 - 64'),
-    ('more_65', '65 or more'),
+     (None, '---------'),
+     ('18_24', '18 - 24'),
+     ('25_34', '25 - 34'),
+     ('35_44', '35 - 44'),
+     ('45_54', '45 - 54'),
+     ('55_64', '55 - 64'),
+     ('more_65', '65 or more'),
     )
     EDUCATION_LEVELS = (
-    (None, '---------'),
-    ('ps', u'Primary school'),
-    ('ss', u'Secondary school'),
-    ('college', u'College degree'),
-    ('bachelor', u'Bachelor degree'),
-    ('master', u'Master degree'),
-    ('phd', u'PhD degree'),
-    ('other', u'Other'),
+     (None, '---------'),
+     ('ps', u'Primary school'),
+     ('ss', u'Secondary school'),
+     ('college', u'College degree'),
+     ('bachelor', u'Bachelor degree'),
+     ('master', u'Master degree'),
+     ('phd', u'PhD degree'),
+     ('other', u'Other'),
     )
 
     user = models.OneToOneField(User, unique=True, verbose_name='player') #Find out how to display as nickname!! :) MZ
@@ -118,7 +135,6 @@ class Player(models.Model):
 
     def __unicode__(self):
         return self.user.username+"\t|\tfrom "+self.country.country
-
 
     #@classmethod
     #def print_countries(cls):

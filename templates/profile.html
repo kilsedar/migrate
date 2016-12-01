@@ -12,18 +12,16 @@
 		<p id="username">{{ request.user.username }}<p>
 		<p>
 			<b>Ranked score:</b>
-			{% if player.profile.avg_score != None %}
-				{{ player.profile.avg_score }}
-			{% else %}
-				No score yet (You should <a href={% url 'map' %}>start playing</a> to initialize your score!)
-			{% endif %}
+      {{ player.profile.avg_score|floatformat:2 }}
 		</p>
 		<p><b>Gender:</b> {{ player.get_gender_display }}</p>
 		<p><b>Country:</b> {{ player.country }}</p>
 		<p><b>Age range:</b> {{ player.get_age_display }}</p>
-		{% if request.user.email %}
-			<p><b>e-mail:</b> {{ request.user.email }}</p>
-		{% endif %}
+    {% comment "email is not asked (yet)" %}
+		  {% if request.user.email %}
+			  <p><b>Email:</b> {{ request.user.email }}</p>
+		  {% endif %}
+		{% endcomment %}
   </div>
 
 {% endblock %}

@@ -12,21 +12,23 @@ from players.models import Country, Player
 
 # Create your models here.
 class Question(models.Model):
-    TYPES = (("MC", "Multiple choice"),
-             ("TB", "Text-based"),
-             ("TF", "True or False"),
-             ("MB", "Map based"),
-             )
+    TYPES = (
+     ("MC", "Multiple choice"),
+     ("TB", "Text-based"),
+     ("TF", "True or False"),
+     ("MB", "Map based"),
+    )
 
-    ANSWER_TYPES = (("NUM", "Numeric"),
-                    ("FIX", "Fixed"),
-                    ("CNT", "Country"),
-                    ("PER", "Percentage"),
-                    ("CLR", "Date Range"),
-                    ("BOL", "Boolean"),
-                    ("ALP", "Alphabetic or other"),
-                    ("MON", "Month(s)"),
-                    )
+    ANSWER_TYPES = (
+     ("NUM", "Numeric"),
+     ("FIX", "Fixed"),
+     ("CNT", "Country"),
+     ("PER", "Percentage"),
+     ("CLR", "Date Range"),
+     ("BOL", "Boolean"),
+     ("ALP", "Alphabetic or other"),
+     ("MON", "Month(s)"),
+    )
 
     category = models.CharField(max_length=50, blank=True, verbose_name="categories")
     region = models.CharField(max_length=120, blank=True, null=True)
@@ -40,7 +42,6 @@ class Question(models.Model):
     data_source_link = models.CharField(max_length=500, blank=True)
     license_link = models.CharField(max_length=500, blank=True)
     cnt_list = models.CharField(max_length=599, blank=True)
-
 
     def __unicode__(self):
         return self.question + "\t|\tAnswer: " + self.answer + "\t|\t(" + self._type + ")"
@@ -213,10 +214,11 @@ class FixedAnswers(models.Model):
     def __unicode__(self):
         return self.question.question
 
+
 class Game(models.Model):
 
     player = models.ForeignKey(Player)
-    score = models.IntegerField(null=True, blank=True)
+    score = models.FloatField(null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -224,6 +226,7 @@ class Game(models.Model):
 
     def __unicode__(self):
         return self.player.user.username+"\t|\tscored:"+str(self.score)+"\t|\t"+self.date.strftime("%d/%m/%Y")+" at: "+self.date.strftime("%H:%M")
+
 
 class AnsweredQuestion(models.Model):
 
@@ -234,7 +237,6 @@ class AnsweredQuestion(models.Model):
     option3 = models.TextField(blank=True, null=True, verbose_name='option 3')
     option4 = models.TextField(blank=True, null=True, verbose_name='option 4')
     game = models.ForeignKey(Game)
-
 
     def __unicode__(self):
         return self.question.question+" "+self.user_answer
