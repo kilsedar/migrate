@@ -1,15 +1,15 @@
-{% extends "registration/base_registration_profile_ranking_download.html" %}
+{% extends "base_registration_profile_ranking_download.html" %}
 {% load staticfiles %}
 
 {% block title %}Your Profile{% endblock %}
 {% block content %}
 
-	<div id="ranking_profile_logout">
-		<b><a href={% url 'ranking' %}>Ranking</a> | <a href={% url 'logout' %}>Log out</a></b>
+	<div id="profile_logout">
+		<b><!--<a href={% url 'ranking' %}>Ranking</a> | --><a href={% url 'logout' %}>Log out</a></b>
 	</div>
 
   <div id="profile">
-		<p id="username">{{ request.user.username }}<p>
+		<h2>{{ request.user.username }}</h2>
 		<p>
 			<b>Ranked score:</b>
       {{ player.profile.avg_score|floatformat:2 }}

@@ -69,7 +69,7 @@ body {
   height: calc(100% - 80px);
   overflow-y: scroll;
 }
-#tab {
+.tab {
   font-size: 12px;
   color: rgb(220, 220, 220);
   background-color: rgba(2, 93, 171, 1);
@@ -140,7 +140,7 @@ a {
 th {
   text-align: center;
 }
-#ranking_profile_logout {
+#profile_logout {
   text-align: right;
   clear: both;
   margin-top: 10px;
@@ -148,12 +148,12 @@ th {
 #profile {
   text-align: center;
 }
-#username {
-  font-size: 40px;
+#challenge {
+  background-color: rgba(115, 34, 107, 1);
 }
 /*Bigger than small devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  p, #tab {
+  p, .tab {
     font-size: 14px;
   }
   label {

@@ -198,6 +198,9 @@ def team(request):
 def data(request):
     return render(request, 'data.html')
 
+def challenge(request):
+    return render(request, 'challenge.html')
+
 def about(request):
     return render(request, 'about.html')
 

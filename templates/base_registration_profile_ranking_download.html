@@ -22,10 +22,12 @@
   </div>
 
   <div id="bottombar">
-    <a href={% url 'about' %}><button id="tab" type='button'>About</button></a>
-    <a href={% url 'map' %}><button id="tab" type='button'>Game</button></a>
-    <a href={% url 'team' %}><button id="tab" type='button'>Team</button></a>
-    <a href={% url 'data' %}><button id="tab" type='button'>Data</button></a>
+    <a href={% url 'about' %}><button class="tab" type='button'>About</button></a>
+    <a href={% url 'map' %}><button class="tab" type='button'>Game</button></a>
+    <a href={% url 'ranking' %}><button class="tab" type='button'>Ranking</button></a>
+    <a href={% url 'team' %}><button class="tab" type='button'>Team</button></a>
+    <a href={% url 'data' %}><button class="tab" type='button'>Data</button></a>
+    <a href={% url 'challenge' %}><button class="tab" id="challenge" type='button'>Challenge</button></a>
   </div>
 
   <div id="footer">Copyright MIGRATE 2016 © - <a id="mailto" href="mailto:candaneylul.kilsedar@polimi.it">Contact the webmaster</a></div>
