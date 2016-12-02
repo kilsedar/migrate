@@ -206,10 +206,11 @@ def about(request):
 
 def free_data(request):
     buf = StringIO()
-    management.call_command('dumpdata', 'questionnaire', stdout=buf)
-    management.call_command('dumpdata', 'players', stdout=buf)
+    management.call_command('dumpdata', 'questionnaire.game', stdout=buf)
+    management.call_command('dumpdata', 'questionnaire.answeredquestion', stdout=buf)
+    #management.call_command('dumpdata', 'players', stdout=buf)
     buf.seek(0)
-    fname = 'questionnaire_players.json'
+    fname = 'migrate.json'
     with open(fname, 'w') as f:
         f.write(buf.read())
     response = HttpResponse(open(fname), content_type='application/force-download')

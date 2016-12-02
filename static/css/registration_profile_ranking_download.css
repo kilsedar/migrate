@@ -140,7 +140,7 @@ a {
 th {
   text-align: center;
 }
-#profile_logout {
+#profile_logout, #register_login_logout {
   text-align: right;
   clear: both;
   margin-top: 10px;
@@ -150,6 +150,10 @@ th {
 }
 #challenge {
   background-color: rgba(115, 34, 107, 1);
+}
+#download_p {
+  text-align: justify;
+  padding-bottom: 10px;
 }
 /*Bigger than small devices (tablets, 768px and up)*/
 @media (min-width: 768px) {

@@ -4,29 +4,33 @@
 {% block title %}Ranking{% endblock %}
 {% block content %}
 
-  <div id="profile_logout">
-    <b><a href={% url 'profile' %}>User profile</a> | <a href={% url 'logout' %}>Log out</a></b>
-  </div>
+<div id="register_login_logout">
+  {% if user.is_authenticated %}
+    <b><a href={% url 'register' %}>Register</a> | <a href={% url 'logout' %}>Log out</a></b>
+  {% else %}
+    <b><a href={% url 'register' %}>Register</a> | <a href={% url 'login' %}>Log in</a></b>
+  {% endif %}
+</div>
 
-  <h2>Ranking</h2>
+<h2>Ranking</h2>
 
-  <table id="ranking_table" class="table table-hover table-condensed">
-    <thead>
-      <tr>
-        <th class="col-xs-4 col-md-2">Ranking</th>
-        <th class="col-xs-4 col-md-2">Username</th>
-        <th class="col-xs-4 col-md-2">Score</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for player in object_list %}
-      <tr>
-        <td>{{ forloop.counter }}</td>
-        <td>{{ player.user.username }}</td>
-        <td>{{ player.profile.avg_score|floatformat:2 }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
+<table id="ranking_table" class="table table-hover table-condensed">
+  <thead>
+    <tr>
+      <th class="col-xs-4 col-md-2">Ranking</th>
+      <th class="col-xs-4 col-md-2">Username</th>
+      <th class="col-xs-4 col-md-2">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for player in object_list %}
+    <tr>
+      <td>{{ forloop.counter }}</td>
+      <td>{{ player.user.username }}</td>
+      <td>{{ player.profile.avg_score|floatformat:2 }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 {% endblock %}
