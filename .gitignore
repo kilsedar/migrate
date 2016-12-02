@@ -4,3 +4,4 @@ migrate/urls.py
 *.csv
 migrate/secret_key.txt
 fixtures
+parse_aux/*.txt

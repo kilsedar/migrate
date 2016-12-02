@@ -2707,7 +2707,7 @@ The total number of arrivals in Bulgaria in 2015 was 31174.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-MAP: BGR
+Map: BGR
 
 
 ______________________________________________________________________________________
@@ -6804,7 +6804,7 @@ MB questions
 
 ANSWERS PROVIDED (countries highlighted on the map)
 a) ERI (correct answer)
-b) XX (where XX is extracted randomly among [ERI NGA, GMB, CIV, GIN, SDN,  SOM, SEN]
+b) XX (where XX is extracted randomly among [ERI, NGA, GMB, CIV, GIN, SDN,  SOM, SEN]
 c) XX (where XX is extracted randomly among)
 d) XX (where XX is extracted randomly among)
 
@@ -6960,7 +6960,7 @@ ________________________________________________________________________________
 
 ANSWERS PROVIDED (countries highlighted on the map)
 a) Guinea (correct answer)
-b) XX (where XX is extracted randomly among [GIN, CMR, CIV, DZA, MAR, BFA])
+b) XX (where XX is extracted randomly among [GIN, CMR, CIV, DZA,  MAR, BFA])
 c) XX (where XX is extracted randomly among)
 d) XX (where XX is extracted randomly among)
 
@@ -6986,7 +6986,7 @@ ________________________________________________________________________________
 
 ANSWERS PROVIDED (countries highlighted on the map)
 a) NGA (correct answer)
-b) XX (where XX is extracted randomly among [NGA, GIN, ERI, GMB, CIV, DZA, MAR, LBY])
+b) XX (where XX is extracted randomly among [NGA, GI(n, ERI, GMB, CIV, DZA, MAR, LBY])
 c) XX (where XX is extracted randomly among)
 d) XX (where XX is extracted randomly among)
 

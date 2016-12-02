@@ -44,7 +44,6 @@ In 2015, the month with most of the arrivals in Italy from the Mediterranean are
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/
 License Link: https://creativecommons.org/licenses/by/4.0/
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -70,7 +69,6 @@ The total number of arrivals in Italy in 2015 was 153842.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -96,7 +94,6 @@ In 2015 there were 83200 new asylum applications in Italy, which marked a 31% in
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -122,7 +119,6 @@ At the end of 2015 there were 118047 refugees in Italy.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -148,7 +144,6 @@ At the end of 2015 there were 60156 asylum applications pending in Italy.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -163,9 +158,10 @@ ANSWERS PROVIDED (the correct answer should be placed in a random position)
 a) 16 (correct answer)
 b) 2
 c) 39
-d) 9[a]
+d) 9
 
 
+CHECK: If the difference between 16 and (each of the possible answers) AND the difference between (each of the possible answers) and (each of the possible answers) is less than 3 (=20%), generate again that possible answer.
 
 
 MESSAGE TO SHOW THE CORRECT ANSWER:
@@ -173,7 +169,6 @@ Finmeccanica participated in 16 among the 39 projects via 13 subsidiaries.
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=1537692675 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -199,7 +194,6 @@ Between 2012 and 2013, Italian taxpayers paid almost 18 million € to supply Li
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/edit#gid=171341358 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: ITA, LBY
 
 
 ______________________________________________________________________________________
@@ -225,7 +219,6 @@ Between 2005 and 2006, the Italian government spent 11.8 million € to build th
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/edit#gid=171341358 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: ITA, LBY
 
 
 ______________________________________________________________________________________
@@ -251,7 +244,6 @@ During the first 6 months of 2016, 10524 unaccompanied minors arived in Italy.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -274,7 +266,6 @@ During the first quarter of 2016 there were 151452 arrivals in Greece and 18777 
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/download.php?id=1782 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA, GRC
 
 
 ______________________________________________________________________________________
@@ -297,7 +288,6 @@ The arrivals in Italy were 18777 during the first quarter of 2016 and 51445 duri
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/download.php?id=1782 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -320,7 +310,6 @@ The arrivals in Italy were 18777 during the first quarter of 2016 and 51445 duri
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/download.php?id=1782 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -343,7 +332,6 @@ At the end of 2015 the ratio was 1.95 migrants for 1000 inhabitants for Italy an
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: ITA, ESP
 
 
 ______________________________________________________________________________________
@@ -366,7 +354,6 @@ At the end of 2015 the ratio was 1.95 migrants for 1000 inhabitants for Italy an
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: ITA, FRA
 
 
 ______________________________________________________________________________________
@@ -389,7 +376,6 @@ At the end of 2015 the ratio was 1.95 migrants for 1000 inhabitants for Italy an
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: ITA, GRC
 
 
 ______________________________________________________________________________________
@@ -412,7 +398,6 @@ At the end of 2015 the ratio was 1.95 migrants for 1000 inhabitants for Italy an
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: ITA, DNK
 
 
 ______________________________________________________________________________________
@@ -435,7 +420,6 @@ During the first 6 months of 2016 47832 migrants arrived in Sicily, 11394 in Cal
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -460,7 +444,6 @@ During the first 6 months of 2016 there were 47832 arrivals in Sicily.
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -485,7 +468,6 @@ During the first 6 months of 2016 there were 6470 arrivals in Apulia.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -510,7 +492,6 @@ During the first 6 months of 2016 there were 11394 arrivals in Calabria.
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 
@@ -535,7 +516,6 @@ In 2015, a total of 153842 migrants arrived in Italy from the Mediterranean area
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -554,7 +534,6 @@ During the first 6 months of 2016, a total of 12163 migrants from Nigeria arrive
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA, NGA
 
 
 ______________________________________________________________________________________
@@ -573,7 +552,6 @@ During the first 6 months of 2015, a total of 19083 migrants from Eritrea arrive
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA, ERI
 
 
 ______________________________________________________________________________________
@@ -592,7 +570,6 @@ During the first 6 months of 2016, a total of 70222 migrants arrived in Italy by
 Data Source: International Organization for Migration 
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -611,7 +588,6 @@ During the first quarter (January-March) of 2016, a total of 18777 migrants arri
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -630,7 +606,6 @@ At the end of 2014 there were 93715 refugees in Italy.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -649,7 +624,6 @@ During the first 6 months of 2016 there were 47832 arrivals in Sicily.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -668,7 +642,6 @@ During the first 6 months of 2016 there were 11394 arrivals in Calabria.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -687,7 +660,6 @@ During the first 6 months of 2016 there were 6470 arrivals in Puglia.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -706,7 +678,6 @@ The 61% of the migrants arrived in Italy during the first 6 months of 2016 were 
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -725,7 +696,6 @@ The 11% of the migrants arrived in Italy during the first 6 months of 2016 were 
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -743,8 +713,7 @@ MESSAGE TO SHOW THE CORRECT ANSWER:
 The 28% of the migrants arrived in Italy during the first 6 months of 2016 were children.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
-License Link: https://creativecommons.org/licenses/by/4.0/
-Map: ITA
+License Link: https://creativecommons.org/licenses/by/4.0/ 
 
 
 ______________________________________________________________________________________
@@ -763,7 +732,6 @@ In 2015 there were 83200 new asylum applications in Italy, which marked a 31% in
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -782,7 +750,6 @@ At the end of 2015 there were 118047 migrants and 60665551 inhabitants in Italy,
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2  
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy  
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -801,7 +768,6 @@ At the end of 2015 there were 118047 refugees and 60156 asylum seekers in Italy,
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2  
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy  
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -820,7 +786,6 @@ These 5 projects (Doggies, Handhold, Sniffer, Sniffles and Snoopy) received a to
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=6441497 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -839,7 +804,6 @@ Since 2004, FRONTEX has spent a total of about 670 million €.
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=6441497 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -858,7 +822,6 @@ It is estimated that over the past 15 years refugees have paid about 16 billion 
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=6441497 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -877,7 +840,6 @@ It is estimated that the cost of deportations in Europe is close to 1 billion �
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=6441497 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -896,7 +858,6 @@ MESSAGE TO SHOW THE CORRECT ANSWER:
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=6441497 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 
@@ -933,7 +894,6 @@ In 2015, the month with most of the arrivals in Greece from the Mediterranean ar
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -945,12 +905,13 @@ ________________________________________________________________________________
 
 
 ANSWERS PROVIDED (the correct answer should be placed in a random position)
-a) about the 99% (correct answer)[b]
+a) about the 99% (correct answer)
 b) about the 64%
 c) about the 78%
 d) about the 91%
 
 
+CHECK: each of the possible answers should not be repeated. Check that the difference between each couple of answers generated is at most 6%.
 
 
 MESSAGE TO SHOW THE CORRECT ANSWER:
@@ -958,7 +919,6 @@ During the first quarter (January-March) of 2016, the arrivals in Greece by sea 
 Data Source: International Organization for Migration 
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -970,7 +930,7 @@ ________________________________________________________________________________
 
 
 ANSWERS PROVIDED (the correct answer should be placed in a random position)
-a) about the 1% (correct answer)[c]
+a) about the 1% (correct answer)
 b) about the 6%
 c) about the 19%
 d) about the 44%
@@ -984,7 +944,6 @@ During the first quarter (January-March) of 2016, the arrivals in Greece by land
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1010,7 +969,6 @@ The total number of arrivals in Greece in 2015 was 857363.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1033,7 +991,6 @@ During the first 7 months of 2016, the number of arrivals was 91963 in Lesvos, 3
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1059,7 +1016,6 @@ At the end of 2015 there were 18489 refugees in Greece.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1085,7 +1041,6 @@ At the end of 2015 there were 26141 asylum applications pending in Greece.
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1111,7 +1066,6 @@ Between 2007 and 2013, the Greek government spent 63.5 million € to prevent bo
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/edit#gid=171341358 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1137,7 +1091,6 @@ The Greek government spent 3.2 million € to build the Evros fence.
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/edit#gid=171341358 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: GRC, TUR
 
 
 ______________________________________________________________________________________
@@ -1160,7 +1113,6 @@ During the first quarter of 2016 there were 151452 arrivals in Greece and 18777 
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/download.php?id=1782 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA, GRC
 
 
 ______________________________________________________________________________________
@@ -1183,7 +1135,6 @@ The arrivals in Greece were 151452 during the first quarter of 2016 and only 692
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/download.php?id=1782 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1206,7 +1157,6 @@ The arrivals in Greece were 151452 during the first quarter of 2016 and only 692
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/download.php?id=1782 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1229,7 +1179,6 @@ At the end of 2015 the ratio was 1.95 migrants for 1000 inhabitants for Italy an
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: ITA, GRC
 
 
 ______________________________________________________________________________________
@@ -1252,7 +1201,6 @@ At the end of 2015 the ratio was 0.12 migrants for 1000 inhabitants for Spain an
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: ESP, GRC
 
 
 ______________________________________________________________________________________
@@ -1275,7 +1223,6 @@ At the end of 2015 the ratio was 1.71 migrants for 1000 inhabitants for Greece a
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: GRC, DNK
 
 
 ______________________________________________________________________________________
@@ -1298,7 +1245,6 @@ During the first 7 months of 2016, the number of arrivals was 91963 in Lesvos, 3
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1324,7 +1270,6 @@ During the first 7 months of 2016, there were 37235 arrivals in Chios.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1350,7 +1295,6 @@ During the first 7 months of 2016 there were 11831 arrivals in Samos.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1376,7 +1320,6 @@ During the first 7 months of 2016 there were 8520 arrivals in Leros.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1399,7 +1342,6 @@ In 2015, more than 2 million asylum applications were ledged in 38 European coun
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 
@@ -1424,7 +1366,6 @@ In 2015, a total of 853650 migrants arrived in Greece from the Mediterranean are
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 _____________________________________________________________________________________
@@ -1443,7 +1384,6 @@ During the first 6 months of 2016, a total of 78779 migrants from Syria arrived 
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC, SYR
 
 
 ______________________________________________________________________________________
@@ -1462,7 +1402,6 @@ In 2015, a total of 475902 migrants from Syria arrived in Greece through the Med
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC, SYR
 
 
 ______________________________________________________________________________________
@@ -1481,7 +1420,6 @@ During the first 6 months of 2016, a total of 158377 migrants arrived in Greece 
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1500,7 +1438,6 @@ During the first 6 months of 2016, a total of 158377 migrants arrived in Greece 
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1519,7 +1456,6 @@ During the first quarter (January-March) of 2016, a total of 151452 migrants arr
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1538,7 +1474,6 @@ During the first quarter (January-March) of 2016, a total of 1165 migrants arriv
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1557,7 +1492,6 @@ At the end of 2014 there were 10304 refugees in Greece.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1576,7 +1510,6 @@ During the first 6 months of 2016 there were 90830 arrivals in Lesvos.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1595,7 +1528,6 @@ During the first 6 months of 2016 there were 36986 arrivals in Chios.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1614,9 +1546,6 @@ During the first 6 months of 2016 there were 4064 arrivals in Kos.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
-
-
 ______________________________________________________________________________________
 
 
@@ -1633,7 +1562,6 @@ During the first 6 months of 2016 there were 11764 arrivals in Samos.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1652,7 +1580,6 @@ During the first 6 months of 2016 there were 8418 arrivals in Leros.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1671,7 +1598,6 @@ The 38% of the migrants arrived in Greece during the first 6 months of 2016 were
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1690,7 +1616,6 @@ The 41% of the migrants arrived in Greece during the first 6 months of 2016 were
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1709,7 +1634,6 @@ The 21% of the migrants arrived in Greece during the first 6 months of 2016 were
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1728,7 +1652,6 @@ At the end of 2015 there were 18489 refugees and 26141 asylum seekers in Greece,
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -1747,7 +1670,6 @@ These 5 projects (Doggies, Handhold, Sniffer, Sniffles and Snoopy) received a to
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=6441497 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -1765,9 +1687,7 @@ MESSAGE TO SHOW THE CORRECT ANSWER:
 Since 2004, FRONTEX has spent a total of about 670 million €.
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/edit#gid=171341358 
-License Link: http://opendatacommons.org/licenses/odbl/1.0/
-Map: Europe
- 
+License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
 ______________________________________________________________________________________
 
 
@@ -1784,7 +1704,6 @@ MESSAGE TO SHOW THE CORRECT ANSWER:
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=6441497 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 
@@ -1823,7 +1742,6 @@ During the first quarter (January-March) of 2016, 648 migrants arrived in Spain 
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -1849,7 +1767,6 @@ During the first quarter (January-March) of 2016, 751 migrants arrived in Spain 
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -1875,7 +1792,6 @@ The total number of arrivals in Spain in 2015 was 3845.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -1901,7 +1817,6 @@ At the end of 2015 there were 11020 asylum applications pending in Spain.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -1927,7 +1842,6 @@ Between 2013 and 2014, the Spanish government spent 6.3 million € to prevent b
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/edit#gid=171341358 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -1950,7 +1864,6 @@ At the end of 2015 the ratio was 0.12 refugees for 1000 inhabitants for Spain, a
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: ESP, ITA
 
 
 ______________________________________________________________________________________
@@ -1973,7 +1886,6 @@ At the end of 2015 the ratio was 0.12 refugees for 1000 inhabitants for Spain an
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: ESP, PRT
 
 
 ______________________________________________________________________________________
@@ -1996,7 +1908,6 @@ At the end of 2015 the ratio was 0.12 refugees for 1000 inhabitants for Spain an
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: ESP, GRC
 
 
 ______________________________________________________________________________________
@@ -2019,7 +1930,6 @@ At the end of 2015 the ratio was 0.12 migrants for 1000 inhabitants for Spain an
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: ESP, FIN
 
 
 ______________________________________________________________________________________
@@ -2045,7 +1955,6 @@ At the end of 2014 there were 11020 asylum seekers in Spain.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -2068,7 +1977,6 @@ In 2015, the number of arrivals in Europe by sea was 1046599, while the total nu
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2091,7 +1999,6 @@ During the first 6 months of 2016 the number of arrivals in Europe by sea was 23
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2117,7 +2024,6 @@ The number of arrivals in Europe during the first 6 months of 2016 was 238933.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2140,7 +2046,6 @@ The total number of arrivals in Europe has decreased from 174395 during the firs
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2163,7 +2068,6 @@ In 2015, more than 2 million asylum applications were ledged in 38 European coun
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2186,7 +2090,6 @@ At the end of 2015 there were 316115 refugees in Germany, 169520 in Sweden, 2732
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: DNK, DEU, FIN, SWE
 
 
 ______________________________________________________________________________________
@@ -2209,9 +2112,6 @@ At the end of 2015 there were 73336 refugees in Switzerland, 72216 in Austria, 1
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: AUT, CZE, POL, CHE
-
-
 ______________________________________________________________________________________
 
 
@@ -2235,7 +2135,6 @@ The total number refugees hosted in Europe at the end of 2015 was 1808289.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2261,7 +2160,6 @@ The total number refugees originating from Europe at the end of 2015 was 506708.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2284,7 +2182,6 @@ Among the 39 projects, Airbus participated in 10 via 14 subsidiaries; Finmeccani
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=1537692675 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 
@@ -2311,7 +2208,6 @@ During the first 6 months of 2016, 1818 migrants arrived in Spain by sea and 179
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -2330,7 +2226,6 @@ At the end of 2014 there were 5798 refugees in Spain.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -2349,7 +2244,6 @@ The 85% of the migrants arrived in Spain during the first 6 months of 2016 were 
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -2368,7 +2262,6 @@ The 10% of the migrants arrived in Spain during the first 6 months of 2016 were 
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -2387,7 +2280,6 @@ The 5% of the migrants arrived in Spain during the first 6 months of 2016 were c
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -2406,7 +2298,6 @@ At the end of 2014 there were 11020 asylum applications pending in Spain.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -2425,7 +2316,6 @@ At the end of 2015 there were 5798 migrants and  inhabitants 46438422 inhabitant
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -2444,7 +2334,6 @@ At the end of 2014 there were 5798 refugees and 11020 asylum seekers in Spain, t
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -2463,7 +2352,6 @@ These 5 projects (Doggies, Handhold, Sniffer, Sniffles and Snoopy) received a to
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=6441497 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2482,7 +2370,6 @@ Since 2004, FRONTEX has spent a total of about 670 million €.
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/edit#gid=171341358 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2501,7 +2388,6 @@ It is estimated that over the past 15 years refugees have paid about 16 billion 
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1cynO8lp6crS4p9kJZUqYUigEB15F2cAwGm7aD9cwoZU/edit#gid=779131653 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2520,7 +2406,6 @@ It is estimated that the cost of deportations in Europe is close to 1 billion �
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1rDThuJ1HVTsWWPEvauOIGuY0kd7h8fGkrxebmlMt7h4/edit#gid=0 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2539,7 +2424,6 @@ MESSAGE TO SHOW THE CORRECT ANSWER:
 Data Source: The Migrants’ Files 
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=6441497 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2558,7 +2442,6 @@ At the end of 2015 the number of refugees in Europe was 4391400. Compared to the
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://data.humdata.org/about/license 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2577,7 +2460,6 @@ The number of arrivals during the first quarter of 2016 was 174395 (almost a 730
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -2596,7 +2478,6 @@ In 2015 about 2500 refugees were naturalized in France.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: FRA
 
 
 ______________________________________________________________________________________
@@ -2615,7 +2496,6 @@ In 2015 there were 441900 individual applications in Germany.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://data.humdata.org/about/license 
-Map: DEU
 
 
 ______________________________________________________________________________________
@@ -2634,7 +2514,6 @@ The ratio between the number of arrivals in Spain in 2015 and the Spanish popula
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2  
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy   
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -2653,7 +2532,6 @@ In 2015 Malta hosted 17 refugees per 1000 inhabitants.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/   
-Map: MLT
 
 
 ______________________________________________________________________________________
@@ -2672,12 +2550,11 @@ The total number refugees hosted in France at the end of 2015 was 273126.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: FRA
 
 
 
 
-20 TB questions for Spain completed
+add here the other TB questions for Spain
 
 
 _____________________________________________________________________________________
@@ -2707,7 +2584,6 @@ The total number of arrivals in Bulgaria in 2015 was 31174.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: BGR
 
 
 ______________________________________________________________________________________
@@ -2733,7 +2609,6 @@ The total number of arrivals in the Republic of Macedonia in 2015 was 388233.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: MKD
 
 
 ______________________________________________________________________________________
@@ -2759,7 +2634,6 @@ The total number of arrivals in the Serbia in 2015 was 579518.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SRB
 
 
 ______________________________________________________________________________________
@@ -2785,7 +2659,6 @@ The total number of arrivals in the Croatia in 2015 was 556830.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: HRV
 
 
 ______________________________________________________________________________________
@@ -2811,7 +2684,6 @@ The total number of arrivals in the Slovenia in 2015 was 378604.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SVN
 
 
 ______________________________________________________________________________________
@@ -2837,7 +2709,6 @@ The total number of arrivals in the Hungary in 2015 was 411515.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: HUN
 
 
 ______________________________________________________________________________________
@@ -2863,7 +2734,6 @@ At the end of 2015 there were 16557 refugees in Bulgaria.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: BGR
 
 
 ______________________________________________________________________________________
@@ -2889,7 +2759,6 @@ At the end of 2015 there were 4393 refugees in Hungary.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: HUN
 
 
 ______________________________________________________________________________________
@@ -2915,7 +2784,6 @@ At the end of 2015 there were only 308 refugees in Croatia.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: HRV
 
 
 ______________________________________________________________________________________
@@ -2938,7 +2806,6 @@ At the end of 2015 there were 16557 refugees in Bulgaria, 6798 in Bosnia and Her
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ROU, BGR, BIH, HUN
 
 
 ______________________________________________________________________________________
@@ -2961,7 +2828,6 @@ At the end of 2015 there were 38273 refugees from Serbia and Kosovo, 33451 from 
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ALB, BIH, HRV, XXK, SRB
 
 
 ______________________________________________________________________________________
@@ -2984,7 +2850,6 @@ At the end of 2015 the ratio was 2.31 migrants for 1000 inhabitants for Bulgaria
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy  
-Map: BGR, FRA
 
 
 ______________________________________________________________________________________
@@ -3007,7 +2872,6 @@ At the end of 2015 the ratio was 183 arrivals for 1000 inhabitants for Slovenia 
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy  
-Map: SVN, HRV
 
 
 ______________________________________________________________________________________
@@ -3030,7 +2894,6 @@ At the end of 2015 the ratio was 82 arrivals for 1000 inhabitants for Serbia and
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy  
-Map: SRB, MKD
 
 
 ______________________________________________________________________________________
@@ -3053,7 +2916,6 @@ At the end of 2015 the ratio was 82 arrivals for 1000 inhabitants for Serbia and
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy  
-Map: SRB, HRV
 
 
 ______________________________________________________________________________________
@@ -3076,7 +2938,6 @@ At the end of 2015 the ratio was 42 arrivals for 1000 inhabitants for Hungary an
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy  
-Map: HUN, MKD
 
 
 ______________________________________________________________________________________
@@ -3099,7 +2960,6 @@ At the end of 2015 the ratio was 133 arrivals for 1000 inhabitants for Croatia a
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy  
-Map: HRV, MKD
 
 
 ______________________________________________________________________________________
@@ -3122,7 +2982,6 @@ At the end of 2015 the ratio was 183 arrivals for 1000 inhabitants for Slovenia 
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy  
-Map: SVN, HUN
 
 
 ______________________________________________________________________________________
@@ -3145,7 +3004,6 @@ In 2015, more than 2 million asylum applications were ledged in 38 European coun
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf
 License Link: https://creativecommons.org/licenses/by/4.0/
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -3168,7 +3026,6 @@ During the first 6 months of 2016 the number of arrivals in Europe by sea was 23
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 
@@ -3195,7 +3052,6 @@ In 2015 there were 74200 new asylum applications in Hungary.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: HUN
 
 
 ______________________________________________________________________________________
@@ -3214,7 +3070,6 @@ Roughly half (36600 out of 74200) of the new asylum applications registered in H
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: HUN, SYR
 
 
 ______________________________________________________________________________________
@@ -3233,7 +3088,6 @@ At the end of 2015 there were 35332 refugees in Serbia and Kosovo.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SRB, XXK
 
 
 ______________________________________________________________________________________
@@ -3252,7 +3106,6 @@ At the end of 2015 there were 6798 refugees in Bosnia and Herzegovina.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: BIH
 
 
 ______________________________________________________________________________________
@@ -3271,7 +3124,6 @@ At the end of 2015 there were 2598 refugees in Romania.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ROU
 
 
 ______________________________________________________________________________________
@@ -3290,7 +3142,8 @@ At the end of 2015 there were 16557 refugees in Bulgaria.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: BGR
+
+
 
 
 ______________________________________________________________________________________
@@ -3309,7 +3162,6 @@ At the end of 2015 there were 9499 applications pending in Bulgaria.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: BGR
 
 
 ______________________________________________________________________________________
@@ -3328,7 +3180,6 @@ At the end of 2015 there were 36693 applications pending in Hungary.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: HUN
 
 
 ______________________________________________________________________________________
@@ -3347,7 +3198,6 @@ At the end of 2015 there were 42162 asylum applications pending worlwide submitt
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ALB
 
 
 ______________________________________________________________________________________
@@ -3366,7 +3216,6 @@ At the end of 2015 there were 53309 asylum applications pending worlwide submitt
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SRB, XXK
 
 
 ______________________________________________________________________________________
@@ -3385,7 +3234,6 @@ At the end of 2015 there were 14621 asylum applications pending worlwide submitt
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: MKD
 
 
 ______________________________________________________________________________________
@@ -3404,7 +3252,6 @@ The Bulgarian government spent 4.6 million € to build the wall, standing three
 Data Source: The Migrants' Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/edit#gid=171341358 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: BGR, TUR
 
 
 ______________________________________________________________________________________
@@ -3423,7 +3270,6 @@ During 2015 there were 378604 arrivals in Slovenia, while the Slovene population
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: SVN
 
 
 ______________________________________________________________________________________
@@ -3442,7 +3288,6 @@ During 2015 there were 556830 arrivals in Croatia, while the Croatian population
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: HRV
 
 
 ______________________________________________________________________________________
@@ -3461,7 +3306,6 @@ During 2015 there were 31174 arrivals in Bulgaria, while the Bulgarian populatio
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: BGR
 
 
 ______________________________________________________________________________________
@@ -3480,7 +3324,6 @@ During 2015 there were 411515 arrivals in Hungary, while the Hungarian populatio
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: HUN
 
 
 ______________________________________________________________________________________
@@ -3499,7 +3342,6 @@ During 2015 there were 388233 arrivals in the Republic of Macedonia, while the p
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: MKD
 
 
 ______________________________________________________________________________________
@@ -3518,7 +3360,6 @@ During 2015 there were 579518 arrivals in Serbia, while the Serbian population a
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2 
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy 
-Map: SRB
 
 
 ______________________________________________________________________________________
@@ -3537,7 +3378,6 @@ These 5 projects (Doggies, Handhold, Sniffer, Sniffles and Snoopy) received a to
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=6441497 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 _____________________________________________________________________________________
@@ -3556,7 +3396,6 @@ Since 2004, FRONTEX has spent a total of about 670 million €.
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/edit#gid=171341358 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 
@@ -3590,7 +3429,6 @@ At the end of 2014 there were 271143 refugees in Iraq and 149140 in Syria.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: IRQ, SYR
 
 
 ______________________________________________________________________________________
@@ -3616,7 +3454,6 @@ The number of refugees in Syria at the end of 2014 was 149140.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SYR
 
 
 ______________________________________________________________________________________
@@ -3642,7 +3479,6 @@ The number of refugees in Iraq at the end of 2014 was 271143.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: IRQ
 
 
 ______________________________________________________________________________________
@@ -3668,7 +3504,6 @@ The number of refugees in Iran at the end of 2014 was 982027.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: IRN
 
 
 ______________________________________________________________________________________
@@ -3691,7 +3526,6 @@ At the end of 2014 there were 982027 refugees in Iran and 271143 in Iraq.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: IRQ, IRN
 
 
 ______________________________________________________________________________________
@@ -3714,7 +3548,6 @@ At the end of 2014 there were 300423 refugees in Afghanistan and 271143 in Iraq.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: AFG, IRQ
 
 
 ______________________________________________________________________________________
@@ -3737,7 +3570,6 @@ At the end of 2014 there were 1154040 refugees in Lebanon, 982027 in Iran, 30042
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: LBN, IRN, SYR, AFG
 
 
 ______________________________________________________________________________________
@@ -3760,7 +3592,6 @@ At the end of 2014 there were 39716 refugees in Israel and 654141 in Jordan.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ISR, JOR
 
 
 ______________________________________________________________________________________
@@ -3786,7 +3617,6 @@ The number of irregular migrants apprehended in Turkey in 2015 was 146485. Most 
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: TUR
 
 
 ______________________________________________________________________________________
@@ -3812,7 +3642,6 @@ The number of foreign nationals in Turkey who were seeking international protect
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: TUR
 
 
 ______________________________________________________________________________________
@@ -3838,7 +3667,6 @@ The number of refugees in Iran at the end of 2014 was 1587374.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: TUR
 
 
 ______________________________________________________________________________________
@@ -3864,7 +3692,6 @@ The number of refugees coming from Syria in 2015 was 4.9 million. In 2015 Syria 
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SYR
 
 
 ______________________________________________________________________________________
@@ -3890,7 +3717,6 @@ The number of refugees coming from Afghanistan in 2015 was 4.9 million. This is 
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: AFG
 
 
 ______________________________________________________________________________________
@@ -3916,7 +3742,6 @@ The number of asylum seekers coming from Syria in 2015 was nearly 250000.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SYR
 
 
 ______________________________________________________________________________________
@@ -3942,7 +3767,6 @@ The number of individuals who fled Yemen in 2015 was 169900.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: YEM
 
 
 ______________________________________________________________________________________
@@ -3968,7 +3792,6 @@ At the end of 2015, Pakistan had 317 refugees per 1 USD GDP.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: PAK
 
 
 * vedere se si riesce a semplificare la domanda
@@ -3995,7 +3818,6 @@ About 2.5 million new IDPs were reported in Yemen in 2015, which corresponds to 
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: YEM
 
 
 ______________________________________________________________________________________
@@ -4021,7 +3843,6 @@ MESSAGE TO SHOW THE CORRECT ANSWER:
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: IRQ
 
 
 ______________________________________________________________________________________
@@ -4047,7 +3868,6 @@ The total number of IDPs in Syria declined from 7.6 million in 2014 to 6.6 milli
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SYR
 
 
 ______________________________________________________________________________________
@@ -4073,7 +3893,6 @@ The number of irregular migrants apprehended by the Turkish Coast Guard (TCG) at
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: TUR
 
 
 
@@ -4100,7 +3919,6 @@ At the end of 2014 there were 300423 refugees in Afghanistan.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: AFG
 
 
 ______________________________________________________________________________________
@@ -4119,7 +3937,6 @@ At the end of 2014 there were 1505525 refugees in Pakistan.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: PAK
 
 
 ______________________________________________________________________________________
@@ -4138,7 +3955,6 @@ At the end of 2014 there were 257645 refugees in Yemen.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: YEM
 
 
 ______________________________________________________________________________________
@@ -4157,7 +3973,6 @@ At the end of 2014 there were 654141 refugees in Jordan.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: JOR
 
 
 ______________________________________________________________________________________
@@ -4176,7 +3991,6 @@ At the end of 2014 there were 39716 refugees in Israel.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: ISR
 
 
 ______________________________________________________________________________________
@@ -4195,7 +4009,6 @@ At the end of 2015 Turkey hosted 2.5 million refugees, compared to 1.6 million r
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: TUR
 
 
 ______________________________________________________________________________________
@@ -4214,7 +4027,6 @@ In 2015, Pakistan hosted 1.6 million refugees.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: PAK
 
 
 ______________________________________________________________________________________
@@ -4233,7 +4045,6 @@ In 2015, Lebanon hosted 1.1 million refugees.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: LBN
 
 
 ______________________________________________________________________________________
@@ -4252,7 +4063,6 @@ In 2015, Iran hosted 979400 refugees.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: IRN
 
 
 ______________________________________________________________________________________
@@ -4271,7 +4081,6 @@ In 2015, 61400 refugees returned to Afghanistan.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: AFG
 
 
 ______________________________________________________________________________________
@@ -4290,7 +4099,6 @@ In 2015 Turkey hosted 32 refugees per 1000 inhabitants.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: TUR
 
 
 ______________________________________________________________________________________
@@ -4309,7 +4117,6 @@ In 2015 Jordan hosted 87 refugees per 1000 inhabitants.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: JOR
 
 
 ______________________________________________________________________________________
@@ -4328,7 +4135,8 @@ MESSAGE TO SHOW THE CORRECT ANSWER:
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: AFG
+
+
 
 
 ______________________________________________________________________________________
@@ -4346,8 +4154,7 @@ MESSAGE TO SHOW THE CORRECT ANSWER:
 In 2015, 373700 new asylum applications worldwide were submitted by Syrians.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
-License Link: https://creativecommons.org/licenses/by/4.0/
-Map: SYR 
+License Link: https://creativecommons.org/licenses/by/4.0/ 
 
 
 ______________________________________________________________________________________
@@ -4366,7 +4173,6 @@ In 2015, 203700 new asylum applications worldwide were submitted by Iraqis.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: IRQ
 
 
 ______________________________________________________________________________________
@@ -4385,7 +4191,6 @@ From 1980 to 2015, Afghanistan has been the first source country of origin for r
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: AFG
 
 
 ______________________________________________________________________________________
@@ -4404,7 +4209,6 @@ The number of Syrians who were seeking international protection in Turkey at the
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: TUR, SYR
 
 
 ______________________________________________________________________________________
@@ -4423,7 +4227,6 @@ At the end of 2015 there were 258892 asylum seekers worldwide originating from A
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: AFG
 
 
 ______________________________________________________________________________________
@@ -4442,7 +4245,6 @@ At the end of 2015 there were 64085 asylum seekers worldwide originating from Pa
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: PAK
 
 
 ______________________________________________________________________________________
@@ -4461,7 +4263,6 @@ At the end of 2015 there were 261107 refugees worldwide originating from Iraq.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: IRQ
 
 
 
@@ -4498,7 +4299,6 @@ The number of refugees in Libya at the end of 2014 was 27964.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: LBY
 
 
 ______________________________________________________________________________________
@@ -4524,7 +4324,6 @@ The number of refugees in Algeria at the end of 2014 was 94128.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/
-Map: DZA
 
 
 ______________________________________________________________________________________
@@ -4550,7 +4349,6 @@ The number of refugees in Egypt at the end of 2014 was 236090.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/
-Map: EGY
 
 
 ______________________________________________________________________________________
@@ -4576,7 +4374,6 @@ The number of refugees in Niger at the end of 2014 was 77830.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/
-Map: NER
 
 
 ______________________________________________________________________________________
@@ -4602,7 +4399,6 @@ The number of refugees in Nigeria at the end of 2014 was 1239.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/
-Map: NGA
 
 
 ______________________________________________________________________________________
@@ -4628,7 +4424,6 @@ The number of refugees in Mali at the end of 2014 was 15195.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/
-Map: MLI
 
 
 ______________________________________________________________________________________
@@ -4654,7 +4449,6 @@ The number of refugees in Mauritania at the end of 2014 was 75635.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/
-Map: MRT
 
 
 ______________________________________________________________________________________
@@ -4680,7 +4474,6 @@ The number of Burundian  refugees who arrived in Tanzania in 2015 was 122000.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: BDI, TZA
 
 
 ______________________________________________________________________________________
@@ -4706,7 +4499,6 @@ The number of refugees coming from Somalia in 2015 was 1.1 million. This is the 
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SOM
 
 
 ______________________________________________________________________________________
@@ -4732,7 +4524,6 @@ In 2015, 10900 prople were forced to flee Sudan.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SDN
 
 
 ______________________________________________________________________________________
@@ -4758,7 +4549,6 @@ At the end of 2015, Chad hosted a total of 369500 refugees.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: TCD
 
 
 ______________________________________________________________________________________
@@ -4784,7 +4574,6 @@ At the end of 2015, Uganda hosted a total of 477200 refugees.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: UGA
 
 
 ______________________________________________________________________________________
@@ -4810,7 +4599,6 @@ In 2015 South Sudan hosted 21 refugees per 1000 inhabitants.
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SSD
 
 
 ______________________________________________________________________________________
@@ -4836,7 +4624,6 @@ At the end of 2015, the Democratic Republic of the Congo had 471 refugees per 1 
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: COD
 
 
 ______________________________________________________________________________________
@@ -4861,8 +4648,7 @@ MESSAGE TO SHOW THE CORRECT ANSWER:
 637900 new IDPs were reported in the Democratic Republic of the Congo in 2015.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
-License Link: https://creativecommons.org/licenses/by/4.0/
-Map: COD 
+License Link: https://creativecommons.org/licenses/by/4.0/ 
 
 
 ______________________________________________________________________________________
@@ -4888,7 +4674,6 @@ The total number of IDPs in Nigeria increased from 1.2 million at the end of 201
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: NGA
 
 
 ______________________________________________________________________________________
@@ -4914,7 +4699,6 @@ The total number refugees hosted in Africa at the end of 2015 was 4769513.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Africa
 
 
 ______________________________________________________________________________________
@@ -4936,7 +4720,6 @@ At the end of 2015, there were globally 5313282 refugees originating from Africa
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Africa
 
 
 ______________________________________________________________________________________
@@ -4959,7 +4742,6 @@ At the end of 2015 there were 212500 refugees in Egypt, 94182 in Algeria, 9305 i
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: DZA, EGY, LBY, MAR
 
 
 ____________________________________________________________________________________
@@ -4985,7 +4767,6 @@ The total number asylum seekers in Africa at the end of 2015 was 1367409.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Africa
 
 
 
@@ -5012,7 +4793,6 @@ At the end of 2014 there were 277833 refugees in Sudan.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: SDN
 
 
 ______________________________________________________________________________________
@@ -5031,7 +4811,6 @@ At the end of 2014 there were 2898 refugees in Eritrea.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: ERI
 
 
 ______________________________________________________________________________________
@@ -5050,7 +4829,6 @@ At the end of 2014 there were 119754 refugees in the Democratic Republic of the 
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: COD
 
 
 ______________________________________________________________________________________
@@ -5069,7 +4847,6 @@ At the end of 2014 there were 551352 refugees in Kenya.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: KEN
 
 
 ______________________________________________________________________________________
@@ -5088,7 +4865,6 @@ At the end of 2014 there were 264126 refugees in Cameroon.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: CMR
 
 
 ______________________________________________________________________________________
@@ -5107,7 +4883,6 @@ At the end of 2014 there were 14274 refugees in Cameroon.
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe/ 
 License Link: https://data.humdata.org/about/license 
-Map: SEN
 
 
 ______________________________________________________________________________________
@@ -5126,7 +4901,6 @@ In 2015, Ethiopia hosted 736100 refugees.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ETH
 
 
 ______________________________________________________________________________________
@@ -5145,7 +4919,6 @@ In 2015, 39500 refugees returned to Sudan.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SDN
 
 
 ______________________________________________________________________________________
@@ -5164,7 +4937,6 @@ In 2015, 32300 refugees returned to Somalia.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SOM
 
 
 ______________________________________________________________________________________
@@ -5183,7 +4955,6 @@ The 95% of the refugees who were present in Yemen at the end of 2015 came from S
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SOM, YEM
 
 
 ______________________________________________________________________________________
@@ -5202,7 +4973,6 @@ During 2015, 221600 individuals were forced to flee Burundi.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: BDI
 
 
 ______________________________________________________________________________________
@@ -5221,7 +4991,6 @@ During 2015, 68200 individuals were forced to flee Nigeria.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: NGA
 
 
 ______________________________________________________________________________________
@@ -5240,7 +5009,6 @@ During 2015, 35500 individuals were forced to flee Eritrea.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ERI
 
 
 ______________________________________________________________________________________
@@ -5259,7 +5027,6 @@ During 2015, 13700 individuals were forced to flee Somalia.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SOM
 
 
 ______________________________________________________________________________________
@@ -5278,7 +5045,6 @@ At the end of 2015, the number of refugees from South Sudan increased to 778700 
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SSD
 
 
 ______________________________________________________________________________________
@@ -5297,7 +5063,6 @@ At the end of 2015, the number of refugees from the Central African Republic was
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: CAF
 
 
 ______________________________________________________________________________________
@@ -5316,7 +5081,6 @@ At the end of 2015, the number of refugees from Eritrea was 411300.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ERI
 
 
 ______________________________________________________________________________________
@@ -5335,7 +5099,6 @@ In 2015 Chad hosted 26 refugees per 1000 inhabitants.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: TCD
 
 
 ______________________________________________________________________________________
@@ -5355,7 +5118,6 @@ the country has dropped considerably since a high of 222300 in 2009.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ZAF
 
 
 ____________________________________________________________________________________
@@ -5376,7 +5138,6 @@ At the end of 2015, there were globally 5313282 refugees originating from Africa
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Africa
 
 
 
@@ -5410,7 +5171,6 @@ In 2015, the number of arrivals in Europe by sea was 1046599, while the total nu
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -5436,7 +5196,6 @@ The number of refugees from Ukraine in 2015, mainly due to the renewed conflict 
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: UKR
 
 
 ______________________________________________________________________________________
@@ -5459,7 +5218,6 @@ During the first 6 months of 2016 the number of arrivals in Europe by sea was 23
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -5487,7 +5245,6 @@ At the end of 2015, Germany hosted 115600 refugees from Syria.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: DEU, SYR
 
 
 ______________________________________________________________________________________
@@ -5513,7 +5270,6 @@ At the end of 2015, Sweden hosted 52700 refugees from Syria.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SYR, SWE
 
 
 ______________________________________________________________________________________
@@ -5539,7 +5295,6 @@ At the end of 2015, Sweden hosted 21500 refugees from Somalia.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SOM, SWE
 
 
 ______________________________________________________________________________________
@@ -5565,7 +5320,6 @@ At the end of 2015, the Netherlands hosted 17400 refugees from Somalia.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SOM, NLD
 
 
 ______________________________________________________________________________________
@@ -5591,7 +5345,6 @@ At the end of 2015, there were 321300 refugees from Ukraine.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: UKR
 
 
 ______________________________________________________________________________________
@@ -5617,7 +5370,6 @@ The number of arrivals in Europe during the first 6 months of 2016 was 238933.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -5640,7 +5392,6 @@ The total number of arrivals in Europe has decreased from 174395 during the firs
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -5666,7 +5417,6 @@ About 800000 new IDPs were reported in Ukraine in 2015.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: UKR
 
 
 ______________________________________________________________________________________
@@ -5689,7 +5439,6 @@ In 2015, more than 2 million asylum applications were ledged in 38 European coun
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -5715,7 +5464,6 @@ In 2015, people originating from Ukraine presented 175500 claims for asylum.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: UKR
 
 
 ______________________________________________________________________________________
@@ -5741,7 +5489,6 @@ In Sweden 35800 unaccompanied or separated children applied for asylum in 2015.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SWE
 
 
 ______________________________________________________________________________________
@@ -5767,7 +5514,6 @@ In Germany 14400 unaccompanied or separated children applied for asylum in 2015.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: DEU
 
 
 ______________________________________________________________________________________
@@ -5790,7 +5536,6 @@ At the end of 2015 there were 316115 refugees in Germany, 169520 in Sweden, 2732
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: DNK, FIN, DEU, SWE
 
 
 ______________________________________________________________________________________
@@ -5813,7 +5558,6 @@ At the end of 2015 there were 73336 refugees in Switzerland, 72216 in Austria, 1
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: AUT, CZK, POL, CHE
 
 
 ______________________________________________________________________________________
@@ -5839,7 +5583,6 @@ The total number refugees hosted in Europe at the end of 2015 was 1808289.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -5865,7 +5608,6 @@ The total number refugees originating from Europe at the end of 2015 was 506708.
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -5888,7 +5630,6 @@ Among the 39 projects, Airbus participated in 10 via 14 subsidiaries; Finmeccani
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=1537692675 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 
@@ -5917,7 +5658,6 @@ In 2015 there were 441900 individual applications in Germany.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://data.humdata.org/about/license 
-Map: DEU
 
 
 ______________________________________________________________________________________
@@ -5936,7 +5676,6 @@ In 2015 there were 156400 individual applications in Sweden.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://data.humdata.org/about/license 
-Map: SWE
 
 
 ______________________________________________________________________________________
@@ -5955,7 +5694,6 @@ In 2015 there were 152500 individual applications in Russia.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://data.humdata.org/about/license 
-Map: RUS
 
 
 ______________________________________________________________________________________
@@ -5974,7 +5712,6 @@ At the end of 2015 the number of refugees in Europe was 4391400. Compared to the
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://data.humdata.org/about/license 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -5993,7 +5730,6 @@ In 2015 Sweden hosted 17 refugees per 1000 inhabitants.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://data.humdata.org/about/license 
-Map: SWE
 
 
 ______________________________________________________________________________________
@@ -6012,7 +5748,6 @@ In 2015 Malta hosted 17 refugees per 1000 inhabitants.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: MLT
 
 
 ______________________________________________________________________________________
@@ -6031,7 +5766,6 @@ The number of arrivals during the first quarter of 2016 was 174395 (almost a 730
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -6050,7 +5784,6 @@ In 2015 about 2500 refugees were naturalized in France.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: FRA
 
 
 ______________________________________________________________________________________
@@ -6069,7 +5802,6 @@ In 2015 about 1700 refugees were naturalized in Belgium.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: BEL
 
 
 ______________________________________________________________________________________
@@ -6088,7 +5820,6 @@ In 2015 about 1000 refugees were naturalized in Austria.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: AUT
 
 
 ______________________________________________________________________________________
@@ -6107,7 +5838,6 @@ In 2015 there were 53800 new asylum applications in Germany from people from Alb
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: DEU, ALB
 
 
 ______________________________________________________________________________________
@@ -6126,7 +5856,6 @@ In 2015 there were 85800 new asylum applications in Austria, which marked a shar
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: AUT
 
 
 ______________________________________________________________________________________
@@ -6145,7 +5874,6 @@ In 2015 there were 74200 new asylum applications in France, compared to the 5900
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: FRA
 
 
 ______________________________________________________________________________________
@@ -6164,7 +5892,6 @@ The total number refugees hosted in France at the end of 2015 was 273126.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: FRA
 
 
 ______________________________________________________________________________________
@@ -6183,7 +5910,6 @@ It is estimated that over the past 15 years refugees have paid about 16 billion 
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1cynO8lp6crS4p9kJZUqYUigEB15F2cAwGm7aD9cwoZU/edit#gid=779131653 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -6202,7 +5928,6 @@ It is estimated that the cost of deportations in Europe is close to 1 billion �
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1rDThuJ1HVTsWWPEvauOIGuY0kd7h8fGkrxebmlMt7h4/edit#gid=0 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -6221,7 +5946,6 @@ MESSAGE TO SHOW THE CORRECT ANSWER:
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=6441497 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -6240,7 +5964,6 @@ These 5 projects (Doggies, Handhold, Sniffer, Sniffles and Snoopy) received a to
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1OJJIVeSdmzNBUi6aBJIdVtHzv4-opnBewGpVBxJXRgw/edit#gid=6441497 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -6259,7 +5982,6 @@ Since 2004, FRONTEX has spent a total of about 670 million €.
 Data Source: The Migrants’ Files
 Data Source Link: https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/edit#gid=171341358 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: Europe
 
 
 ______________________________________________________________________________________
@@ -6274,11 +5996,10 @@ CHECK: the correct answer is 0.75. We consider the answer right if the differenc
 
 
 MESSAGE TO SHOW THE CORRECT ANSWER:
-At the end of 2015 there were 316115 refugees and 420625 asylum seekers in Germany, therefore the ratio is about 0.75.
+At the end of 2015 there were 316115 refugees and 420625 asylum seekers in Greece, therefore the ratio is about 0.75.
 Data Source: UNHCR - The UN Refugee Agency, Eurostat
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf, http://ec.europa.eu/eurostat/web/population-demography-migration-projections/population-data/database?p_p_id=NavTreeportletprod_WAR_NavTreeportletprod_INSTANCE_2pAWwssjV8xq&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&p_p_col_id=column-2&p_p_col_pos=1&p_p_col_count=2  
 License Link: https://creativecommons.org/licenses/by/4.0/, http://ec.europa.eu/eurostat/statistics-explained/index.php/Copyright/licence_policy  
-Map: DEU
 
 
 
@@ -6319,7 +6040,6 @@ The total number of migrants who died in the Mediterranean area during the first
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6342,7 +6062,6 @@ The month of 2014 when most migrants die was September (813 deaths).
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6365,7 +6084,6 @@ The month of 2015 when most migrants die was May (1244 deaths).
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6388,7 +6106,6 @@ The month of 2015 when most migrants die was May (1138 deaths).
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6411,7 +6128,6 @@ During the first 6 months of the year, the number of deaths in the Mediterranean
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6434,7 +6150,6 @@ The number of deaths in the Mediterranean area has increased from 3279 in 2014 t
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6460,7 +6175,6 @@ During the first 6 months of 2016, the number of migrants who died in the Medite
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6486,7 +6200,6 @@ In 2015, the number of migrants who died in the Mediterranean region was 3772, w
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6512,7 +6225,6 @@ In 2014, the number of migrants who died in the Mediterranean region was 3279, w
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6538,7 +6250,6 @@ During the first 6 months of 2016, the month with most of the arrivals in the Me
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6564,7 +6275,6 @@ In 2015, the month with most of the arrivals in the Mediterranean area (220579) 
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6590,7 +6300,6 @@ The number of migrants and refugees transiting the Central Mediterranean route h
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6616,7 +6325,6 @@ The number of dead/missing migrants in the Mediterranean and Aegean Sea in the s
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6639,7 +6347,6 @@ The number of deaths in the Mediterranean area has increased from 500 in 2012 to
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6666,7 +6373,6 @@ The number of dead/missing migrants in the Mediterranean and Aegean Sea in the f
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6689,7 +6395,6 @@ The number of arrivals in the Mediterranean area has increased from 216054 in 20
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://data.humdata.org/about/license 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6712,7 +6417,6 @@ During the first 7 months the migrants arrived in the Mediterranean Sea were com
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6735,7 +6439,6 @@ The number of arrivals in the Mediterranean area during the first 6 months of th
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6762,7 +6465,6 @@ In 2015, the arrivals in Italy, Greece and Spain from Syria and Afghanistan repr
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SYR, AFG
 
 
 ______________________________________________________________________________________
@@ -6785,7 +6487,6 @@ In 2015 the migrants arrived in the Mediterranean Sea were composed by 57% by me
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Mediterranean
 
 
 
@@ -6803,10 +6504,10 @@ MB questions
 
 
 ANSWERS PROVIDED (countries highlighted on the map)
-a) ERI (correct answer)
-b) XX (where XX is extracted randomly among [ERI, NGA, GMB, CIV, GIN, SDN,  SOM, SEN]
-c) XX (where XX is extracted randomly among)
-d) XX (where XX is extracted randomly among)
+a) Eritrea (correct answer)
+b) XX (where XX is extracted randomly among [Nigeria, Gambia, Ivory Coast, Guinea, Sudan, Somalia, Senegal])
+c) XX (where XX is extracted randomly among [Nigeria, Gambia, Ivory Coast, Guinea, Sudan, Somalia, Senegal])
+d) XX (where XX is extracted randomly among [Nigeria, Gambia, Ivory Coast, Guinea, Sudan, Somalia, Senegal])
 
 
 CHECK: each of the possible answers should not be repeated.
@@ -6817,7 +6518,6 @@ During the first 6 months of 2015, most of the migrants to Italy (19083) came fr
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -6829,10 +6529,10 @@ ________________________________________________________________________________
 
 
 ANSWERS PROVIDED (countries highlighted on the map)
-a) NGA (correct answer)
-b) XX (where XX is extracted randomly among [NGA, ERI, GMB, CIV, GIN, SDN, SOM, SEN])
-c) XX (where XX is extracted randomly among)
-d) XX (where XX is extracted randomly among)
+a) Nigeria (correct answer)
+b) XX (where XX is extracted randomly among [Eritrea, Gambia, Ivory Coast, Guinea, Sudan, Somalia, Senegal])
+c) XX (where XX is extracted randomly among [Eritrea, Gambia, Ivory Coast, Guinea, Sudan, Somalia, Senegal])
+d) XX (where XX is extracted randomly among [Eritrea, Gambia, Ivory Coast, Guinea, Sudan, Somalia, Senegal])
 
 
 CHECK: each of the possible answers should not be repeated.
@@ -6843,7 +6543,6 @@ During the first 6 months of 2015, most of the migrants to Italy (12163) came fr
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -6855,10 +6554,10 @@ ________________________________________________________________________________
 
 
 ANSWERS PROVIDED (countries highlighted on the map)
-a) SYR (correct answer)
-b) XX (where XX is extracted randomly among [SYR, AFG, IRQ, PAK, IRN])
-c) XX (where XX is extracted randomly among)
-d) XX (where XX is extracted randomly among)
+a) Syria (correct answer)
+b) XX (where XX is extracted randomly among [Afghanistan, Iraq, Pakistan, Iran])
+c) XX (where XX is extracted randomly among [Afghanistan, Iraq, Pakistan, Iran])
+d) XX (where XX is extracted randomly among [Afghanistan, Iraq, Pakistan, Iran])
 
 
 CHECK: each of the possible answers should not be repeated.
@@ -6869,7 +6568,6 @@ In 2016, most of the migrants to Greece (475902) came from Syria.
 Data Source: International Organization for Migration - Missing Migrants Project 
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -6882,9 +6580,9 @@ ________________________________________________________________________________
 
 ANSWERS PROVIDED (countries highlighted on the map)
 a) Syria (correct answer)
-b) XX (where XX is extracted randomly among [SYR, AFG, IRQ, PAK, IRN])
-c) XX (where XX is extracted randomly among)
-d) XX (where XX is extracted randomly among)
+b) XX (where XX is extracted randomly among [Afghanistan, Iraq, Pakistan, Iran])
+c) XX (where XX is extracted randomly among [Afghanistan, Iraq, Pakistan, Iran])
+d) XX (where XX is extracted randomly among [Afghanistan, Iraq, Pakistan, Iran])
 
 
 CHECK: each of the possible answers should not be repeated.
@@ -6895,7 +6593,6 @@ During the first 6 months of 2016, most of the migrants to Greece (78779) came f
 Data Source: International Organization for Migration - Missing Migrants Project
 Data Source Link: http://missingmigrants.iom.int/ 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC
 
 
 ______________________________________________________________________________________
@@ -6908,9 +6605,9 @@ ________________________________________________________________________________
 
 ANSWERS PROVIDED (countries highlighted on the map)
 a) Syria (correct answer)
-b) XX (where XX is extracted randomly among [SYR, AFG, IRQ, PAK, IRN, ERI, NGA, LBY])
-c) XX (where XX is extracted randomly among)
-d) XX (where XX is extracted randomly among)
+b) XX (where XX is extracted randomly among [Afghanistan, Iraq, Pakistan, Iran, Eritrea, Nigeria, Libya])
+c) XX (where XX is extracted randomly among [Afghanistan, Iraq, Pakistan, Iran, Eritrea, Nigeria, Libya])
+d) XX (where XX is extracted randomly among [Afghanistan, Iraq, Pakistan, Iran, Eritrea, Nigeria, Libya])
 
 
 CHECK: each of the possible answers should not be repeated.
@@ -6921,7 +6618,6 @@ During the second quarter of 2016, the country from which most of the migrants (
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC, ITA
 
 
 ______________________________________________________________________________________
@@ -6934,9 +6630,9 @@ ________________________________________________________________________________
 
 ANSWERS PROVIDED (countries highlighted on the map)
 a) Syria (correct answer)
-b) XX (where XX is extracted randomly among [SYR, AFG, IRQ, PAK, IRN, ERI, NGA, LBY])
-c) XX (where XX is extracted randomly among)
-d) XX (where XX is extracted randomly among)
+b) XX (where XX is extracted randomly among [Afghanistan, Iraq, Pakistan, Iran, Eritrea, Nigeria, Libya])
+c) XX (where XX is extracted randomly among [Afghanistan, Iraq, Pakistan, Iran, Eritrea, Nigeria, Libya])
+d) XX (where XX is extracted randomly among [Afghanistan, Iraq, Pakistan, Iran, Eritrea, Nigeria, Libya])
 
 
 CHECK: each of the possible answers should not be repeated.
@@ -6947,7 +6643,6 @@ During the first 7 months of 2016, the country from which there were most arriva
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Mediterranean
 
 
 ______________________________________________________________________________________
@@ -6960,9 +6655,9 @@ ________________________________________________________________________________
 
 ANSWERS PROVIDED (countries highlighted on the map)
 a) Guinea (correct answer)
-b) XX (where XX is extracted randomly among [GIN, CMR, CIV, DZA,  MAR, BFA])
-c) XX (where XX is extracted randomly among)
-d) XX (where XX is extracted randomly among)
+b) XX (where XX is extracted randomly among [Cameroon, Gambia, Ivory Coast, Algeria, Morocco, Burkina Faso])
+c) XX (where XX is extracted randomly among [Cameroon, Gambia, Ivory Coast, Algeria, Morocco, Burkina Faso])
+d) XX (where XX is extracted randomly among [Cameroon, Gambia, Ivory Coast, Algeria, Morocco, Burkina Faso])
 
 
 CHECK: each of the possible answers should not be repeated.
@@ -6973,7 +6668,6 @@ During the first 6 months of 2016, most of the migrants to Spain (634) came from
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ESP
 
 
 ______________________________________________________________________________________
@@ -6985,10 +6679,10 @@ ________________________________________________________________________________
 
 
 ANSWERS PROVIDED (countries highlighted on the map)
-a) NGA (correct answer)
-b) XX (where XX is extracted randomly among [NGA, GI(n, ERI, GMB, CIV, DZA, MAR, LBY])
-c) XX (where XX is extracted randomly among)
-d) XX (where XX is extracted randomly among)
+a) Nigeria (correct answer)
+b) XX (where XX is extracted randomly among [Guinea, Eritrea, Gambia, Ivory Coast, Algeria, Morocco, Libya])
+c) XX (where XX is extracted randomly among [Guinea, Eritrea, Gambia, Ivory Coast, Algeria, Morocco, Libya])
+d) XX (where XX is extracted randomly among [Guinea, Eritrea, Gambia, Ivory Coast, Algeria, Morocco, Libya])
 
 
 CHECK: each of the possible answers should not be repeated.
@@ -6999,7 +6693,6 @@ During the first 6 months of 2016, most of the migrants to Italy (12163) came fr
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA
 
 
 ______________________________________________________________________________________
@@ -7022,7 +6715,6 @@ At the end of 2015 there were 7075 migrants in Malta, 7067 in Cyprus, 5798 in Sp
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: http://data.unhcr.org/mediterranean/regional.php 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: MLT, GIB, CYP, ESP
 
 
 ______________________________________________________________________________________
@@ -7045,7 +6737,6 @@ At the end of 2015 the asylum applications pending were 60156 in Italy, 26141 in
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA, GRC, MLT, CYP
 
 
 ______________________________________________________________________________________
@@ -7068,7 +6759,6 @@ Between 2005 and 2006, the Italian government spent 11.8 million € to build tw
 Data Source: The Migrants’ Files
 Data Source Link:  https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/edit#gid=171341358 
 License Link: http://opendatacommons.org/licenses/odbl/1.0/ 
-Map: LBY, DZA, TUN, EGY
 
 
 ______________________________________________________________________________________
@@ -7091,7 +6781,6 @@ At the end of 2015 there were globally 17930 refugees originating from Egypt, 60
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: EGY, DZA, TUN, LBY
 
 
 ______________________________________________________________________________________
@@ -7114,7 +6803,6 @@ The country where most of the migrants arrived in Europe by sea during the first
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/download.php?id=1782 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GRC, ITA, ESP, CYP
 
 
 ______________________________________________________________________________________
@@ -7137,7 +6825,6 @@ The country where most of the migrants arrived in Europe by sea during the secon
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/download.php?id=1782 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA, GRC, ESP, CYP
 
 
 ______________________________________________________________________________________
@@ -7160,7 +6847,6 @@ During the first 6 months of 2016, the 10.6% of the arrivals in the Mediterranea
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://data.unhcr.org/mediterranean/download.php?id=1782 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: IRQ, NGA, ERI, PAK
 
 
 ______________________________________________________________________________________
@@ -7172,7 +6858,7 @@ ________________________________________________________________________________
 
 
 ANSWERS PROVIDED (countries highlighted on the map)
-a) CIV (correct answer)
+a) Côte d'Ivoire (correct answer)
 b) Gambia
 c) Morocco
 d) Mali
@@ -7183,7 +6869,6 @@ During the first 6 months of 2016, the 24.6% of the arrivals in Spain were from 
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: http://data.unhcr.org/mediterranean/download.php?id=1782 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: CIV, GMB, MAR, MLI
 
 
 ______________________________________________________________________________________
@@ -7195,7 +6880,7 @@ ________________________________________________________________________________
 
 
 ANSWERS PROVIDED (countries highlighted on the map)
-a) ITA (correct answer)
+a) Italy (correct answer)
 b) Greece
 c) Spain
 d) Cyprus
@@ -7206,7 +6891,6 @@ During the first 6 months of 2016 there were 2484 dead/missing migrants (86% of 
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: http://data.unhcr.org/mediterranean/download.php?id=1782 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ITA, GRC, ESP, CYP
 
 
 ______________________________________________________________________________________
@@ -7229,7 +6913,6 @@ At the end of 2015, the ratio between the number of refugees and the number of a
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: MLT, GRC, ITA, CYP
 
 
 ______________________________________________________________________________________
@@ -7252,7 +6935,6 @@ At the end of 2015, the ratio between the number of refugees and the population 
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: MLT, GRC, ITA, CYP
 
 
 ______________________________________________________________________________________
@@ -7275,7 +6957,8 @@ At the end of 2015, the ratio between the number of asylum seekers and the popul
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: CYP, GRC, ITA, MLT
+
+
 
 
 20 MB questions for the Mediterranean area COMPLETED
@@ -7308,7 +6991,6 @@ The number of migrants from all around the world who died in 2015 is 5393.
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7326,8 +7008,7 @@ MESSAGE TO SHOW THE CORRECT ANSWER:
 The number of migrants from all around the world who died is 4191 in 2014, and 5393 in 2015 (about a 30% increase).
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
-License Link: https://data.humdata.org/about/license
-Map: World 
+License Link: https://data.humdata.org/about/license 
 
 
 _____________________________________________________________________________________
@@ -7346,7 +7027,6 @@ The number of migrants from all around the world who died in the first 6 months 
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7365,7 +7045,6 @@ The number of migrants who died during the first 6 months of 2016 is 70 in the M
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7384,7 +7063,6 @@ The number of migrants who died in 2015 is 86 in the Middle East and North Afric
 Data Source: International Organization for Migration
 Data Source Link: https://data.humdata.org/dataset/migrant-deaths-by-month 
 License Link: https://data.humdata.org/about/license 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7403,7 +7081,6 @@ At the end of 2015, the 10 countries hosting the largest numbers of refugees wer
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7422,7 +7099,6 @@ At the end of 2015, about half of refugees worldwide were children.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7441,7 +7117,6 @@ At the end of 2015, the 10 countries where most of the migrants worldwide came f
 Data Source: UNHCR - the UN Refugee Agency 
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7460,7 +7135,6 @@ The number of refugees returned to their country of origin between 1996 and 2005
 Data Source: UNHCR - the UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7479,7 +7153,6 @@ By the end of 2015, countries in developing regions hosted 13.9 million of the w
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7498,7 +7171,6 @@ The number of individual applications for asylum or refugee status in 2015 is th
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7517,7 +7189,6 @@ During the first 6 months of 2016, 238933 migrants arrived in Europe and only 84
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: Europe
 
 
 _____________________________________________________________________________________
@@ -7536,7 +7207,6 @@ The first developed country in this ranking is Russia, which at the end of 2015 
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7555,7 +7225,6 @@ The number of refugees returned to their countries of origin was 126000 in 2014 
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7574,7 +7243,6 @@ A refugee is a person who has been forced to flee his or her country because of 
 Data Source: International Organization for Migration
 Data Source Link: http://www.iom.int/who-is-a-migrant 
 License Link: http://www.unrefugees.org/privacy-policy
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7593,7 +7261,6 @@ In 2014, 14.1 million of refugees from all around the world fled their country o
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7612,7 +7279,6 @@ In 2014, 57.3 million of refugees from all around the world were forced to flee 
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7631,7 +7297,6 @@ A refugee is a person who has been forced to flee his/her country because of per
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: http://www.unrefugees.org/what-is-a-refugee 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7650,7 +7315,6 @@ An asylum seeker is a person who has fled his/her own country and has applied fo
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: http://www.unrefugees.org/what-is-a-refugee 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: World
 
 
 _____________________________________________________________________________________
@@ -7669,7 +7333,6 @@ A person can become stateless due to a variety of reasons, including sovereign, 
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: http://www.unrefugees.org/what-is-a-refugee 
 License Link: http://www.unrefugees.org/privacy-policy
-Map: World
 
 
 
@@ -7702,7 +7365,6 @@ During the first quarter (January-March) of 2016, the Balkan country with most m
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: HRV, SRB, SVN, MKD
 
 
 ______________________________________________________________________________________
@@ -7725,7 +7387,6 @@ At the end of June 2016, most of the asylum applicants in Turkey (123433) came f
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: IRQ, IRN, AFG, SOM
 
 
 ______________________________________________________________________________________
@@ -7748,7 +7409,6 @@ At the end of 2014 there were 982027 refugees in Iran, 654141 in Jordan, 271143 
 Data Source: International Organization for Migration
 Data Source Link: http://migration.iom.int/europe 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: IRN, IRQ, SYR, JOR
 
 
 ______________________________________________________________________________________
@@ -7771,7 +7431,6 @@ In 2015 Lebanon hosted the largest number of refugees in relation to its populat
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: LBN, ITA, JOR, TUR
 
 
 ______________________________________________________________________________________
@@ -7794,7 +7453,6 @@ In 2015 there were 441900 individual applications in Germany, followed by the Un
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: DEU, USA, SWE, RUS
 
 
 ______________________________________________________________________________________
@@ -7817,7 +7475,6 @@ In 2015, all the arrivals in Russia were from Ukraine and were granted temporary
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: UKR, KAZ, CHN, MNG
 
 
 ______________________________________________________________________________________
@@ -7840,7 +7497,6 @@ With an estimated 340200 refugees, Colombia was the 10th country of origin world
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: COL, BRA, ARG, VEN
 
 
 ______________________________________________________________________________________
@@ -7863,7 +7519,6 @@ In 2015, 373700 new asylum applications worldwide were submitted by Syrians. Thi
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: SYR, UKR, IRQ, AFG
 
 
 ______________________________________________________________________________________
@@ -7886,7 +7541,6 @@ In 2015, 50300 asylum applications were registered from Afghan unaccompanied or 
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: AFG, PAK, SOM, SYR
 
 
 ______________________________________________________________________________________
@@ -7909,7 +7563,6 @@ At the end of 2015 south Africa had still 1096100 asylum applications pending.
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: ZAF, DEU, TUR, USA
 
 
 ______________________________________________________________________________________
@@ -7932,7 +7585,6 @@ At the end of 2015 there were 313155 refugees from Vietnam, 212911 from China, 1
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: VNM, MMR, THA, CHN
 
 
 ______________________________________________________________________________________
@@ -7955,7 +7607,6 @@ At the end of 2015 there were 11133 refugees from Mexico, 10284 from Guatemala, 
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: MEX, GTM, NIC, CUB
 
 
 ______________________________________________________________________________________
@@ -7978,7 +7629,6 @@ At the end of 2015 there were 90836 refugees from Colombia, 7456 from Venezuela,
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: COL, BRA, PER, VEN
 
 
 ______________________________________________________________________________________
@@ -8001,7 +7651,6 @@ At the end of 2015 there were 123067 refugees in United Kingdom, 88536 in the Ne
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: GBR, NOR, DNK, NLD
 
 
 ______________________________________________________________________________________
@@ -8024,7 +7673,6 @@ At the end of 2015 there were 316115 refugees in Germany, 314506 in Russia, 3010
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: DEU, USA, RUS, CHN
 
 
 ______________________________________________________________________________________
@@ -8047,7 +7695,6 @@ At the end of 2015 there were 778629 refugees from South Sudan, 622463 from Suda
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: CAF, NGA, SSD, SDN
 
 
 ______________________________________________________________________________________
@@ -8070,7 +7717,6 @@ At the end of 2015 the asylum applications pending were 258892 from Afghan migra
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: AFG, IRQ, IRN, PAK
 
 
 ______________________________________________________________________________________
@@ -8093,7 +7739,6 @@ At the end of 2015 there were 292764 migrants from Burundi, 15896 from Yemen, 11
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: BDI, IND, MEX, YEM
 
 
 ______________________________________________________________________________________
@@ -8116,7 +7761,6 @@ At the end of 2015 the ratio was 445 for China, 151 for Russia, 0.96 for USA, an
 Data Source: UNHCR - The UN Refugee Agency
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: CHN, USA, RUS, DEU
 
 
 ______________________________________________________________________________________
@@ -8139,14 +7783,8 @@ At the end of 2015 the ratio was 6.92 for Canada, 2.68 for United Kingdom, 1.96 
 Data Source: UNHCR - The UN Refugee Agency 
 Data Source Link: https://s3.amazonaws.com/unhcrsharedmedia/2016/2016-06-20-global-trends/2016-06-14-Global-Trends-2015.pdf 
 License Link: https://creativecommons.org/licenses/by/4.0/ 
-Map: CAN, ITA, BRA, GBR
 
 
 
 
 20 MB questions for the general overview COMPLETED
-
-
-[a]put this one fixed
-[b]put this one fixed
-[c]Put this one fixed
