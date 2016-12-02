@@ -11,6 +11,7 @@ from django.shortcuts import render
 from django.http import JsonResponse, HttpResponse
 from django.utils.encoding import smart_str
 from django.contrib.auth.decorators import login_required
+from django.conf import settings
 from players.models import Player, Country
 from questionnaire.models import Question, Game, AnsweredQuestion
 
@@ -210,10 +211,10 @@ def free_data(request):
     management.call_command('dumpdata', 'questionnaire.answeredquestion', stdout=buf)
     #management.call_command('dumpdata', 'players', stdout=buf)
     buf.seek(0)
-    fname = 'migrate.json'
-    with open(fname, 'w') as f:
+    dname = settings.BASE_DIR + '/migrate.json'
+    with open(dname, 'w') as f:
         f.write(buf.read())
-    response = HttpResponse(open(fname), content_type='application/force-download')
-    response['Content-Disposition'] = 'attachment; filename=%s' % smart_str(fname)
-    response['X-Sendfile'] = smart_str(fname)
+    response = HttpResponse(open(dname), content_type='application/force-download')
+    response['Content-Disposition'] = 'attachment; filename=%s' % "migrate.json"
+    response['X-Sendfile'] = smart_str(dname)
     return response
