@@ -16,7 +16,43 @@
   <title>MIGRATE</title>
 </head>
 <body>
-  <div id="map" style="height: calc(100vh - 80px);"></div>
+  <div id="map" style="height: calc(100vh - 80px);">
+
+    <div class="box" id="start" style="top: calc(50vh - 40px);">
+      <div id="startInstructions">
+        <b>How to play?</b><br>
+        <b>1.</b> You will be asked 6 questions and 30 seconds will be given for each.<br>
+        <b>2.</b> The questions can be map-based, multiple choice, true/false or text-based.
+        <div id="startInstructions_video">Click <a href="https://www.youtube.com/watch?v=zKTzfvglEt4" target="_blank">here</a> to see a demo video on how to play.</div>
+      </div>
+      <button id='startButton' type='button'>Start the game</button>
+    </div>
+
+    <div id="questionnaire" style="max-height: calc(100vh - 240px);" class="col-xs-8 col-sm-6 col-md-4">
+      <p></p>
+    </div>
+
+    <div class="box" id="end" style="top: calc(50vh - 40px);">
+      <p id="pFirst"></p>
+      <img id="imgEnd" src="">
+      <p id="pSecond"></p>
+      <a><div id="closeButton">x</div></a>
+    </div>
+
+    <div id="timer">30</div>
+
+    <div id="logos">
+      <a href="http://digitalearthlab.jrc.ec.europa.eu/mygeoss" target="_blank"><img id="mygeoss" src="{% static "css/images/mygeoss.png" %}"></a>
+      <a href="https://ec.europa.eu/jrc/en" target="_blank"><img id="jrc" src="{% static "css/images/jrc.png" %}"></a>
+    </div>
+
+    <div id="links">
+      <!--<a href={% url 'ranking' %}>Ranking</a>-->
+      <a href={% url 'profile' %}>User profile</a>
+      <a href={% url 'logout' %}>Log out</a>
+    </div>
+
+  </div>
 
   <div id="bottombar">
     <a href={% url 'about' %}><button class="tab" type='button'>About</button></a>
@@ -29,39 +65,6 @@
 
   <div id="footer">Copyright MIGRATE 2016 © - <a id="mailto" href="mailto:candaneylul.kilsedar@polimi.it">Contact the webmaster</a></div>
 
-  <div class="box" id="start" style="top: calc(50vh - 40px);">
-    <div id="startInstructions">
-      <b>How to play?</b><br>
-      <b>1.</b> You will be asked 6 questions and 30 seconds will be given for each.<br>
-      <b>2.</b> The questions can be map-based, multiple choice, true/false or text-based.
-      <div id="startInstructions_video">Click <a href="https://www.youtube.com/watch?v=zKTzfvglEt4" target="_blank">here</a> to see a demo video on how to play.</div>
-    </div>
-    <button id='startButton' type='button'>Start the game</button>
-  </div>
-
-  <div id="questionnaire" style="max-height: calc(100vh - 240px);" class="col-xs-8 col-sm-6 col-md-4">
-    <p></p>
-  </div>
-
-  <div class="box" id="end" style="top: calc(50vh - 40px);">
-    <p id="pFirst"></p>
-    <img id="imgEnd" src="">
-    <p id="pSecond"></p>
-    <a><div id="closeButton">x</div></a>
-  </div>
-
-  <div id="timer">30</div>
-
-  <div id="logos">
-    <a href="http://digitalearthlab.jrc.ec.europa.eu/mygeoss" target="_blank"><img id="mygeoss" src="{% static "css/images/mygeoss.png" %}"></a>
-    <a href="https://ec.europa.eu/jrc/en" target="_blank"><img id="jrc" src="{% static "css/images/jrc.png" %}"></a>
-  </div>
-
-  <div id="links">
-    <!--<a href={% url 'ranking' %}>Ranking</a>-->
-    <a href={% url 'profile' %}>User profile</a>
-    <a href={% url 'logout' %}>Log out</a>
-  </div>
 
   <script type="text/javascript">
     {% for country in alpha3 %}
@@ -85,7 +88,8 @@
     //var questions = {{ questions|safe }};
   </script>
 
-  <script src="{% static "js/map.js" %}"></script>
+  <script src="{% static "js/map.min.js" %}"></script>
+  <!--<script src="{% static "js/map.js" %}"></script>-->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{% static "css/map.css" %}">
 </body>

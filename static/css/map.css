@@ -135,14 +135,14 @@ input[type="radio"]{
 #logos {
   z-index: 10;
   position: absolute;
-  bottom: 90px;
+  bottom: 5px;
   right: 10px;
 }
 #jrc, #mygeoss {
   height: 80px;
 }
 #mygeoss {
-  padding-right: 10px;
+  padding-right: 5px;
 }
 #bottombar {
   height: 50px;
@@ -243,6 +243,14 @@ input[type="radio"]{
   }
   .box#questionnaire {
     top: 70px;
+  }
+}
+@media (max-width: 768px) {
+  #mygeoss {
+    height: 8vh;
+  }
+  #jrc {
+    height: 8vh;
   }
 }
 /*

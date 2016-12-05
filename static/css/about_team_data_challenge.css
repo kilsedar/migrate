@@ -96,3 +96,9 @@ p, li {
     line-height: 70%;
   }
 }
+@media (max-width: 640px) {
+  #video_iframe {
+    width: 100%;
+    height: calc(56.25vw - 30px);
+  }
+}
