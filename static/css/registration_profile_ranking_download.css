@@ -7,7 +7,7 @@ html, body {
   font-family: 'Open Sans', sans-serif;
 }
 p {
-  font-size: 12px;
+  /*font-size: 12px;*/
   display: block;
 }
 h2 {
@@ -16,7 +16,7 @@ h2 {
 }
 label {
   margin-top: 5px;
-  font-size: 14px;
+  /*font-size: 14px;*/
   display: block;
 }
 input {
@@ -34,6 +34,7 @@ select {
 }
 body {
   background-color: rgba(2,93,171,0.1);
+  font-size: 12px;
 }
 /*#acknowledgement {
   text-align: justify;
@@ -70,7 +71,7 @@ body {
   overflow-y: scroll;
 }
 .tab {
-  font-size: 12px;
+  /*font-size: 12px;*/
   color: rgb(220, 220, 220);
   background-color: rgba(2, 93, 171, 1);
   border: solid 1px #cbc9c9;
@@ -113,6 +114,7 @@ a {
   color: rgba(2,93,171,1);
 }
 #register, #login, #download {
+  /*font-size: 12px;*/
   color: rgb(220,220,220);
   background-color: rgba(2,93,171,1);
   border: solid 1px #cbc9c9;
@@ -141,6 +143,7 @@ th {
   text-align: center;
 }
 #profile_logout, #register_login_logout {
+  font-size: 14px;
   text-align: right;
   clear: both;
   margin-top: 10px;
@@ -157,12 +160,12 @@ th {
 }
 /*Bigger than small devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  p, .tab {
+  body {
     font-size: 14px;
   }
-  label {
+  /*label {
     font-size: 16px;
-  }
+  }*/
   #footer, #warning, #privacy_statement {
     font-size: 12px;
   }

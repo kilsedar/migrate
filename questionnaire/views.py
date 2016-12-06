@@ -1,9 +1,8 @@
 import ast
 import json
-import base64
 import math
-from Crypto.Cipher import AES
 from Crypto import Random
+from Crypto.Cipher import AES
 from cStringIO import StringIO
 #from ipware.ip import get_trusted_ip
 from django.core import management
@@ -15,6 +14,7 @@ from django.conf import settings
 from players.models import Player, Country
 from questionnaire.models import Question, Game, AnsweredQuestion
 
+import base64
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
