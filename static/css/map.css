@@ -31,6 +31,7 @@ p {
   /*top: 50%;*/
   left: 50%;
   transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
 }
 .box#start {
   text-align: left;
@@ -69,6 +70,7 @@ p {
   top: 0%;
   left: 100%;
   transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
   background: rgba(255, 255, 255, 0.8);
   cursor: pointer;
   text-align: center;
