@@ -380,6 +380,8 @@ function startGame(){
         }
         $("#end").css("visibility", "visible");
         score = 0;
+        questionnaire = {};
+        gameResults = {};
       }
     });
   }
@@ -513,6 +515,7 @@ function evaluateAnswer() {
 
 $("#startButton").click(function() {
   $.getJSON("/migrate/game/restart/", function(data) {
+    $("#noConnection").text("");    
     $("#start").css("visibility", "hidden");
     $("#questionnaire").css("visibility", "visible");
     $('#questionnaire').addClass("box bigEntrance");
@@ -524,15 +527,12 @@ $("#startButton").click(function() {
     gameResults.questions = [];
     startGame();
   }).fail(function(){
-    questionnaire = {};
-    gameResults = {};
     $("#noConnection").text("No internet connection!");
     //console.log("no internet connection");
   });
 });
 
-$("#closeButton").click(function() {
-  $("#noConnection").text("");
+$("#closeButton").click(function() {  
   $("#end").css("visibility", "hidden");
   i=-1;
   $("#start").css("visibility", "visible");
