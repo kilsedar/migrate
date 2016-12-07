@@ -398,7 +398,7 @@ function evaluateAnswer() {
   var $thumb_up = ($("<img id='thumb_up' src='" + thumb_up_source + "'>"));
   var $thumb_down = ($("<img id='thumb_down' src='" + thumb_down_source + "'>"));
 
-  if (type == "TF" || type == "MC"){
+  if (type == "TF" || type == "MC") {
     right_answer = capitalizeFirstLetter(decrypt(questionnaire.questions[i].answer)); //needed only in the case of MC, but TF are already in all capital
     given_answer = $('input[type="radio"]:checked').parent().text();
     //console.log(given_answer + " --- " + right_answer);
@@ -410,17 +410,19 @@ function evaluateAnswer() {
       $('input[type="radio"]:checked').parent().css("width", "calc(100% - 32px)");
       //the answer is selected and it is right
     }
-    else {
-      //the answer is selected and wrong, so highlight both wrong and right
-      //nothing is selected, just show the right answer (given_answer == undefined)
+    //nothing is selected, just show the right answer (given_answer == undefined)
+    else if (given_answer == undefined) {
       $("span:contains('" + right_answer + "')").css("color", "rgba(255, 102, 0, 1)");
       $("span:contains('" + right_answer + "')").css("font-weight", "bold");
-      //nothing is selected, just show the right answer
+    }
+    else {
+      //the answer is selected and wrong, so highlight both wrong and right
+      $("span:contains('" + right_answer + "')").css("color", "rgba(0, 205, 0, 1)");
+      $("span:contains('" + right_answer + "')").css("font-weight", "bold");
       $('input[type="radio"]:checked').parent().css("color", "rgba(224, 0, 0, 1)");
       $('input[type="radio"]:checked').parent().css("font-weight", "bold");
       $('input[type="radio"]:checked').parent().append($thumb_down);
       $('input[type="radio"]:checked').parent().css("width", "calc(100% - 32px)");
-      //the answer is selected and wrong, so highlight both wrong and right
     }
   }
   else if (type == "MB") {
@@ -428,38 +430,31 @@ function evaluateAnswer() {
     given_answer = alpha3_selected;
     //console.log("answers: " + questionnaire.questions[i].answers);
     //console.log("right answer: " + right_answer + " --- " + "alpha3_selected: " + alpha3_selected);
-    if (right_answer == alpha3_selected){
+    if (right_answer == alpha3_selected) {
       //console.log("right!");
       $("#thumb").append($thumb_up);
       window[alpha3_selected].setStyle(styleRight_answerGiven);
       map.removeLayer(window[alpha3_selected]);
       map.addLayer(window[alpha3_selected]);
-      map.unByKey(mapClickKey);
-      map.unByKey(mapPointerMoveKey);
-      map.getTarget().style.cursor = '';
-      ELdeactivated = true;
+    }
+    else if (alpha3_selected == "") {
+      window[right_answer].setStyle(styleRight_answerNotGiven);
+      map.removeLayer(window[right_answer]);
+      map.addLayer(window[right_answer]);
     }
     else {
-      //console.log("wrong!");
-      if (alpha3_selected != "") {
-        $("#thumb").append($thumb_down);
-        window[alpha3_selected].setStyle(styleWrong);
-        map.removeLayer(window[alpha3_selected]);
-        map.addLayer(window[alpha3_selected]);
-        window[right_answer].setStyle(styleRight_answerGiven);
-        map.removeLayer(window[right_answer]);
-        map.addLayer(window[right_answer]);
-      }
-      else {
-        window[right_answer].setStyle(styleRight_answerNotGiven);
-        map.removeLayer(window[right_answer]);
-        map.addLayer(window[right_answer]);
-      }
-      map.unByKey(mapClickKey);
-      map.unByKey(mapPointerMoveKey);
-      map.getTarget().style.cursor = '';
-      ELdeactivated = true;
+      $("#thumb").append($thumb_down);
+      window[alpha3_selected].setStyle(styleWrong);
+      map.removeLayer(window[alpha3_selected]);
+      map.addLayer(window[alpha3_selected]);
+      window[right_answer].setStyle(styleRight_answerGiven);
+      map.removeLayer(window[right_answer]);
+      map.addLayer(window[right_answer]);
     }
+    map.unByKey(mapClickKey);
+    map.unByKey(mapPointerMoveKey);
+    map.getTarget().style.cursor = '';
+    ELdeactivated = true;
   }
   else {
     right_answer = decrypt(questionnaire.questions[i].answer);
