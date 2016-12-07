@@ -411,7 +411,7 @@ function evaluateAnswer() {
       //the answer is selected and it is right
     }
     //nothing is selected, just show the right answer (given_answer == undefined)
-    else if (given_answer == undefined) {
+    else if (given_answer == "") {
       $("span:contains('" + right_answer + "')").css("color", "rgba(255, 102, 0, 1)");
       $("span:contains('" + right_answer + "')").css("font-weight", "bold");
     }
