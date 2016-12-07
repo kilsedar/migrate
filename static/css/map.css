@@ -110,6 +110,9 @@ p {
 #startInstructions {
   padding: 10px;
 }
+#noConnection {
+  text-align: center;
+}
 label {
   font-weight: normal;
   /*width: inherit;

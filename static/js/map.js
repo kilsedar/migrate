@@ -1,7 +1,7 @@
 var i=-1, intervalID, counter=6, duration, trem, submitButtonRemoved, title="", extents=[], alpha3_countries=[], alpha3_selected="", mapClickKey, mapPointerMoveKey, ELdeactivated=true;
 //var alpha3_countries = ["ITA", "TUR", "POL", "UGA", "UKR"];
 var questionnaire = {};
-var gameResults = new Object();
+var gameResults = {};
 
 function getCookie(name) {
   var cookieValue = null;
@@ -100,9 +100,16 @@ var styleWrong = new ol.style.Style({
   })
 });
 
-var styleRight = new ol.style.Style({
+var styleRight_answerGiven = new ol.style.Style({
   stroke: new ol.style.Stroke({
     color: 'rgba(0, 205, 0, 1)',
+    width: 3
+  })
+});
+
+var styleRight_answerNotGiven = new ol.style.Style({
+  stroke: new ol.style.Stroke({
+    color: 'rgba(255, 102, 0, 1)',
     width: 3
   })
 });
@@ -304,7 +311,8 @@ function startGame(){
     $("#questionnaire p").html(question);
     //console.log(i);
     //setTimeout(startGame, 10500);
-    intervalID = setInterval(function () {
+    intervalID = setInterval(timerQuestion, 1000);
+    function timerQuestion(){
       duration--;
       $('#timer').text(duration);
       if (duration < 1){
@@ -313,7 +321,17 @@ function startGame(){
         evaluateAnswer();
         //startGame();
       }
-    }, 1000);
+    }
+    /*intervalID = setInterval(function () {
+      duration--;
+      $('#timer').text(duration);
+      if (duration < 1){
+        window.clearInterval(intervalID);
+        trem = 0;
+        evaluateAnswer();
+        //startGame();
+      }
+    }, 1000);*/
   }
   else {
     var csrftoken = getCookie('csrftoken');
@@ -361,6 +379,7 @@ function startGame(){
           $("#end #pSecond").html("Your knowledge is impressive, congratulations!");
         }
         $("#end").css("visibility", "visible");
+        score = 0;
       }
     });
   }
@@ -392,7 +411,7 @@ function evaluateAnswer() {
     else {
       //the answer is selected and wrong, so highlight both wrong and right
       //nothing is selected, just show the right answer (given_answer == undefined)
-      $("span:contains('" + right_answer + "')").css("color", "rgba(0, 205, 0, 1)");
+      $("span:contains('" + right_answer + "')").css("color", "rgba(255, 102, 0, 1)");
       $("span:contains('" + right_answer + "')").css("font-weight", "bold");
       //nothing is selected, just show the right answer
       $('input[type="radio"]:checked').parent().css("color", "rgba(224, 0, 0, 1)");
@@ -410,7 +429,7 @@ function evaluateAnswer() {
     if (right_answer == alpha3_selected){
       //console.log("right!");
       $("#thumb").append($thumb_up);
-      window[alpha3_selected].setStyle(styleRight);
+      window[alpha3_selected].setStyle(styleRight_answerGiven);
       map.removeLayer(window[alpha3_selected]);
       map.addLayer(window[alpha3_selected]);
       map.unByKey(mapClickKey);
@@ -420,15 +439,20 @@ function evaluateAnswer() {
     }
     else {
       //console.log("wrong!");
-      $("#thumb").append($thumb_down);
-      if (alpha3_selected != ""){
+      if (alpha3_selected != "") {
+        $("#thumb").append($thumb_down);
         window[alpha3_selected].setStyle(styleWrong);
         map.removeLayer(window[alpha3_selected]);
         map.addLayer(window[alpha3_selected]);
+        window[right_answer].setStyle(styleRight_answerGiven);
+        map.removeLayer(window[right_answer]);
+        map.addLayer(window[right_answer]);
       }
-      window[right_answer].setStyle(styleRight);
-      map.removeLayer(window[right_answer]);
-      map.addLayer(window[right_answer]);
+      else {
+        window[right_answer].setStyle(styleRight_answerNotGiven);
+        map.removeLayer(window[right_answer]);
+        map.addLayer(window[right_answer]);
+      }
       map.unByKey(mapClickKey);
       map.unByKey(mapPointerMoveKey);
       map.getTarget().style.cursor = '';
@@ -464,6 +488,11 @@ function evaluateAnswer() {
       $("#textInput").css("font-weight", "bold");
       $('#spanTextInput').append($thumb_up);
     }
+    else if (given_answer == ""){
+      $("#textInput").css("color", "rgba(255, 102, 0, 1)");
+      $("#textInput").css("font-weight", "bold");
+      $("#textInput").val(right_answer);
+    }
     else {
       $("#textInput").css("color", "rgba(224, 0, 0, 1)");
       $("#textInput").css("font-weight", "bold");
@@ -483,21 +512,27 @@ function evaluateAnswer() {
 }
 
 $("#startButton").click(function() {
-  $("#start").css("visibility", "hidden");
-  $("#questionnaire").css("visibility", "visible");
-  $('#questionnaire').addClass("box bigEntrance");
-
   $.getJSON("/game/restart/", function(data) {
+    $("#start").css("visibility", "hidden");
+    $("#questionnaire").css("visibility", "visible");
+    $('#questionnaire').addClass("box bigEntrance");
+
     //console.log(data);
     questionnaire.questions = data.questions;
     //console.log(questionnaire);
     gameResults.game_id = questionnaire.questions[0].game_id;
     gameResults.questions = [];
     startGame();
+  }).fail(function(){
+    questionnaire = {};
+    gameResults = {};
+    $("#noConnection").text("No internet connection!");
+    //console.log("no internet connection");
   });
 });
 
 $("#closeButton").click(function() {
+  $("#noConnection").text("");
   $("#end").css("visibility", "hidden");
   i=-1;
   $("#start").css("visibility", "visible");
@@ -511,7 +546,7 @@ $("#questionnaire").on('click', "#submitButton", function(){
 
 $("#questionnaire").on('click', "#nextButton", function(){
   alpha3_selected = "";
-  window.clearInterval(intervalID);
+  //window.clearInterval(intervalID);
   mapCountryUpdate_remove();
   startGame();
 });

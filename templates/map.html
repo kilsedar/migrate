@@ -26,6 +26,7 @@
         <div id="startInstructions_video">Click <a href="https://www.youtube.com/watch?v=zKTzfvglEt4" target="_blank">here</a> to see a demo video on how to play.</div>
       </div>
       <button id='startButton' type='button'>Start the game</button>
+      <div id="noConnection"></div>
     </div>
 
     <div id="questionnaire" style="max-height: calc(100vh - 240px);" class="col-xs-8 col-sm-6 col-md-4">
@@ -88,7 +89,7 @@
     //var questions = {{ questions|safe }};
   </script>
 
-  <script src="{% static "js/map.min.js" %}"></script>
+  <script src="{% static "js/map.js" %}"></script>
   <!--<script src="{% static "js/map.js" %}"></script>-->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{% static "css/map.css" %}">
