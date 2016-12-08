@@ -410,7 +410,7 @@ function evaluateAnswer() {
       $('input[type="radio"]:checked').parent().css("width", "calc(100% - 32px)");
       //the answer is selected and it is right
     }
-    //nothing is selected, just show the right answer (given_answer == undefined)
+    //nothing is selected, just show the right answer
     else if (given_answer == "") {
       $("span:contains('" + right_answer + "')").css("color", "rgba(255, 102, 0, 1)");
       $("span:contains('" + right_answer + "')").css("font-weight", "bold");
