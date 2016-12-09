@@ -66,7 +66,7 @@ def map(request, json_req=None):
             qd = q.to_dict()
 
             #encrypt the answer
-            qd_answer_encypted = encrypt(qd['answer'], "2356987456213565")
+            qd_answer_encypted = encrypt(qd['answer'], "1234567890123456")
             qd['answer'] = qd_answer_encypted
 
             qd['answers'] = answers
@@ -79,7 +79,7 @@ def map(request, json_req=None):
 
             qd['game_id'] = game.id
             if q._type == 'MB':
-                qd['answer_code'] = encrypt(q.answer_code, "2356987456213565")
+                qd['answer_code'] = encrypt(q.answer_code, "1234567890123456")
             q_list.append(qd)
         ct_rs['questions'] = q_list
         return JsonResponse(ct_rs)
@@ -134,14 +134,10 @@ def evaluate_answer(type, right_answer, given_answer):
                 lowerBound = float(right_answer)*8/10
                 upperBound = float(right_answer)*12/10
 
-            if float(given_answer) >= lowerBound and float(given_answer) <= upperBound:
+            if float(given_answer) >= lowerBound and given_answer <= upperBound:
                 result = True
-                print lowerBound, " ", upperBound
-                print "true TB"
             else:
                 result = False
-                print lowerBound, " ", upperBound
-                print "false TB"
         else:
             print "given answer is not a float or a number!"
             result = False

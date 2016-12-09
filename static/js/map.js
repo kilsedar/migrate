@@ -19,7 +19,7 @@ function getCookie(name) {
   return cookieValue;
 }
 
-function decryptScRt(string) {
+function decrypt(string) {
   var ciphertext = CryptoJS.enc.Base64.parse(string);
   var iv = ciphertext.clone();
   iv.sigBytes = 16;
@@ -27,7 +27,7 @@ function decryptScRt(string) {
   ciphertext.words.splice(0, 4); //delete 4 words = 16 bytes
   ciphertext.sigBytes -= 16;
 
-  var key = CryptoJS.enc.Utf8.parse("2356987456213565");
+  var key = CryptoJS.enc.Utf8.parse("1234567890123456");
 
   //decryption
   var decrypted = CryptoJS.AES.decrypt({ciphertext: ciphertext}, key, {
@@ -172,7 +172,7 @@ function getFinalExtent(){
 
 function htmlGenerator(){
   var type = questionnaire.questions[i]._type;
-  var right_answer = decryptScRt(questionnaire.questions[i].answer);
+  var right_answer = decrypt(questionnaire.questions[i].answer);
   //console.log(right_answer);
   var cnt_list = questionnaire.questions[i].cnt_list;
   //console.log("cnt_list: " + cnt_list);
@@ -364,19 +364,19 @@ function startGame(){
         $("#end #pFirst").html("Game is finished!<br>Your score is: " + score);
         if (score < 2){
           $('.box#end img').attr("src", badge_zero_one_source);
-          $("#end #pSecond").text("Come on, you can do better than this!");
+          $("#end #pSecond").html("Come on, you can do better than this!");
         }
         else if (score < 4){
           $('.box#end img').attr("src", badge_two_three_source);
-          $("#end #pSecond").text("Not so bad, keep on playing!");
+          $("#end #pSecond").html("Not so bad, keep on playing!");
         }
         else if (score < 6){
           $('.box#end img').attr("src", badge_four_five_source);
-          $("#end #pSecond").text("You’re almost there!");
+          $("#end #pSecond").html("You’re almost there!");
         }
         else{
           $('.box#end img').attr("src", badge_six_source);
-          $("#end #pSecond").text("Your knowledge is impressive, congratulations!");
+          $("#end #pSecond").html("Your knowledge is impressive, congratulations!");
         }
         $("#end").css("visibility", "visible");
         score = 0;
@@ -399,7 +399,7 @@ function evaluateAnswer() {
   var $thumb_down = ($("<img id='thumb_down' src='" + thumb_down_source + "'>"));
 
   if (type == "TF" || type == "MC") {
-    right_answer = capitalizeFirstLetter(decryptScRt(questionnaire.questions[i].answer)); //needed only in the case of MC, but TF are already in all capital
+    right_answer = capitalizeFirstLetter(decrypt(questionnaire.questions[i].answer)); //needed only in the case of MC, but TF are already in all capital
     given_answer = $('input[type="radio"]:checked').parent().text();
     //console.log(given_answer + " --- " + right_answer);
     if (given_answer == right_answer) {
@@ -426,7 +426,7 @@ function evaluateAnswer() {
     }
   }
   else if (type == "MB") {
-    right_answer = decryptScRt(questionnaire.questions[i].answer_code);
+    right_answer = decrypt(questionnaire.questions[i].answer_code);
     given_answer = alpha3_selected;
     //console.log("answers: " + questionnaire.questions[i].answers);
     //console.log("right answer: " + right_answer + " --- " + "alpha3_selected: " + alpha3_selected);
@@ -457,7 +457,7 @@ function evaluateAnswer() {
     ELdeactivated = true;
   }
   else {
-    right_answer = decryptScRt(questionnaire.questions[i].answer);
+    right_answer = decrypt(questionnaire.questions[i].answer);
     given_answer = $("#textInput").val();
     var lowerBound, upperBound;
 
@@ -510,7 +510,7 @@ function evaluateAnswer() {
 
 $("#startButton").click(function() {
   $.getJSON("/game/restart/", function(data) {
-    $("#noConnection").text("");
+    $("#noConnection").text("");    
     $("#start").css("visibility", "hidden");
     $("#questionnaire").css("visibility", "visible");
     $('#questionnaire').addClass("box bigEntrance");
@@ -527,7 +527,7 @@ $("#startButton").click(function() {
   });
 });
 
-$("#closeButton").click(function() {
+$("#closeButton").click(function() {  
   $("#end").css("visibility", "hidden");
   i=-1;
   $("#start").css("visibility", "visible");
