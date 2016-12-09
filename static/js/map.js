@@ -19,7 +19,7 @@ function getCookie(name) {
   return cookieValue;
 }
 
-function decryptSDFJLK(string) {
+function decryptGGKUGITYJHJGUIG(string) {
   var ciphertext = CryptoJS.enc.Base64.parse(string);
   var iv = ciphertext.clone();
   iv.sigBytes = 16;
@@ -172,7 +172,7 @@ function getFinalExtent(){
 
 function htmlGenerator(){
   var type = questionnaire.questions[i]._type;
-  var right_answer = decryptSDFJLK(questionnaire.questions[i].answer);
+  var right_answer = decryptGGKUGITYJHJGUIG(questionnaire.questions[i].answer);
   //console.log(right_answer);
   var cnt_list = questionnaire.questions[i].cnt_list;
   //console.log("cnt_list: " + cnt_list);
@@ -399,7 +399,7 @@ function evaluateAnswer() {
   var $thumb_down = ($("<img id='thumb_down' src='" + thumb_down_source + "'>"));
 
   if (type == "TF" || type == "MC") {
-    right_answer = capitalizeFirstLetter(decryptSDFJLK(questionnaire.questions[i].answer)); //needed only in the case of MC, but TF are already in all capital
+    right_answer = capitalizeFirstLetter(decryptGGKUGITYJHJGUIG(questionnaire.questions[i].answer)); //needed only in the case of MC, but TF are already in all capital
     given_answer = $('input[type="radio"]:checked').parent().text();
     //console.log(given_answer + " --- " + right_answer);
     if (given_answer == right_answer) {
@@ -426,7 +426,7 @@ function evaluateAnswer() {
     }
   }
   else if (type == "MB") {
-    right_answer = decryptSDFJLK(questionnaire.questions[i].answer_code);
+    right_answer = decryptGGKUGITYJHJGUIG(questionnaire.questions[i].answer_code);
     given_answer = alpha3_selected;
     //console.log("answers: " + questionnaire.questions[i].answers);
     //console.log("right answer: " + right_answer + " --- " + "alpha3_selected: " + alpha3_selected);
@@ -457,7 +457,7 @@ function evaluateAnswer() {
     ELdeactivated = true;
   }
   else {
-    right_answer = decryptSDFJLK(questionnaire.questions[i].answer);
+    right_answer = decryptGGKUGITYJHJGUIG(questionnaire.questions[i].answer);
     given_answer = $("#textInput").val();
     var lowerBound, upperBound;
 
