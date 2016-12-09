@@ -5,3 +5,6 @@ migrate/urls.py
 migrate/secret_key.txt
 fixtures
 parse_aux/*.txt
+static/js/map.js
+static/js/map.min.js
+static/js/map_production.js
