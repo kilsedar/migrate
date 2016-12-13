@@ -170,7 +170,11 @@ def finish_game(request):
 
             given_answer = q['answer']
 
-            tf = evaluate_answer(type, right_answer, given_answer)
+            if given_answer == '':
+                a.eval = "None"
+            else:
+                tf = evaluate_answer(type, right_answer, given_answer)
+                a.eval = str(tf)
 
             print given_answer + " " + right_answer + " %r" % tf
 
@@ -191,7 +195,7 @@ def finish_game(request):
             a = answers.get(question_id = q['question_id'])
             a.user_answer = q['answer']
             a.trem = q['trem']
-            a.eval = str(tf)
+            #a.eval = str(tf)
             a.save()
 
         print "g_score: %f" % g_score
@@ -227,6 +231,7 @@ def finish_game(request):
                     # if tf == True:
                         # print given_answer + " " + right_answer + " %r" % tf
                         # game.score = game.score + 1.5
+                        # game.save()
 
 
     # games = Game.objects.all()
@@ -242,8 +247,12 @@ def finish_game(request):
             # else:
                 # right_answer = question.answer
 
-            # tf = evaluate_answer(type, right_answer, given_answer)
-            # a.eval = str(tf)
+            # if given_answer == '':
+                # a.eval = "None"
+            # else:
+                # tf = evaluate_answer(type, right_answer, given_answer)
+                # a.eval = str(tf)
+            # a.save()
 
 
     # players = Player.objects.all()
@@ -288,6 +297,7 @@ def finish_game(request):
         # player.profile.n_games = n_games
         # player.profile.n_games_quitted = n_games_quitted
         # player.profile.avg_score = avg_score
+        # player.profile.save()
 
 
 def team(request):
