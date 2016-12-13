@@ -170,7 +170,9 @@ def finish_game(request):
 
             given_answer = q['answer']
 
+            a = answers.get(question_id = q['question_id'])
             if given_answer == '':
+                tf = "None"
                 a.eval = "None"
             else:
                 tf = evaluate_answer(type, right_answer, given_answer)
@@ -192,7 +194,6 @@ def finish_game(request):
                     g_score += q_score
                     print q_score, g_score
 
-            a = answers.get(question_id = q['question_id'])
             a.user_answer = q['answer']
             a.trem = q['trem']
             #a.eval = str(tf)
