@@ -42,5 +42,5 @@ def player_profile(request):
 
 class RankingView(ListView):
     #queryset = Player.objects.filter(profile__isnull=False, profile__avg_score__gt = 0).order_by('-profile__avg_score')[:10]
-    queryset = Player.objects.filter(profile__isnull=False, profile__avg_score__gt = 0).order_by('-profile__avg_score')
+    queryset = Player.objects.filter(profile__isnull=False, profile__total_score__gt = 0).order_by('-profile__total_score')
     template_name = 'ranking.html'

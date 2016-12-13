@@ -60,7 +60,7 @@ class Country(models.Model):
 
 class Profile(models.Model):
 
-    avg_score = models.FloatField(null=True, blank=True, default=0, verbose_name='average score')
+    total_score = models.FloatField(null=True, blank=True, default=0, verbose_name='total score')
     n_games = models.IntegerField(null=True, blank=True, verbose_name='number of games')
     n_games_quitted = models.IntegerField(null=True, blank=True, verbose_name='number of games quitted')
 
@@ -70,7 +70,7 @@ class Profile(models.Model):
         except:
             return "profile not available for user"
 
-    def update_avg_score(self):
+    def update_total_score(self):
         games = self.player.game_set.all()
         n_games = len(games)
         sum_scores = 0
@@ -83,24 +83,26 @@ class Profile(models.Model):
         games_excNone = self.player.game_set.filter(~Q(score = None))
         n_games_excNone = len(games_excNone)
 
+        total_score = avg_score
+
         if n_games_excNone > 1 and n_games_excNone <= 5:
-            avg_score += (n_games_excNone-1)*0.5
+            total_score += (n_games_excNone-1)*0.5
         elif n_games_excNone > 5 and n_games_excNone <= 15:
-            avg_score += 2 + (n_games_excNone-5)*0.2
+            total_score += 2 + (n_games_excNone-5)*0.2
         elif n_games_excNone > 15 and n_games_excNone <= 55:
-            avg_score += 4 + (n_games_excNone-15)*0.1
+            total_score += 4 + (n_games_excNone-15)*0.1
         elif n_games_excNone > 55 and n_games_excNone <= 135:
-            avg_score += 8 + (n_games_excNone-55)*0.05
+            total_score += 8 + (n_games_excNone-55)*0.05
         elif n_games_excNone > 135 and n_games_excNone <= 535:
-            avg_score += 12 + (n_games_excNone-135)*0.01
+            total_score += 12 + (n_games_excNone-135)*0.01
         elif n_games_excNone > 535:
-            avg_score += 16 + (n_games_excNone-535)*0.005
+            total_score += 16 + (n_games_excNone-535)*0.005
 
         n_games_quitted = n_games - n_games_excNone
 
         self.n_games = n_games
         self.n_games_quitted = n_games_quitted
-        self.avg_score = avg_score
+        self.total_score = total_score
         self.save()
 
 

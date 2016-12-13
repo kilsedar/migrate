@@ -200,6 +200,8 @@ def finish_game(request):
             a.save()
 
         print "g_score: %f" % g_score
+        if g_score > 6.0:
+            g_score = 6.0
         game.score = g_score
 
         #answers = game.answeredquestion_set
@@ -210,7 +212,7 @@ def finish_game(request):
             #a.eval = ?
             #a.save()
         game.save()
-        game.player.profile.update_avg_score()
+        game.player.profile.update_total_score()
         return JsonResponse({'ok': True, 'score': g_score})
     return JsonResponse({'ok': False})
 
@@ -272,32 +274,34 @@ def finish_game(request):
             # print "sum of scores: ", sum_scores
             # avg_score = sum_scores/n_games
 
-        # print "avg_score before extra points: ", avg_score
+        # print "avg_score: ", avg_score
 
         # games_excNone = player.game_set.filter(~Q(score = None))
         # n_games_excNone = len(games_excNone)
 
+        # total_score = avg_score
+
         # if n_games_excNone > 1 and n_games_excNone <= 5:
-            # avg_score += (n_games_excNone-1)*0.5
+            # total_score += (n_games_excNone-1)*0.5
         # elif n_games_excNone > 5 and n_games_excNone <= 15:
-            # avg_score += 2 + (n_games_excNone-5)*0.2
+            # total_score += 2 + (n_games_excNone-5)*0.2
         # elif n_games_excNone > 15 and n_games_excNone <= 55:
-            # avg_score += 4 + (n_games_excNone-15)*0.1
+            # total_score += 4 + (n_games_excNone-15)*0.1
         # elif n_games_excNone > 55 and n_games_excNone <= 135:
-            # avg_score += 8 + (n_games_excNone-55)*0.05
+            # total_score += 8 + (n_games_excNone-55)*0.05
         # elif n_games_excNone > 135 and n_games_excNone <= 535:
-            # avg_score += 12 + (n_games_excNone-135)*0.01
+            # total_score += 12 + (n_games_excNone-135)*0.01
         # elif n_games_excNone > 535:
-            # avg_score += 16 + (n_games_excNone-535)*0.005
+            # total_score += 16 + (n_games_excNone-535)*0.005
 
         # print "n_games_excNone: ", n_games_excNone
-        # print "avg_score after extra points: ", avg_score
+        # print "total_score: ", total_score
         # n_games_quitted = n_games - n_games_excNone
         # print "number of games quitted: ", n_games_quitted
 
         # player.profile.n_games = n_games
         # player.profile.n_games_quitted = n_games_quitted
-        # player.profile.avg_score = avg_score
+        # player.profile.total_score = total_score
         # player.profile.save()
 
 
