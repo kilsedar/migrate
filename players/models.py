@@ -61,39 +61,45 @@ class Country(models.Model):
 class Profile(models.Model):
 
     avg_score = models.FloatField(null=True, blank=True, default=0, verbose_name='average score')
+    n_games = models.IntegerField(null=True, blank=True, verbose_name='number of games')
+    n_games_quitted = models.IntegerField(null=True, blank=True, verbose_name='number of games quitted')
 
     def __unicode__(self):
         try:
-            return self.player.user.username+"\t|\t average score: "+str(self.avg_score)
+            return self.player.user.username+"\t|\t average score: "+str(self.avg_score)+"\t|\t number of games: "+str(self.n_games)+"\t|\t number of games quitted: "+str(self.n_games_quitted)
         except:
             return "profile not available for user"
 
     def update_avg_score(self):
         games = self.player.game_set.all()
-        #print "count of the games: %d" % len(games)
         n_games = len(games)
-        avg = 0
-        cont = 0
+        sum_scores = 0
 
         for game in games:
-            avg += game.score or 0
-            cont += 1
+            sum_scores += game.score or 0
 
-        avg_score = avg/cont
+        avg_score = sum_scores/n_games
 
-        if n_games > 1 and n_games <= 5:
-            avg_score += (n_games-1)*0.5
-        elif n_games > 5 and n_games <= 15:
-            avg_score += 2 + (n_games-5)*0.2
-        elif n_games > 15 and n_games <= 55:
-            avg_score += 4 + (n_games-15)*0.1
-        elif n_games > 55 and n_games <= 135:
-            avg_score += 8 + (n_games-55)*0.05
-        elif n_games > 135 and n_games <= 535:
-            avg_score += 12 + (n_games-135)*0.01
-        elif n_games > 535:
-            avg_score += 16 + (n_games-535)*0.005
+        games_excNone = self.player.game_set.filter(~Q(score = None))
+        n_games_excNone = len(games_excNone)
 
+        if n_games_excNone > 1 and n_games_excNone <= 5:
+            avg_score += (n_games_excNone-1)*0.5
+        elif n_games_excNone > 5 and n_games_excNone <= 15:
+            avg_score += 2 + (n_games_excNone-5)*0.2
+        elif n_games_excNone > 15 and n_games_excNone <= 55:
+            avg_score += 4 + (n_games_excNone-15)*0.1
+        elif n_games_excNone > 55 and n_games_excNone <= 135:
+            avg_score += 8 + (n_games_excNone-55)*0.05
+        elif n_games_excNone > 135 and n_games_excNone <= 535:
+            avg_score += 12 + (n_games_excNone-135)*0.01
+        elif n_games_excNone > 535:
+            avg_score += 16 + (n_games_excNone-535)*0.005
+
+        n_games_quitted = n_games - n_games_excNone
+
+        self.n_games = n_games
+        self.n_games_quitted = n_games_quitted
         self.avg_score = avg_score
         self.save()
 

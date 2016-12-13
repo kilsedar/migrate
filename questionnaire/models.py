@@ -236,7 +236,9 @@ class AnsweredQuestion(models.Model):
     option2 = models.TextField(blank=True, null=True, verbose_name='option 2')
     option3 = models.TextField(blank=True, null=True, verbose_name='option 3')
     option4 = models.TextField(blank=True, null=True, verbose_name='option 4')
+    trem = models.IntegerField(blank=True, null=True, verbose_name='remaining time')
+    eval = models.TextField(default="None", verbose_name='evaluation')
     game = models.ForeignKey(Game)
 
     def __unicode__(self):
-        return self.question.question+" "+self.user_answer
+        return self.question.question+" "+self.user_answer+" "+self.eval
