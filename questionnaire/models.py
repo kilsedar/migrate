@@ -12,23 +12,21 @@ from players.models import Country, Player
 
 # Create your models here.
 class Question(models.Model):
-    TYPES = (
-     ("MC", "Multiple choice"),
-     ("TB", "Text-based"),
-     ("TF", "True or False"),
-     ("MB", "Map based"),
-    )
+    TYPES = (("MC", "Multiple choice"),
+             ("TB", "Text-based"),
+             ("TF", "True or False"),
+             ("MB", "Map based"),
+             )
 
-    ANSWER_TYPES = (
-     ("NUM", "Numeric"),
-     ("FIX", "Fixed"),
-     ("CNT", "Country"),
-     ("PER", "Percentage"),
-     ("CLR", "Date Range"),
-     ("BOL", "Boolean"),
-     ("ALP", "Alphabetic or other"),
-     ("MON", "Month(s)"),
-    )
+    ANSWER_TYPES = (("NUM", "Numeric"),
+                    ("FIX", "Fixed"),
+                    ("CNT", "Country"),
+                    ("PER", "Percentage"),
+                    ("CLR", "Date Range"),
+                    ("BOL", "Boolean"),
+                    ("ALP", "Alphabetic or other"),
+                    ("MON", "Month(s)"),
+                    )
 
     category = models.CharField(max_length=50, blank=True, verbose_name="categories")
     region = models.CharField(max_length=120, blank=True, null=True)
@@ -42,6 +40,7 @@ class Question(models.Model):
     data_source_link = models.CharField(max_length=500, blank=True)
     license_link = models.CharField(max_length=500, blank=True)
     cnt_list = models.CharField(max_length=599, blank=True)
+
 
     def __unicode__(self):
         return self.question + "\t|\tAnswer: " + self.answer + "\t|\t(" + self._type + ")"
@@ -129,13 +128,13 @@ class Question(models.Model):
             if self.random_factor:
                 return get_rnd_months(self.answer, rf = self.random_factor) + [self.answer]
             return get_rnd_months(self.answer) + [self.answer]
-
+        
         if self.answer_type == "NUM":
             """Generate options based on random numbers"""
             ans = list()
             context = self.get_context_num()
             ans.append(self.answer) #right answer
-
+            
             r = round(0.9999999-random.random(), 2)
             op = int(r * self.random_factor)
             found = re.search('\d+', self.answer)
@@ -146,13 +145,30 @@ class Question(models.Model):
                 r = round(0.9999999-random.random(), 2)
                 op = int(r * self.random_factor)
             ans.append(context[0]+str(op)+context[1])
-
+            
             for i in range(2):
                 while too_close(answer, op) == True or context[0]+str(op)+context[1] in ans:
                     r = round(0.9999999-random.random(), 2)
                     x = 0.1 if r > 0.5 else 10
                     op = int(r * self.random_factor * x)
                 ans.append(context[0]+str(op)+context[1])
+           
+            return ans
+        
+        if self.answer_type == "NUMP":
+            """fixes the particular question:
+            The two countries where most of the migrants arrived in Italy, Greece and Spain in 2015 came 
+            from were Syria and Afghanistan. Which percentage of the total number"""
+            ans = list()
+            ans.append("71") #right answer
+            r = round(0.9999999-random.random(), 2)
+            x = 0.1 if r > 0.5 else 10
+            op = int(r * self.random_factor * x)
+            while (op <= 100):
+                ans.append(str(op)+"%")
+                r = round(0.9999999-random.random(), 2)
+                x = 0.1 if r > 0.5 else 10
+                op = int(r * self.random_factor * x)
 
             return ans
 
@@ -183,7 +199,7 @@ class Question(models.Model):
             """Generates option when the answer is a percentage"""
             bef, aft = self.get_context_num()
             pos = [10, 20, 30, 40, 50, 60, 70, 80, 90]
-
+    
             while self.answer in pos[:3]:
                 random.shuffle(pos)
 
@@ -214,11 +230,11 @@ class FixedAnswers(models.Model):
     def __unicode__(self):
         return self.question.question
 
-
 class Game(models.Model):
 
+
     player = models.ForeignKey(Player)
-    score = models.FloatField(null=True, blank=True)
+    score = models.IntegerField(null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -226,7 +242,6 @@ class Game(models.Model):
 
     def __unicode__(self):
         return self.player.user.username+"\t|\tscored:"+str(self.score)+"\t|\t"+self.date.strftime("%d/%m/%Y")+" at: "+self.date.strftime("%H:%M")
-
 
 class AnsweredQuestion(models.Model):
 
@@ -236,9 +251,8 @@ class AnsweredQuestion(models.Model):
     option2 = models.TextField(blank=True, null=True, verbose_name='option 2')
     option3 = models.TextField(blank=True, null=True, verbose_name='option 3')
     option4 = models.TextField(blank=True, null=True, verbose_name='option 4')
-    trem = models.IntegerField(blank=True, null=True, verbose_name='remaining time')
-    eval = models.TextField(default="None", verbose_name='evaluation')
     game = models.ForeignKey(Game)
 
+
     def __unicode__(self):
-        return self.question.question+" "+self.user_answer+" "+self.eval
+        return self.question.question+" "+self.user_answer

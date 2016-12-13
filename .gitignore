@@ -8,3 +8,4 @@ parse_aux/*.txt
 static/js/map.js
 static/js/map.min.js
 static/js/map_production.js
+mayenv
