@@ -66,7 +66,7 @@ class Profile(models.Model):
 
     def __unicode__(self):
         try:
-            return self.player.user.username+"\t|\t average score: "+str(self.avg_score)+"\t|\t number of games: "+str(self.n_games)+"\t|\t number of games quitted: "+str(self.n_games_quitted)
+            return self.player.user.username+"\t|\t total score: "+str(self.total_score)+"\t|\t number of games: "+str(self.n_games)+"\t|\t number of games quitted: "+str(self.n_games_quitted)
         except:
             return "profile not available for user"
 
