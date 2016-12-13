@@ -27,7 +27,7 @@
     <tr>
       <td>{{ forloop.counter }}</td>
       <td>{{ player.user.username }}</td>
-      <td>{{ player.profile.avg_score|floatformat:2 }}</td>
+      <td>{{ player.profile.total_score|floatformat:2 }}</td>
     </tr>
     {% endfor %}
   </tbody>
