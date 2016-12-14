@@ -301,6 +301,7 @@ def finish_game(request):
 
         # player.profile.n_games = n_games
         # player.profile.n_games_quitted = n_games_quitted
+        # player.profile.avg_score = avg_score
         # player.profile.total_score = total_score
         # player.profile.save()
 

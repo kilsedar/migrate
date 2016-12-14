@@ -60,13 +60,14 @@ class Country(models.Model):
 
 class Profile(models.Model):
 
+    avg_score = models.FloatField(null=True, blank=True, default=0, verbose_name='avg score')
     total_score = models.FloatField(null=True, blank=True, default=0, verbose_name='total score')
     n_games = models.IntegerField(null=True, blank=True, verbose_name='number of games')
     n_games_quitted = models.IntegerField(null=True, blank=True, verbose_name='number of games quitted')
 
     def __unicode__(self):
         try:
-            return self.player.user.username+"\t|\t total score: "+str(self.total_score)+"\t|\t number of games: "+str(self.n_games)+"\t|\t number of games quitted: "+str(self.n_games_quitted)
+            return self.player.user.username+"\t|\taverage score: "+str(self.avg_score)+"\t|\ttotal score: "+str(self.total_score)+"\t|\tnumber of games: "+str(self.n_games)+"\t|\tnumber of games quitted: "+str(self.n_games_quitted)
         except:
             return "profile not available for user"
 
@@ -102,6 +103,7 @@ class Profile(models.Model):
 
         self.n_games = n_games
         self.n_games_quitted = n_games_quitted
+        self.avg_score = avg_score
         self.total_score = total_score
         self.save()
 
