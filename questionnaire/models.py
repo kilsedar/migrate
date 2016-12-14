@@ -13,20 +13,20 @@ from players.models import Country, Player
 # Create your models here.
 class Question(models.Model):
     TYPES = (("MC", "Multiple choice"),
-             ("TB", "Text-based"),
-             ("TF", "True or False"),
-             ("MB", "Map based"),
-             )
+     ("TB", "Text-based"),
+     ("TF", "True or False"),
+     ("MB", "Map based"),
+    )
 
     ANSWER_TYPES = (("NUM", "Numeric"),
-                    ("FIX", "Fixed"),
-                    ("CNT", "Country"),
-                    ("PER", "Percentage"),
-                    ("CLR", "Date Range"),
-                    ("BOL", "Boolean"),
-                    ("ALP", "Alphabetic or other"),
-                    ("MON", "Month(s)"),
-                    )
+     ("FIX", "Fixed"),
+     ("CNT", "Country"),
+     ("PER", "Percentage"),
+     ("CLR", "Date Range"),
+     ("BOL", "Boolean"),
+     ("ALP", "Alphabetic or other"),
+     ("MON", "Month(s)"),
+    )
 
     category = models.CharField(max_length=50, blank=True, verbose_name="categories")
     region = models.CharField(max_length=120, blank=True, null=True)
@@ -128,13 +128,13 @@ class Question(models.Model):
             if self.random_factor:
                 return get_rnd_months(self.answer, rf = self.random_factor) + [self.answer]
             return get_rnd_months(self.answer) + [self.answer]
-        
+
         if self.answer_type == "NUM":
             """Generate options based on random numbers"""
             ans = list()
             context = self.get_context_num()
             ans.append(self.answer) #right answer
-            
+
             r = round(0.9999999-random.random(), 2)
             op = int(r * self.random_factor)
             found = re.search('\d+', self.answer)
@@ -145,19 +145,19 @@ class Question(models.Model):
                 r = round(0.9999999-random.random(), 2)
                 op = int(r * self.random_factor)
             ans.append(context[0]+str(op)+context[1])
-            
+
             for i in range(2):
                 while too_close(answer, op) == True or context[0]+str(op)+context[1] in ans:
                     r = round(0.9999999-random.random(), 2)
                     x = 0.1 if r > 0.5 else 10
                     op = int(r * self.random_factor * x)
                 ans.append(context[0]+str(op)+context[1])
-           
+
             return ans
-        
+
         if self.answer_type == "NUMP":
             """fixes the particular question:
-            The two countries where most of the migrants arrived in Italy, Greece and Spain in 2015 came 
+            The two countries where most of the migrants arrived in Italy, Greece and Spain in 2015 came
             from were Syria and Afghanistan. Which percentage of the total number"""
             ans = list()
             ans.append("71") #right answer
@@ -199,7 +199,7 @@ class Question(models.Model):
             """Generates option when the answer is a percentage"""
             bef, aft = self.get_context_num()
             pos = [10, 20, 30, 40, 50, 60, 70, 80, 90]
-    
+
             while self.answer in pos[:3]:
                 random.shuffle(pos)
 
