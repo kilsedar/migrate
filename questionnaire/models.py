@@ -236,6 +236,7 @@ class Game(models.Model):
     player = models.ForeignKey(Player)
     score = models.FloatField(null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
+    ip_address = models.TextField(blank=True, null=True, verbose_name='ip address')
 
     class Meta:
         ordering = ['-date']

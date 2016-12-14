@@ -152,6 +152,13 @@ def evaluate_answer(type, right_answer, given_answer):
 
 def finish_game(request):
     if request.is_ajax() and request.method == 'POST':
+
+        x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+        if x_forwarded_for:
+            ip_address = x_forwarded_for.split(',')[0]
+        else:
+            ip_address = request.META.get('REMOTE_ADDR')
+
         data = json.loads(request.body)
         game = Game.objects.get(id=data['game_id'])
         answers = game.answeredquestion_set
@@ -203,6 +210,7 @@ def finish_game(request):
         if g_score > 6.0:
             g_score = 6.0
         game.score = g_score
+        game.ip_address = ip_address
 
         #answers = game.answeredquestion_set
         #for q in data['questions']:
