@@ -242,7 +242,7 @@ class Game(models.Model):
         ordering = ['-date']
 
     def __unicode__(self):
-        return self.player.user.username+"\t|\tscored:"+str(self.score)+"\t|\t"+self.date.strftime("%d/%m/%Y")+" at: "+self.date.strftime("%H:%M")
+        return self.player.user.username+"\t|\tscored: "+str(self.score)+"\t|\t"+self.date.strftime("%d/%m/%Y")+" at: "+self.date.strftime("%H:%M")+"\t|\tip address: "+str(self.ip_address)
 
 class AnsweredQuestion(models.Model):
 
