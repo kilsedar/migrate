@@ -12,7 +12,7 @@
 	<h2>{{ request.user.username }}</h2>
 	<p>
 		<b>Ranked score:</b>
-    {{ player.profile.avg_score|floatformat:2 }}
+    {{ player.profile.total_score|floatformat:2 }}
 	</p>
 	<p><b>Gender:</b> {{ player.get_gender_display }}</p>
 	<p><b>Country:</b> {{ player.country }}</p>

@@ -71,21 +71,48 @@ class Profile(models.Model):
         except:
             return "profile not available for user"
 
-    def update_total_score(self):
+    def update_total_score(self, g_score):
+        #games = self.player.game_set.all()
+        #n_games = len(games)
+        #sum_scores = 0
+
+        #for game in games:
+        #    sum_scores += game.score or 0
+
+        #avg_score = sum_scores/n_games
+
+        #games_excNone = self.player.game_set.filter(~Q(score = None))
+        #n_games_excNone = len(games_excNone)
+
+        #total_score = avg_score
+
+        #if n_games_excNone > 1 and n_games_excNone <= 5:
+        #    total_score += (n_games_excNone-1)*0.5
+        #elif n_games_excNone > 5 and n_games_excNone <= 15:
+        #    total_score += 2 + (n_games_excNone-5)*0.2
+        #elif n_games_excNone > 15 and n_games_excNone <= 55:
+        #    total_score += 4 + (n_games_excNone-15)*0.1
+        #elif n_games_excNone > 55 and n_games_excNone <= 135:
+        #    total_score += 8 + (n_games_excNone-55)*0.05
+        #elif n_games_excNone > 135 and n_games_excNone <= 535:
+        #    total_score += 12 + (n_games_excNone-135)*0.01
+        #elif n_games_excNone > 535:
+        #    total_score += 16 + (n_games_excNone-535)*0.005
+
+        #n_games_quitted = n_games - n_games_excNone
+
         games = self.player.game_set.all()
         n_games = len(games)
-        sum_scores = 0
 
-        for game in games:
-            sum_scores += game.score or 0
-
-        avg_score = sum_scores/n_games
+        avg_score = (g_score + (self.avg_score*self.n_games))/n_games
 
         games_excNone = self.player.game_set.filter(~Q(score = None))
         n_games_excNone = len(games_excNone)
+        n_games_quitted = n_games - n_games_excNone
 
         total_score = avg_score
 
+        n_games_excNone = (self.n_games - self.n_games_quitted)+1
         if n_games_excNone > 1 and n_games_excNone <= 5:
             total_score += (n_games_excNone-1)*0.5
         elif n_games_excNone > 5 and n_games_excNone <= 15:
@@ -98,8 +125,6 @@ class Profile(models.Model):
             total_score += 12 + (n_games_excNone-135)*0.01
         elif n_games_excNone > 535:
             total_score += 16 + (n_games_excNone-535)*0.005
-
-        n_games_quitted = n_games - n_games_excNone
 
         self.n_games = n_games
         self.n_games_quitted = n_games_quitted

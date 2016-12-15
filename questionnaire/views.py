@@ -163,9 +163,13 @@ def finish_game(request):
         game = Game.objects.get(id=data['game_id'])
         answers = game.answeredquestion_set
 
+        n_questions = len(data['questions'])
+        n = min(6, n_questions)
+        #print "n_questions: ", n_questions, ", n: ", n
+
         g_score = 0.0
         #for q in data['questions']:
-        for i in range(0, 6):
+        for i in range(0, n):
             q = data['questions'][i]
             question = Question.objects.get(id=q['question_id'])
             type = question._type
@@ -220,7 +224,7 @@ def finish_game(request):
             #a.eval = ?
             #a.save()
         game.save()
-        game.player.profile.update_total_score()
+        game.player.profile.update_total_score(g_score)
         return JsonResponse({'ok': True, 'score': g_score})
     return JsonResponse({'ok': False})
 
