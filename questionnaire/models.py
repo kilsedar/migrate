@@ -67,10 +67,10 @@ class Question(models.Model):
         return self.answer
 
     @classmethod
-    def get_question(cls, type, category, region):
+    def get_question(cls, type, category, regions):
         """Method to filter questions"""
-        if (region != ""):
-            qs_list = Question.objects.filter(_type=type, category=category, region=region).values_list('id', flat=True)
+        if (regions != ""):
+            qs_list = Question.objects.filter(Q(_type=type, category=category, region=regions[0]) | Q(_type=type, category=category, region=regions[1]) | Q(_type=type, category=category, region=regions[2])).values_list('id', flat=True)
         else:
             qs_list = Question.objects.filter(_type=type, category=category).values_list('id', flat=True)
         qs_id = random.choice(qs_list)
@@ -81,14 +81,53 @@ class Question(models.Model):
     def get_questions(cls, country):
         questionnaire = list()
 
-        #user region & text-based
         region = country.region
+        
         if region == 'changeme':
             region = 'Europe'
-        questionnaire.append(cls.get_question("TB", "USER REGION", region.upper()))
+
+        if region == "Europe":
+            region1 = "GREECE"
+            region2 = "SPAIN"
+            region3 = "MIDDLE EAST"
+
+        elif region == "Italy":
+            region1 = "SPAIN"
+            region2 = "AFRICA"
+            region3 = "BULGARIA, HUNGARY AND BALKANS"
+
+        elif region == "Spain":
+            region1 = "GREECE"
+            region2 = "EUROPE"
+            region3 = "MIDDLE EAST"
+
+        elif region == "Greece":
+            region1 = "ITALY"
+            region2 = "EUROPE"
+            region3 = "MIDDLE EAST"
+
+        elif region == "Bulgaria, Hungary and Balkans":
+            region1 = "SPAIN"
+            region2 = "AFRICA"
+            region3 = "MIDDLE EAST"
+
+        elif region == "Middle East":
+            region1 = "ITALY"
+            region2 = "AFRICA"
+            region3 = "EUROPE"
+
+        elif region == "Africa":
+            region1 = "ITALY"
+            region2 = "BULGARIA, HUNGARY AND BALKANS"
+            region3 = "EUROPE"
+
+        regions = [region1, region2, region3]
+
+        #user region & text-based
+        questionnaire.append(cls.get_question("TB", "USER REGION", regions))
 
         #user region & multiple-choice
-        questionnaire.append(cls.get_question("MC", "USER REGION", region.upper()))
+        questionnaire.append(cls.get_question("MC", "USER REGION", regions))
 
         #mediterranean & map-based
         questionnaire.append(cls.get_question("MB", "MEDITERRANEAN AREA", ""))
