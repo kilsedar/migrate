@@ -124,8 +124,6 @@ class Question(models.Model):
         regions = [region1, region2, region3]
 
         #user region & text-based
-        #questionnaire.append(cls.objects.get(question="The two countries where most of the migrants arrived in Italy, Greece and Spain in 2015 came from were Syria and Afghanistan. Which percentage of the total number of arrivals in 2015 did these two countries of origin represent?"))
-        #print questionnaire[0]
         questionnaire.append(cls.get_question("TB", "USER REGION", regions))
 
         #user region & multiple-choice
@@ -205,12 +203,13 @@ class Question(models.Model):
             r = round(0.9999999-random.random(), 2)
             x = 0.1 if r > 0.5 else 10
             op = int(r * self.random_factor * x)
-            while (op <= 100 and len(ans)<=4):
-                ans.append(str(op)+"%")
+            while (len(ans)<=4):
+                if (op <= 100 and op>=0):
+                    ans.append(str(op)+"%")
                 r = round(0.9999999-random.random(), 2)
                 x = 0.1 if r > 0.5 else 10
                 op = int(r * self.random_factor * x)
-
+            print ans
             return ans
 
         if self.answer_type == "FIX" and self._type != 'MB':
