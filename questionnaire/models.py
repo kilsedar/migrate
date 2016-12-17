@@ -124,7 +124,9 @@ class Question(models.Model):
         regions = [region1, region2, region3]
 
         #user region & text-based
-        questionnaire.append(cls.get_question("TB", "USER REGION", regions))
+        questionnaire.append(cls.objects.get(question="The two countries where most of the migrants arrived in Italy, Greece and Spain in 2015 came from were Syria and Afghanistan. Which percentage of the total number of arrivals in 2015 did these two countries of origin represent?"))
+        #print questionnaire[0]
+        #questionnaire.append(cls.get_question("TB", "USER REGION", regions))
 
         #user region & multiple-choice
         questionnaire.append(cls.get_question("MC", "USER REGION", regions))
@@ -199,7 +201,7 @@ class Question(models.Model):
             The two countries where most of the migrants arrived in Italy, Greece and Spain in 2015 came
             from were Syria and Afghanistan. Which percentage of the total number"""
             ans = list()
-            ans.append("71") #right answer
+            ans.append("71%") #right answer
             r = round(0.9999999-random.random(), 2)
             x = 0.1 if r > 0.5 else 10
             op = int(r * self.random_factor * x)

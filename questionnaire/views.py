@@ -172,10 +172,12 @@ def finish_game(request):
         for i in range(0, n):
             q = data['questions'][i]
             question = Question.objects.get(id=q['question_id'])
-            type = question._type
+            type = question._type #type is a reserved python code word. should not use it!
 
             if type == "MB":
                 right_answer = question.answer_code
+            elif question._type == 'NUMP':
+                right_answer = "71%"
             else:
                 right_answer = question.answer
 
