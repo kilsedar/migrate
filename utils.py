@@ -1,7 +1,7 @@
 from random import shuffle
 
 def get_rnd_months(not_this, n = 3, rf=None):
-    months = ["January", "February", "March", "May", "June", "July", "August", "September",
+    months = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
               "October", "November", "December"]
     if rf is not None:
         months = months[:rf]
