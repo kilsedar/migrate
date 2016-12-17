@@ -206,7 +206,7 @@ class Question(models.Model):
             x = 0.1 if r > 0.5 else 10
             op = int(r * self.random_factor * x)
             while (len(ans)<=4):
-                if (op <= 100 and op>=0):
+                if (op <= 100 and op>1):
                     ans.append(str(op)+"%")
                 r = round(0.9999999-random.random(), 2)
                 x = 0.1 if r > 0.5 else 10
