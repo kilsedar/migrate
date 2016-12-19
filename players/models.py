@@ -60,8 +60,8 @@ class Country(models.Model):
 
 class Profile(models.Model):
 
-    avg_score = models.FloatField(null=True, blank=True, default=None, verbose_name='avg score')
-    total_score = models.FloatField(null=True, blank=True, default=None, verbose_name='total score')
+    avg_score = models.FloatField(null=True, blank=True, default=0, verbose_name='avg score')
+    total_score = models.FloatField(null=True, blank=True, default=0, verbose_name='total score')
     n_games = models.IntegerField(null=True, blank=True, default=0, verbose_name='number of games')
     n_games_quitted = models.IntegerField(null=True, blank=True, default=0, verbose_name='number of games quitted')
 
