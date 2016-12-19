@@ -82,7 +82,7 @@ class Question(models.Model):
         questionnaire = list()
 
         region = country.region
-        
+
         if region == 'changeme':
             region = 'Europe'
 
@@ -128,6 +128,7 @@ class Question(models.Model):
 
         #user region & multiple-choice
         questionnaire.append(cls.get_question("MC", "USER REGION", regions))
+        #questionnaire.append(cls.objects.get(question="The two countries where most of the migrants arrived in Italy, Greece and Spain in 2015 came from were Syria and Afghanistan. Which percentage of the total number of arrivals in 2015 did these two countries of origin represent?"))
 
         #mediterranean & map-based
         questionnaire.append(cls.get_question("MB", "MEDITERRANEAN AREA", ""))
@@ -196,20 +197,16 @@ class Question(models.Model):
 
         if self.answer_type == "NUMP":
             """fixes the particular question:
-            The two countries where most of the migrants arrived in Italy, Greece and Spain in 2015 came
-            from were Syria and Afghanistan. Which percentage of the total number"""
+            The two countries where most of the migrants arrived in Italy, Greece and Spain in 2015 came from were Syria and Afghanistan.
+            Which percentage of the total number of arrivals in 2015 did these two countries of origin represent?"""
             ans = list()
             ans.append("71%") #right answer
-            r = round(0.9999999-random.random(), 2)
-            x = 0.1 if r > 0.5 else 10
-            op = int(r * self.random_factor * x)
             while (len(ans)<=4):
-                if (op <= 100 and op>1):
+                r = round(random.random(), 2)
+                op = int(r * 100)
+                if ((op>0 and op<=66) or (op>77)) and op not in ans:
                     ans.append(str(op)+"%")
-                r = round(0.9999999-random.random(), 2)
-                x = 0.1 if r > 0.5 else 10
-                op = int(r * self.random_factor * x)
-            print ans
+            #print ans
             return ans
 
         if self.answer_type == "FIX" and self._type != 'MB':
@@ -235,6 +232,7 @@ class Question(models.Model):
             except Exception, e:
                 print self
                 print str(e)
+
         if self.answer_type == "PER":
             """Generates option when the answer is a percentage"""
             bef, aft = self.get_context_num()

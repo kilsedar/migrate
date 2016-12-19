@@ -62,8 +62,8 @@ class Profile(models.Model):
 
     avg_score = models.FloatField(null=True, blank=True, default=0, verbose_name='avg score')
     total_score = models.FloatField(null=True, blank=True, default=0, verbose_name='total score')
-    n_games = models.IntegerField(null=True, blank=True, verbose_name='number of games')
-    n_games_quitted = models.IntegerField(null=True, blank=True, verbose_name='number of games quitted')
+    n_games = models.IntegerField(null=True, blank=True, default=None, verbose_name='number of games')
+    n_games_quitted = models.IntegerField(null=True, blank=True, default=None, verbose_name='number of games quitted')
 
     def __unicode__(self):
         try:
@@ -123,8 +123,10 @@ class Profile(models.Model):
             total_score += 8 + (n_games_excNone-55)*0.05
         elif n_games_excNone > 135 and n_games_excNone <= 535:
             total_score += 12 + (n_games_excNone-135)*0.01
-        elif n_games_excNone > 535:
+        elif n_games_excNone > 535 and n_games_excNone <= 935:
             total_score += 16 + (n_games_excNone-535)*0.005
+        elif n_games_excNone > 935:
+            total_score += 18 + (n_games_excNone-935)*0.002
 
         self.n_games = n_games
         self.n_games_quitted = n_games_quitted
