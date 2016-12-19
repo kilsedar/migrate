@@ -224,7 +224,7 @@ input[type="radio"]{
 .ol-attribution {
   top: .5em;
   right: 3em;
-  height: 28px;
+  bottom: auto;
 }
 .ol-attribution ul{
   font-size: 1rem;

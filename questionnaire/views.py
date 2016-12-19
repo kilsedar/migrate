@@ -5,6 +5,8 @@ from Crypto import Random
 from Crypto.Cipher import AES
 from cStringIO import StringIO
 #from ipware.ip import get_trusted_ip
+from random import choice
+from string import digits
 from django.core import management
 from django.shortcuts import render
 from django.http import JsonResponse, HttpResponse
@@ -46,6 +48,8 @@ def map(request, json_req=None):
     #print "country was %s but ip is %s" % (country, ip)
 
     if json_req == "restart":
+        key = (''.join(choice(digits) for i in range(16)))
+
         ct_rs = dict()
 
         user = request.user
@@ -67,7 +71,7 @@ def map(request, json_req=None):
             qd = q.to_dict()
 
             #encrypt the answer
-            qd_answer_encypted = encrypt(qd['answer'], "7852686953568954")
+            qd_answer_encypted = encrypt(qd['answer'], key)
             qd['answer'] = qd_answer_encypted
 
             qd['answers'] = answers
@@ -80,10 +84,10 @@ def map(request, json_req=None):
 
             qd['game_id'] = game.id
             if q._type == 'MB':
-                qd['answer_code'] = encrypt(q.answer_code, "7852686953568954")
+                qd['answer_code'] = encrypt(q.answer_code, key)
             q_list.append(qd)
         ct_rs['questions'] = q_list
-        ct_rs['keyFromServer'] = "7852686953568954"
+        ct_rs['keyFromServer'] = key
         return JsonResponse(ct_rs)
 
     ct = dict()
@@ -114,13 +118,13 @@ def isFloat(str):
     except ValueError:
         return False
 
-def evaluate_answer(type, right_answer, given_answer):
-    if type == "MC":
+def evaluate_answer(q_type, right_answer, given_answer):
+    if q_type == "MC":
         if right_answer.capitalize() == given_answer:
             result = True
         else:
             result = False
-    elif type == "MB" or type == "TF":
+    elif q_type == "MB" or q_type == "TF":
         if right_answer == given_answer:
             result = True
         else:
@@ -172,9 +176,9 @@ def finish_game(request):
         for i in range(0, n):
             q = data['questions'][i]
             question = Question.objects.get(id=q['question_id'])
-            type = question._type #type is a reserved python code word. should not use it!
+            q_type = question._type
 
-            if type == "MB":
+            if q_type == "MB":
                 right_answer = question.answer_code
             elif question._type == 'NUMP':
                 right_answer = "71%"
@@ -188,17 +192,17 @@ def finish_game(request):
                 tf = "None"
                 a.eval = "None"
             else:
-                tf = evaluate_answer(type, right_answer, given_answer)
+                tf = evaluate_answer(q_type, right_answer, given_answer)
                 a.eval = str(tf)
 
             print given_answer + " " + right_answer + " %r" % tf
 
             if tf == True:
-                if type == "TF":
+                if q_type == "TF":
                     q_score = weighted_score(0.5, q['trem'])
                     g_score += q_score
                     print q_score, g_score
-                elif type == "TB":
+                elif q_type == "TB":
                     q_score = weighted_score(1.5, q['trem'])
                     g_score += q_score
                     print q_score, g_score
@@ -227,7 +231,8 @@ def finish_game(request):
             #a.save()
         game.save()
         game.player.profile.update_total_score(g_score)
-        return JsonResponse({'ok': True, 'score': g_score})
+        #return JsonResponse({'ok': True, 'score': g_score})
+        return JsonResponse({'ok': True})
     return JsonResponse({'ok': False})
 
 
@@ -258,8 +263,8 @@ def finish_game(request):
             # question_id = a.question_id
             # given_answer = a.user_answer
             # question = Question.objects.get(id=question_id)
-            # type = question._type
-            # if type == "MB":
+            # q_type = question._type
+            # if q_type == "MB":
                 # right_answer = question.answer_code
             # else:
                 # right_answer = question.answer
@@ -267,18 +272,18 @@ def finish_game(request):
             # if given_answer == '':
                 # a.eval = "None"
             # else:
-                # tf = evaluate_answer(type, right_answer, given_answer)
+                # tf = evaluate_answer(q_type, right_answer, given_answer)
                 # a.eval = str(tf)
             # a.save()
 
-
+#
     # players = Player.objects.all()
     # for player in players:
         # games = player.game_set.all()
         # n_games = len(games)
-
+#
         # print "n_games: ", n_games
-
+#
         # if n_games == 0:
             # avg_score = 0
         # else:
@@ -287,14 +292,14 @@ def finish_game(request):
                 # sum_scores += game.score or 0
             # print "sum of scores: ", sum_scores
             # avg_score = sum_scores/n_games
-
+#
         # print "avg_score: ", avg_score
-
+#
         # games_excNone = player.game_set.filter(~Q(score = None))
         # n_games_excNone = len(games_excNone)
-
+#
         # total_score = avg_score
-
+#
         # if n_games_excNone > 1 and n_games_excNone <= 5:
             # total_score += (n_games_excNone-1)*0.5
         # elif n_games_excNone > 5 and n_games_excNone <= 15:
@@ -307,18 +312,20 @@ def finish_game(request):
             # total_score += 12 + (n_games_excNone-135)*0.01
         # elif n_games_excNone > 535:
             # total_score += 16 + (n_games_excNone-535)*0.005
-
+        # elif n_games_excNone > 935:
+            # total_score += 18 + (n_games_excNone-935)*0.002
+#
         # print "n_games_excNone: ", n_games_excNone
         # print "total_score: ", total_score
         # n_games_quitted = n_games - n_games_excNone
         # print "number of games quitted: ", n_games_quitted
-
+#
         # player.profile.n_games = n_games
         # player.profile.n_games_quitted = n_games_quitted
         # player.profile.avg_score = avg_score
         # player.profile.total_score = total_score
         # player.profile.save()
-
+#
 
 def team(request):
     return render(request, 'team.html')

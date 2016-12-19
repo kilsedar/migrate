@@ -41,7 +41,6 @@ class Question(models.Model):
     license_link = models.CharField(max_length=500, blank=True)
     cnt_list = models.CharField(max_length=599, blank=True)
 
-
     def __unicode__(self):
         return self.question + "\t|\tAnswer: " + self.answer + "\t|\t(" + self._type + ")"
 
@@ -268,8 +267,8 @@ class FixedAnswers(models.Model):
     def __unicode__(self):
         return self.question.question
 
-class Game(models.Model):
 
+class Game(models.Model):
 
     player = models.ForeignKey(Player)
     score = models.FloatField(null=True, blank=True)
@@ -282,6 +281,7 @@ class Game(models.Model):
     def __unicode__(self):
         return self.player.user.username+"\t|\tscored: "+str(self.score)+"\t|\t"+self.date.strftime("%d/%m/%Y")+" at: "+self.date.strftime("%H:%M")+"\t|\tip address: "+str(self.ip_address)
 
+
 class AnsweredQuestion(models.Model):
 
     question = models.ForeignKey(Question)
@@ -293,7 +293,6 @@ class AnsweredQuestion(models.Model):
     trem = models.IntegerField(blank=True, null=True, verbose_name='remaining time')
     eval = models.TextField(default="None", verbose_name='evaluation')
     game = models.ForeignKey(Game)
-
 
     def __unicode__(self):
         return self.question.question+" "+self.user_answer+" "+self.eval
