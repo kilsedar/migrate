@@ -276,14 +276,14 @@ def finish_game(request):
                 # a.eval = str(tf)
             # a.save()
 
-#
+
     # players = Player.objects.all()
     # for player in players:
         # games = player.game_set.all()
         # n_games = len(games)
-#
+
         # print "n_games: ", n_games
-#
+
         # if n_games == 0:
             # avg_score = 0
         # else:
@@ -292,14 +292,14 @@ def finish_game(request):
                 # sum_scores += game.score or 0
             # print "sum of scores: ", sum_scores
             # avg_score = sum_scores/n_games
-#
+
         # print "avg_score: ", avg_score
-#
+
         # games_excNone = player.game_set.filter(~Q(score = None))
         # n_games_excNone = len(games_excNone)
-#
+
         # total_score = avg_score
-#
+
         # if n_games_excNone > 1 and n_games_excNone <= 5:
             # total_score += (n_games_excNone-1)*0.5
         # elif n_games_excNone > 5 and n_games_excNone <= 15:
@@ -314,18 +314,18 @@ def finish_game(request):
             # total_score += 16 + (n_games_excNone-535)*0.005
         # elif n_games_excNone > 935:
             # total_score += 18 + (n_games_excNone-935)*0.002
-#
+
         # print "n_games_excNone: ", n_games_excNone
         # print "total_score: ", total_score
         # n_games_quitted = n_games - n_games_excNone
         # print "number of games quitted: ", n_games_quitted
-#
+
         # player.profile.n_games = n_games
         # player.profile.n_games_quitted = n_games_quitted
         # player.profile.avg_score = avg_score
         # player.profile.total_score = total_score
         # player.profile.save()
-#
+
 
 def team(request):
     return render(request, 'team.html')
