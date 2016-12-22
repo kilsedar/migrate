@@ -80,12 +80,12 @@ To set up a production server follow the instructions at https://docs.djangoproj
 
 ## Credits
 
-This application was developed under the MYGEOSS Third Call For Innovative Apps in the environmental and social domains project. The team can be found in the home page of the application (http://geomobile.como.polimi.it/migrate).
+This application was developed under the MYGEOSS Third Call For Innovative Apps in the environmental and social domains project. The team can be found at http://geomobile.como.polimi.it/migrate/team.
 
 
 ## License
 
 The data used to create the questions for the trivia game was collected from open sources listed in the section [data](Link http://geomobile.como.polimi.it/migrate/data/) of the application.
-The tools used during the development were also Free and Open Source Software (FOSS) complying to the directions of the GEOSS Data-CORE.
+The tools used during the development were Free and Open Source Software (FOSS) complying to the directions of the GEOSS Data-CORE.
 If you wish to modify the project or clone the app, you need to provide proper credits to this repository and keep the modified project open as well. This code is under the EU Public License (EUPL).
 This will allow further development of the applications in the future, even for commercial purposes, as long as the original source code remains open.
