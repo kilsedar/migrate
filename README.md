@@ -15,45 +15,37 @@ For replicating the game on your own server you will need:
 
 Clone this repository:
 ```
-#!python
-
 git clone https://bitbucket.org/kilsedar/migrate
 ```
 
-Install psycopg2, using linux:
+Install psycopg2, using Linux:
 ```
-#!python
-
 sudo apt-get install python-psycopg2
 ```
 
 Using pip:
 ```
-#!python
-
 pip install psycopg2
+```
+
+Install Python Cryptography Toolkit:
+```
 pip install pycrypto
 ```
 
 Change the file migrate/settings.py to your server's details and from the root directory of the application run:
 ```
-#!python
-
 python manage.py migrate
 ```
 
 This will create the necessary tables for the game, then to populate them:
 ```
-#!python
-
 python manage.py loaddata fixtures/questionnaire6.json
 python manage.py loaddata fixtures/country.json
 ```
 
 To start your server in test mode:
 ```
-#!python
-
 python manage.py runserver
 ```
 
@@ -61,15 +53,11 @@ You should then be able to access and use the application at http://localhost:80
 
 To create a superuser run:
 ```
-#!python
-
 python manage.py createsuperuser
 ```
 
 With this you'll be able to login to:
 ```
-#!python
-
 http://localhost:8080/admin/
 ```
 
