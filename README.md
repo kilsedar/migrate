@@ -40,7 +40,8 @@ python manage.py migrate
 
 This will create the necessary tables for the game, then to populate them:
 ```
-python manage.py loaddata fixtures/questionnaire6.json
+python manage.py loaddata fixtures/questionnaire.json
+python manage.py loaddata fixtures/fixedanswers.json
 python manage.py loaddata fixtures/country.json
 ```
 
