@@ -86,77 +86,77 @@ class Question(models.Model):
             region = 'Europe'
 
         #second period - beginning
-        if region == "Europe":
-            region1 = "GREECE"
-            region2 = "SPAIN"
-            region3 = "MIDDLE EAST"
-
-        elif region == "Italy":
-            region1 = "SPAIN"
-            region2 = "AFRICA"
-            region3 = "BULGARIA, HUNGARY AND BALKANS"
-
-        elif region == "Spain":
-            region1 = "GREECE"
-            region2 = "EUROPE"
-            region3 = "MIDDLE EAST"
-
-        elif region == "Greece":
-            region1 = "ITALY"
-            region2 = "EUROPE"
-            region3 = "MIDDLE EAST"
-
-        elif region == "Bulgaria, Hungary and Balkans":
-            region1 = "SPAIN"
-            region2 = "AFRICA"
-            region3 = "MIDDLE EAST"
-
-        elif region == "Middle East":
-            region1 = "ITALY"
-            region2 = "AFRICA"
-            region3 = "EUROPE"
-
-        elif region == "Africa":
-            region1 = "ITALY"
-            region2 = "BULGARIA, HUNGARY AND BALKANS"
-            region3 = "EUROPE"
-        #second period - end
-
-        #third period - beginning
         #if region == "Europe":
-        #    region1 = "ITALY"
-        #    region2 = "BULGARIA, HUNGARY AND BALKANS"
-        #    region3 = "AFRICA"
+        #    region1 = "GREECE"
+        #    region2 = "SPAIN"
+        #    region3 = "MIDDLE EAST"
 
         #elif region == "Italy":
-        #    region1 = "MIDDLE EAST"
-        #    region2 = "EUROPE"
-        #    region3 = "GREECE"
-
-        #elif region == "Spain":
-        #    region1 = "ITALY"
-        #    region2 = "BALKANS"
-        #    region3 = "AFRICA"
-
-        #elif region == "Greece":
         #    region1 = "SPAIN"
         #    region2 = "AFRICA"
         #    region3 = "BULGARIA, HUNGARY AND BALKANS"
 
-        #elif region == "Bulgaria, Hungary and Balkans":
+        #elif region == "Spain":
         #    region1 = "GREECE"
         #    region2 = "EUROPE"
-        #    region3 = "ITALY"
+        #    region3 = "MIDDLE EAST"
+
+        #elif region == "Greece":
+        #    region1 = "ITALY"
+        #    region2 = "EUROPE"
+        #    region3 = "MIDDLE EAST"
+
+        #elif region == "Bulgaria, Hungary and Balkans":
+        #    region1 = "SPAIN"
+        #    region2 = "AFRICA"
+        #    region3 = "MIDDLE EAST"
 
         #elif region == "Middle East":
-        #    region1 = "SPAIN"
-        #    region2 = "BALKANS"
-        #    region3 = "GREECE"
+        #    region1 = "ITALY"
+        #    region2 = "AFRICA"
+        #    region3 = "EUROPE"
 
         #elif region == "Africa":
-        #    region1 = "GREECE"
-        #    region2 = "MIDDLE EAST"
-        #    region3 = "SPAIN"
+        #    region1 = "ITALY"
+        #    region2 = "BULGARIA, HUNGARY AND BALKANS"
+        #    region3 = "EUROPE"
+        #second period - end
+
+        #third period - beginning
+        if region == "Europe":
+            region1 = "ITALY"
+            region2 = "BULGARIA, HUNGARY AND BALKANS"
+            region3 = "AFRICA"
+
+        elif region == "Italy":
+            region1 = "MIDDLE EAST"
+            region2 = "EUROPE"
+            region3 = "GREECE"
+
+        elif region == "Spain":
+            region1 = "ITALY"
+            region2 = "BALKANS"
+            region3 = "AFRICA"
+
+        elif region == "Greece":
+            region1 = "SPAIN"
+            region2 = "AFRICA"
+            region3 = "BULGARIA, HUNGARY AND BALKANS"
+
+        elif region == "Bulgaria, Hungary and Balkans":
+            region1 = "GREECE"
+            region2 = "EUROPE"
+            region3 = "ITALY"
+
+        elif region == "Middle East":
+            region1 = "SPAIN"
+            region2 = "BALKANS"
+            region3 = "GREECE"
+
+        elif region == "Africa":
+            region1 = "GREECE"
+            region2 = "MIDDLE EAST"
+            region3 = "SPAIN"
         #third period - end
 
         regions = [region1, region2, region3]
