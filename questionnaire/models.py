@@ -239,7 +239,7 @@ class Question(models.Model):
             Which percentage of the total number of arrivals in 2015 did these two countries of origin represent?"""
             ans = list()
             ans.append("71%") #right answer
-            while (len(ans)<=4):
+            while (len(ans)<4):
                 r = round(random.random(), 2)
                 op = int(r * 100)
                 if ((op>0 and op<=66) or (op>77)) and op not in ans:
