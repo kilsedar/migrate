@@ -112,7 +112,7 @@ class Profile(models.Model):
 
         total_score = avg_score
 
-        n_games_excNone = (self.n_games - self.n_games_quitted)+1
+        #n_games_excNone = (self.n_games - self.n_games_quitted)+1 unnecessary!
         if n_games_excNone > 1 and n_games_excNone <= 5:
             total_score += (n_games_excNone-1)*0.5
         elif n_games_excNone > 5 and n_games_excNone <= 15:

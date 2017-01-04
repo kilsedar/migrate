@@ -25,4 +25,46 @@
     <p style="text-align: justify;">As the <a href={% url 'register' %}>registration</a> to MIGRATE is totally anonymous, at the end of the challenge we will provide instructions to the top 10 players explaining how to contact us to receive the award. Amazon vouchers will be sent by the <b>February 15, 2017</b>. After analyzing the data from the games played by each user, the project responsible reserves the right not to award the prize to the user in case of actions considered to be unfair or malicious.</p>
   </div>
 </div>
+
+
+
+<!--<div class="container">
+  <div class="row">
+    <p id="header_challenge_winners">Winners of the Challenge</p>
+    <div id="table_challenge_winners">
+      <table class="table table-hover table-bordered table-condensed">
+        <thead>
+          <tr>
+            <th class="centered col-xs-6">Username</th>
+            <th class="centered col-xs-6">Score</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+  var ranking = [
+    {
+      "username": "x",
+      "score": "y"
+    },
+    {
+      "username": "y",
+      "score": "x"
+    }
+  ];
+  for (var i=0; i<ranking.length; i++){
+    if (i < 10)
+      $('tbody').append('<tr class="centered"><td><img id="star" src="{% static "css/images/star_s.png" %}"><b>' + ranking[i].username + '</b></td><td><b>' + ranking[i].score + '</b></td></tr>');
+    else
+      $('tbody').append('<tr class="centered"><td>' + ranking[i].username + '</td><td>' + ranking[i].score + '</td></tr>');
+  }
+</script>-->
+
+
+
 {% endblock %}

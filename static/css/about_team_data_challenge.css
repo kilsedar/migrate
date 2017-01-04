@@ -60,7 +60,7 @@ p, li {
   background-color: rgba(2, 93, 171, 1);
   line-height: 30px;
   padding: 0px 10px 0px 10px;
-  font-size: 12px;
+  font-size: 11px;
 }
 #mailto {
   color: rgb(220, 220, 220);
@@ -82,14 +82,33 @@ p, li {
 #challenge {
   background-color: rgba(115, 34, 107, 1);
 }
+/*#table_challenge_winners {
+  padding-bottom: 20px;
+}
+#table_challenge_winners .centered {
+  text-align: center;
+}
+#header_challenge_winners {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+#star {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}*/
 /*Bigger than small devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
   p, li, .tab {
     font-size: 14px;
   }
   #footer {
-    font-size: 11px;
+    font-size: 12px;
   }
+  /*#header_challenge_winners {
+    font-size: 24px;
+  }*/
 }
 @media screen and (min-width: 992px) {
   .p_md_lg{
