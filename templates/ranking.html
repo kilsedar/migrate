@@ -3,7 +3,6 @@
 
 {% block title %}Ranking{% endblock %}
 {% block content %}
-
 <div id="register_login_logout">
   {% if user.is_authenticated %}
     <b><a href={% url 'register' %}>Register</a> | <a href={% url 'logout' %}>Log out</a></b>
@@ -32,5 +31,4 @@
     {% endfor %}
   </tbody>
 </table>
-
 {% endblock %}

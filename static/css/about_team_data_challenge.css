@@ -50,6 +50,9 @@ p, li {
 #about {
   padding-bottom: 40px;
 }
+#challenge {
+  padding-bottom: 24px;
+}
 #register_login_logout {
   text-align: right;
 }
@@ -79,36 +82,58 @@ p, li {
   padding-top: 20px;
   text-align: center;
 }
-#challenge {
+#challenge_tab {
   background-color: rgba(115, 34, 107, 1);
-}
-/*#table_challenge_winners {
-  padding-bottom: 20px;
-}
-#table_challenge_winners .centered {
-  text-align: center;
 }
 #header_challenge_winners {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
+  padding-bottom: 10px;
 }
-#star {
+#table_challenge_winners {
+  margin-bottom: 20px;
+  font-size: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#table_challenge_winners th {
+  font-size: 14px;
+}
+#table_challenge_winners .centered {
+  text-align: center;
+}
+.table-nonfluid {
+   width: auto !important;
+}
+#star_left {
   height: 16px;
   width: 16px;
   margin-right: 10px;
-}*/
-/*Bigger than small devices (tablets, 768px and up)*/
+}
+#star_right {
+  height: 16px;
+  width: 16px;
+  margin-left: 10px;
+}
+/*bigger than small devices*/
 @media (min-width: 768px) {
-  p, li, .tab {
+  #table_challenge_winners td {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  p, li, .tab, #table_challenge_winners {
     font-size: 14px;
+  }
+  #table_challenge_winners th {
+    font-size: 16px;
+  }
+  #header_challenge_winners {
+    font-size: 24px;
   }
   #footer {
     font-size: 12px;
   }
-  /*#header_challenge_winners {
-    font-size: 24px;
-  }*/
 }
 @media screen and (min-width: 992px) {
   .p_md_lg{

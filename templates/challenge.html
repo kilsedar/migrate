@@ -4,7 +4,7 @@
 {% block title %}Challenge{% endblock %}
 
 {% block content %}
-<div class="row" id="about">
+<div class="row" id="challenge">
   <div class="col-xs-12">
     <p style="text-align: justify;">We are happy to announce the launch of the first MIGRATE challenge, which will allow you to get prizes while becoming informed about migration in Europe!</p>
     <p style="text-align: justify;">The challenge will be opened from <b>December 6, 2016</b> and will end after a month on <b>January 5, 2017</b>. Joining the challenge is very easy: you will need just to <a href={% url 'register' %}>create an account</a> and <a href={% url 'map' %}>play MIGRATE</a>!</p>
@@ -26,45 +26,107 @@
   </div>
 </div>
 
-
-
-<!--<div class="container">
-  <div class="row">
-    <p id="header_challenge_winners">Winners of the Challenge</p>
-    <div id="table_challenge_winners">
-      <table class="table table-hover table-bordered table-condensed">
-        <thead>
-          <tr>
-            <th class="centered col-xs-6">Username</th>
-            <th class="centered col-xs-6">Score</th>
-          </tr>
-        </thead>
-        <tbody>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
+<p id="header_challenge_winners">Winners of the Challenge</p>
+<table id="table_challenge_winners" class="table table-nonfluid table-hover table-bordered table-condensed">
+  <thead>
+    <tr>
+      <th class="centered col-xs-8">Username</th>
+      <th class="centered col-xs-4">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
 
 <script>
   var ranking = [
     {
-      "username": "x",
-      "score": "y"
+      "username": "7dado88",
+      "score": "24.70"
     },
     {
-      "username": "y",
-      "score": "x"
+      "username": "skywalker16",
+      "score": "24.10"
+    },
+    {
+      "username": "taniamhn",
+      "score": "23.59"
+    },
+    {
+      "username": "Monik",
+      "score": "23.50"
+    },
+    {
+      "username": "Tars4815",
+      "score": "22.29"
+    },
+    {
+      "username": "ValeP",
+      "score": "21.14"
+    },
+    {
+      "username": "simonebt92",
+      "score": "20.32"
+    },
+    {
+      "username": "aled96",
+      "score": "18.31"
+    },
+    {
+      "username": "giulia.petrillo",
+      "score": "17.89"
+    },
+    {
+      "username": "davideselvatici",
+      "score": "17.55"
+    },
+    {
+      "username": "manuelcc87",
+      "score": "17.01"
+    },
+    {
+      "username": "Davide",
+      "score": "16.30"
+    },
+    {
+      "username": "Manu",
+      "score": "15.60"
+    },
+    {
+      "username": "Bridges",
+      "score": "14.72"
+    },
+    {
+      "username": "eR17",
+      "score": "14.24"
+    },
+    {
+      "username": "mauromanto",
+      "score": "13.45"
+    },
+    {
+      "username": "Ale.Morello",
+      "score": "13.20"
+    },
+    {
+      "username": "ei8ht",
+      "score": "12.50"
+    },
+    {
+      "username": "milardo",
+      "score": "11.66"
+    },
+    {
+      "username": "purpleturtle",
+      "score": "11.46"
     }
   ];
+  
   for (var i=0; i<ranking.length; i++){
     if (i < 10)
-      $('tbody').append('<tr class="centered"><td><img id="star" src="{% static "css/images/star_s.png" %}"><b>' + ranking[i].username + '</b></td><td><b>' + ranking[i].score + '</b></td></tr>');
+      $('tbody').append('<tr class="centered"><td><img id="star_left" src="{% static "css/images/star_s.png" %}">' + ranking[i].username + '<img id="star_right" src="{% static "css/images/star_s.png" %}"></td><td>' + ranking[i].score + '</td></tr>');
     else
       $('tbody').append('<tr class="centered"><td>' + ranking[i].username + '</td><td>' + ranking[i].score + '</td></tr>');
   }
-</script>-->
-
-
-
+</script>
 {% endblock %}
