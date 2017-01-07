@@ -66,10 +66,10 @@ class Question(models.Model):
         return self.answer
 
     @classmethod
-    def get_question(cls, type, category, regions):
+    def get_question(cls, type, category, region):
         """Method to filter questions"""
-        if (regions != ""):
-            qs_list = Question.objects.filter(Q(_type=type, category=category, region=regions[0]) | Q(_type=type, category=category, region=regions[1]) | Q(_type=type, category=category, region=regions[2])).values_list('id', flat=True)
+        if (region != ""):
+            qs_list = Question.objects.filter(_type=type, category=category, region=region).values_list('id', flat=True)
         else:
             qs_list = Question.objects.filter(_type=type, category=category).values_list('id', flat=True)
         qs_id = random.choice(qs_list)
@@ -123,49 +123,49 @@ class Question(models.Model):
         #second period - end
 
         #third period - beginning
-        if region == "Europe":
-            region1 = "ITALY"
-            region2 = "BULGARIA, HUNGARY AND BALKANS"
-            region3 = "AFRICA"
+        #if region == "Europe":
+        #    region1 = "ITALY"
+        #    region2 = "BULGARIA, HUNGARY AND BALKANS"
+        #    region3 = "AFRICA"
 
-        elif region == "Italy":
-            region1 = "MIDDLE EAST"
-            region2 = "EUROPE"
-            region3 = "GREECE"
+        #elif region == "Italy":
+        #    region1 = "MIDDLE EAST"
+        #    region2 = "EUROPE"
+        #    region3 = "GREECE"
 
-        elif region == "Spain":
-            region1 = "ITALY"
-            region2 = "BALKANS"
-            region3 = "AFRICA"
+        #elif region == "Spain":
+        #    region1 = "ITALY"
+        #    region2 = "BALKANS"
+        #    region3 = "AFRICA"
 
-        elif region == "Greece":
-            region1 = "SPAIN"
-            region2 = "AFRICA"
-            region3 = "BULGARIA, HUNGARY AND BALKANS"
+        #elif region == "Greece":
+        #    region1 = "SPAIN"
+        #    region2 = "AFRICA"
+        #    region3 = "BULGARIA, HUNGARY AND BALKANS"
 
-        elif region == "Bulgaria, Hungary and Balkans":
-            region1 = "GREECE"
-            region2 = "EUROPE"
-            region3 = "ITALY"
+        #elif region == "Bulgaria, Hungary and Balkans":
+        #    region1 = "GREECE"
+        #    region2 = "EUROPE"
+        #    region3 = "ITALY"
 
-        elif region == "Middle East":
-            region1 = "SPAIN"
-            region2 = "BALKANS"
-            region3 = "GREECE"
+        #elif region == "Middle East":
+        #    region1 = "SPAIN"
+        #    region2 = "BALKANS"
+        #    region3 = "GREECE"
 
-        elif region == "Africa":
-            region1 = "GREECE"
-            region2 = "MIDDLE EAST"
-            region3 = "SPAIN"
+        #elif region == "Africa":
+        #    region1 = "GREECE"
+        #    region2 = "MIDDLE EAST"
+        #    region3 = "SPAIN"
         #third period - end
 
-        regions = [region1, region2, region3]
+        #regions = [region1, region2, region3]
 
         #user region & text-based
-        questionnaire.append(cls.get_question("TB", "USER REGION", regions))
+        questionnaire.append(cls.get_question("TB", "USER REGION", region.upper()))
 
         #user region & multiple-choice
-        questionnaire.append(cls.get_question("MC", "USER REGION", regions))
+        questionnaire.append(cls.get_question("MC", "USER REGION", region.upper()))
         #questionnaire.append(cls.objects.get(question="The two countries where most of the migrants arrived in Italy, Greece and Spain in 2015 came from were Syria and Afghanistan. Which percentage of the total number of arrivals in 2015 did these two countries of origin represent?"))
 
         #mediterranean & map-based
