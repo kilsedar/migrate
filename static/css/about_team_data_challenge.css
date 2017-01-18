@@ -116,6 +116,11 @@ p, li {
   width: 16px;
   margin-left: 10px;
 }
+.prize_claim {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
 /*bigger than small devices*/
 @media (min-width: 768px) {
   #table_challenge_winners td {

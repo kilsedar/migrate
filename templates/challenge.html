@@ -23,6 +23,7 @@
     </ul>
     <p style="text-align: justify;">How to become one of the top players? Your total score, which is also accessible from your <a href={% url 'profile' %}>user profile</a>, will depend both on the number of times you play the game and on the score of each game. The score of each game depends on the answers given to the 6 questions. More in detail, the score for each question depends on the time taken to answer the question and the weight of the question (more difficult questions give a higher score than easier ones).</p>
     <p style="text-align: justify;">As the <a href={% url 'register' %}>registration</a> to MIGRATE is totally anonymous, at the end of the challenge we will provide instructions to the top 10 players explaining how to contact us to receive the award. Amazon vouchers will be sent by the <b>February 15, 2017</b>. After analyzing the data from the games played by each user, the project responsible reserves the right not to award the prize to the user in case of actions considered to be unfair or malicious.</p>
+    <p class="prize_claim">The way to contact us for the winners to claim their prizes will be announced by the beginning of February!</p>
   </div>
 </div>
 
@@ -121,7 +122,7 @@
       "score": "11.46"
     }
   ];
-  
+
   for (var i=0; i<ranking.length; i++){
     if (i < 10)
       $('tbody').append('<tr class="centered"><td><img id="star_left" src="{% static "css/images/star_s.png" %}">' + ranking[i].username + '<img id="star_right" src="{% static "css/images/star_s.png" %}"></td><td>' + ranking[i].score + '</td></tr>');
