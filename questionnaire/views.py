@@ -236,6 +236,108 @@ def finish_game(request):
     return JsonResponse({'ok': False})
 
 
+def updateGameScores():
+    games = Game.objects.all()
+    for game in games:
+        g_score = 0.0
+        answers = game.answeredquestion_set
+        # n_answers = answers.count()
+        # n = min(6, n_answers)
+        # for i in range(0, n):
+        for a in answers.all()[0:6]:
+            # a = answers[i]
+            question_id = a.question_id
+            given_answer = a.user_answer
+            question = Question.objects.get(id=question_id)
+            q_type = question._type
+            if q_type == "MB":
+                right_answer = question.answer_code
+            elif question._type == 'NUMP':
+                right_answer = "71%"
+            else:
+                right_answer = question.answer
+
+            if given_answer == '':
+                tf = "None"
+                a.eval = "None"
+            else:
+                tf = evaluate_answer(q_type, right_answer, given_answer)
+                a.eval = str(tf)
+
+            # print given_answer + " " + right_answer + " %r" % tf
+
+            if tf == True:
+                trem = a.trem
+                if trem == None:
+                    trem = 30
+                if q_type == "TF":
+                    q_score = weighted_score(0.5, trem)
+                    g_score += q_score
+                    # print q_score, g_score
+                elif q_type == "TB":
+                    q_score = weighted_score(1.5, trem)
+                    g_score += q_score
+                    # print q_score, g_score
+                else:
+                    q_score = weighted_score(1.0, trem)
+                    g_score += q_score
+                    # print q_score, g_score
+
+        # print "g_score: %f" % g_score
+        print g_score
+        if g_score > 6.0:
+            g_score = 6.0
+        if game.score != None:
+            game.score = g_score
+
+        game.save()
+
+def updateAvgTotalScores():
+    players = Player.objects.all()
+    for player in players:
+        # update average and total score
+        player_games = player.game_set
+        n_games = player_games.count()
+        #print n_games
+
+        sum_scores = 0
+
+        for player_game in player_games.all():
+            sum_scores += player_game.score or 0
+
+        if n_games != 0:
+            avg_score = sum_scores/n_games
+            total_score = avg_score
+        else:
+            avg_score = 0
+            total_score = 0
+
+        games_excNone = player_games.filter(~Q(score = None))
+        n_games_excNone = len(games_excNone)
+        n_games_quitted = n_games - n_games_excNone
+
+        #n_games_excNone = (self.n_games - self.n_games_quitted)+1 unnecessary!
+        if n_games_excNone > 1 and n_games_excNone <= 5:
+            total_score += (n_games_excNone-1)*0.5
+        elif n_games_excNone > 5 and n_games_excNone <= 15:
+            total_score += 2 + (n_games_excNone-5)*0.2
+        elif n_games_excNone > 15 and n_games_excNone <= 55:
+            total_score += 4 + (n_games_excNone-15)*0.1
+        elif n_games_excNone > 55 and n_games_excNone <= 135:
+            total_score += 8 + (n_games_excNone-55)*0.05
+        elif n_games_excNone > 135 and n_games_excNone <= 535:
+            total_score += 12 + (n_games_excNone-135)*0.01
+        elif n_games_excNone > 535 and n_games_excNone <= 935:
+            total_score += 16 + (n_games_excNone-535)*0.005
+        elif n_games_excNone > 935:
+            total_score += 18 + (n_games_excNone-935)*0.002
+
+        player.profile.n_games = n_games
+        player.profile.n_games_quitted = n_games_quitted
+        player.profile.avg_score = avg_score
+        player.profile.total_score = total_score
+        player.profile.save()
+
 # def updateGameScores():
     # games = Game.objects.filter(id__range=(989, 3985))
     # for game in games:
