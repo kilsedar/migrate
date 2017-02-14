@@ -1,0 +1,21 @@
+on the remote server:
+
+cd /var/www/html/migrate
+python manage.py dumpdata > db_date.json
+python manage.py dumpdata download.download > download_download_date.json
+python manage.py dumpdata players.country > players_country_date.json
+python manage.py dumpdata players.player > players_player_date.json
+python manage.py dumpdata players.profile > players_profile_date.json
+python manage.py dumpdata questionnaire.answeredquestion > questionnaire_answeredquestion_date.json
+python manage.py dumpdata questionnaire.fixedanswers > questionnaire_fixedanswers_date.json
+python manage.py dumpdata questionnaire.game > questionnaire_game_date.json
+python manage.py dumpdata questionnaire.question > questionnaire_question_date.json
+
+
+on the local server:
+
+in postgresql -> drop schema public cascade;
+python manage.py makemigrations
+python manage.py migrate
+in postgresql -> truncate django_content_type cascade;
+python manage.py loaddata db_date.json

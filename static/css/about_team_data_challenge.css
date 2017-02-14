@@ -50,9 +50,9 @@ p, li {
 #about {
   padding-bottom: 40px;
 }
-#challenge {
+/*#challenge {
   padding-bottom: 24px;
-}
+}*/
 #register_login_logout {
   text-align: right;
 }
@@ -90,6 +90,7 @@ p, li {
   font-size: 20px;
   text-align: center;
   padding-bottom: 10px;
+  padding-top: 20px;
 }
 #table_challenge_winners {
   margin-bottom: 20px;
@@ -116,10 +117,11 @@ p, li {
   width: 16px;
   margin-left: 10px;
 }
-.challenge_form {
+.feedback_form {
   color: red;
   font-weight: bold;
-  text-align: center;
+  text-align: justify;
+  /*text-align: center;*/
 }
 /*bigger than small devices*/
 @media (min-width: 768px) {

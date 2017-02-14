@@ -104,11 +104,11 @@ class Profile(models.Model):
         games = self.player.game_set.all()
         n_games = len(games)
 
-        avg_score = (g_score + (self.avg_score*self.n_games))/n_games
-
         games_excNone = self.player.game_set.filter(~Q(score = None))
         n_games_excNone = len(games_excNone)
         n_games_quitted = n_games - n_games_excNone
+
+        avg_score = (g_score + (self.avg_score*(n_games_excNone-1)))/n_games_excNone
 
         total_score = avg_score
 

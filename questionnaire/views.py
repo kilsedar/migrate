@@ -241,11 +241,11 @@ def updateGameScores():
     for game in games:
         g_score = 0.0
         answers = game.answeredquestion_set
-        # n_answers = answers.count()
-        # n = min(6, n_answers)
-        # for i in range(0, n):
+        #n_answers = answers.count()
+        #n = min(6, n_answers)
+        #for i in range(0, n):
         for a in answers.all()[0:6]:
-            # a = answers[i]
+            #a = answers[i]
             question_id = a.question_id
             given_answer = a.user_answer
             question = Question.objects.get(id=question_id)
@@ -264,7 +264,7 @@ def updateGameScores():
                 tf = evaluate_answer(q_type, right_answer, given_answer)
                 a.eval = str(tf)
 
-            # print given_answer + " " + right_answer + " %r" % tf
+            #print given_answer + " " + right_answer + " %r" % tf
 
             if tf == True:
                 trem = a.trem
@@ -273,17 +273,17 @@ def updateGameScores():
                 if q_type == "TF":
                     q_score = weighted_score(0.5, trem)
                     g_score += q_score
-                    # print q_score, g_score
+                    #print q_score, g_score
                 elif q_type == "TB":
                     q_score = weighted_score(1.5, trem)
                     g_score += q_score
-                    # print q_score, g_score
+                    #print q_score, g_score
                 else:
                     q_score = weighted_score(1.0, trem)
                     g_score += q_score
-                    # print q_score, g_score
+                    #print q_score, g_score
 
-        # print "g_score: %f" % g_score
+        #print "g_score: %f" % g_score
         print g_score
         if g_score > 6.0:
             g_score = 6.0
@@ -295,7 +295,7 @@ def updateGameScores():
 def updateAvgTotalScores():
     players = Player.objects.all()
     for player in players:
-        # update average and total score
+        #update average and total score
         player_games = player.game_set
         n_games = player_games.count()
         #print n_games
@@ -305,16 +305,16 @@ def updateAvgTotalScores():
         for player_game in player_games.all():
             sum_scores += player_game.score or 0
 
-        if n_games != 0:
-            avg_score = sum_scores/n_games
+        games_excNone = player_games.filter(~Q(score = None))
+        n_games_excNone = len(games_excNone)
+        n_games_quitted = n_games - n_games_excNone
+
+        if n_games_excNone != 0:
+            avg_score = sum_scores/n_games_excNone
             total_score = avg_score
         else:
             avg_score = 0
             total_score = 0
-
-        games_excNone = player_games.filter(~Q(score = None))
-        n_games_excNone = len(games_excNone)
-        n_games_quitted = n_games - n_games_excNone
 
         #n_games_excNone = (self.n_games - self.n_games_quitted)+1 unnecessary!
         if n_games_excNone > 1 and n_games_excNone <= 5:
@@ -338,95 +338,95 @@ def updateAvgTotalScores():
         player.profile.total_score = total_score
         player.profile.save()
 
-# def updateGameScores():
-    # games = Game.objects.filter(id__range=(989, 3985))
-    # for game in games:
-        # if game.score != None:
-            # print game.id
-            # answers = game.answeredquestion_set
-            # for a in answers.all():
-                # question_id = a.question_id
-                # given_answer = a.user_answer
-                # question = Question.objects.get(id=question_id)
-                # right_answer = question.answer
+#def updateGameScores():
+    #games = Game.objects.filter(id__range=(989, 3985))
+    #for game in games:
+        #if game.score != None:
+            #print game.id
+            #answers = game.answeredquestion_set
+            #for a in answers.all():
+                #question_id = a.question_id
+                #given_answer = a.user_answer
+                #question = Question.objects.get(id=question_id)
+                #right_answer = question.answer
 
-                # if question._type == "TB":
-                    # tf = evaluate_answer("TB", right_answer, given_answer)
-                    # if tf == True:
-                        # print given_answer + " " + right_answer + " %r" % tf
-                        # game.score = game.score + 1.5
-                        # game.save()
-
-
-    # games = Game.objects.all()
-    # for game in games:
-        # answers = game.answeredquestion_set
-        # for a in answers.all():
-            # question_id = a.question_id
-            # given_answer = a.user_answer
-            # question = Question.objects.get(id=question_id)
-            # q_type = question._type
-            # if q_type == "MB":
-                # right_answer = question.answer_code
-            # else:
-                # right_answer = question.answer
-
-            # if given_answer == '':
-                # a.eval = "None"
-            # else:
-                # tf = evaluate_answer(q_type, right_answer, given_answer)
-                # a.eval = str(tf)
-            # a.save()
+                #if question._type == "TB":
+                    #tf = evaluate_answer("TB", right_answer, given_answer)
+                    #if tf == True:
+                        #print given_answer + " " + right_answer + " %r" % tf
+                        #game.score = game.score + 1.5
+                        #game.save()
 
 
-    # players = Player.objects.all()
-    # for player in players:
-        # games = player.game_set.all()
-        # n_games = len(games)
+    #games = Game.objects.all()
+    #for game in games:
+        #answers = game.answeredquestion_set
+        #for a in answers.all():
+            #question_id = a.question_id
+            #given_answer = a.user_answer
+            #question = Question.objects.get(id=question_id)
+            #q_type = question._type
+            #if q_type == "MB":
+                #right_answer = question.answer_code
+            #else:
+                #right_answer = question.answer
 
-        # print "n_games: ", n_games
+            #if given_answer == '':
+                #a.eval = "None"
+            #else:
+                #tf = evaluate_answer(q_type, right_answer, given_answer)
+                #a.eval = str(tf)
+            #a.save()
 
-        # if n_games == 0:
-            # avg_score = 0
-        # else:
-            # sum_scores = 0
-            # for game in games:
-                # sum_scores += game.score or 0
-            # print "sum of scores: ", sum_scores
-            # avg_score = sum_scores/n_games
 
-        # print "avg_score: ", avg_score
+    #players = Player.objects.all()
+    #for player in players:
+        #games = player.game_set.all()
+        #n_games = len(games)
 
-        # games_excNone = player.game_set.filter(~Q(score = None))
-        # n_games_excNone = len(games_excNone)
+        #print "n_games: ", n_games
 
-        # total_score = avg_score
+        #if n_games == 0:
+            #avg_score = 0
+        #else:
+            #sum_scores = 0
+            #for game in games:
+                #sum_scores += game.score or 0
+            #print "sum of scores: ", sum_scores
+            #avg_score = sum_scores/n_games
 
-        # if n_games_excNone > 1 and n_games_excNone <= 5:
-            # total_score += (n_games_excNone-1)*0.5
-        # elif n_games_excNone > 5 and n_games_excNone <= 15:
-            # total_score += 2 + (n_games_excNone-5)*0.2
-        # elif n_games_excNone > 15 and n_games_excNone <= 55:
-            # total_score += 4 + (n_games_excNone-15)*0.1
-        # elif n_games_excNone > 55 and n_games_excNone <= 135:
-            # total_score += 8 + (n_games_excNone-55)*0.05
-        # elif n_games_excNone > 135 and n_games_excNone <= 535:
-            # total_score += 12 + (n_games_excNone-135)*0.01
-        # elif n_games_excNone > 535:
-            # total_score += 16 + (n_games_excNone-535)*0.005
-        # elif n_games_excNone > 935:
-            # total_score += 18 + (n_games_excNone-935)*0.002
+        #print "avg_score: ", avg_score
 
-        # print "n_games_excNone: ", n_games_excNone
-        # print "total_score: ", total_score
-        # n_games_quitted = n_games - n_games_excNone
-        # print "number of games quitted: ", n_games_quitted
+        #games_excNone = player.game_set.filter(~Q(score = None))
+        #n_games_excNone = len(games_excNone)
 
-        # player.profile.n_games = n_games
-        # player.profile.n_games_quitted = n_games_quitted
-        # player.profile.avg_score = avg_score
-        # player.profile.total_score = total_score
-        # player.profile.save()
+        #total_score = avg_score
+
+        #if n_games_excNone > 1 and n_games_excNone <= 5:
+            #total_score += (n_games_excNone-1)*0.5
+        #elif n_games_excNone > 5 and n_games_excNone <= 15:
+            #total_score += 2 + (n_games_excNone-5)*0.2
+        #elif n_games_excNone > 15 and n_games_excNone <= 55:
+            #total_score += 4 + (n_games_excNone-15)*0.1
+        #elif n_games_excNone > 55 and n_games_excNone <= 135:
+            #total_score += 8 + (n_games_excNone-55)*0.05
+        #elif n_games_excNone > 135 and n_games_excNone <= 535:
+            #total_score += 12 + (n_games_excNone-135)*0.01
+        #elif n_games_excNone > 535:
+            #total_score += 16 + (n_games_excNone-535)*0.005
+        #elif n_games_excNone > 935:
+            #total_score += 18 + (n_games_excNone-935)*0.002
+
+        #print "n_games_excNone: ", n_games_excNone
+        #print "total_score: ", total_score
+        #n_games_quitted = n_games - n_games_excNone
+        #print "number of games quitted: ", n_games_quitted
+
+        #player.profile.n_games = n_games
+        #player.profile.n_games_quitted = n_games_quitted
+        #player.profile.avg_score = avg_score
+        #player.profile.total_score = total_score
+        #player.profile.save()
 
 
 def team(request):
@@ -443,8 +443,9 @@ def about(request):
 
 def free_data(request):
     buf = StringIO()
-    management.call_command('dumpdata', 'questionnaire.game', stdout=buf)
-    management.call_command('dumpdata', 'questionnaire.answeredquestion', stdout=buf)
+    management.call_command('dumpdata', stdout=buf) #dumps the whole db
+    #management.call_command('dumpdata', 'questionnaire.game', stdout=buf)
+    #management.call_command('dumpdata', 'questionnaire.answeredquestion', stdout=buf)
     #management.call_command('dumpdata', 'players', stdout=buf)
     buf.seek(0)
     dname = settings.BASE_DIR + '/migrate.json'
