@@ -6,7 +6,6 @@ migrate/urls.py
 #parse_aux/*.txt
 parse_aux
 fixtures/backup
-static/js/map.js
-static/js/map.min.js
-static/js/map_production.js
+static/js/map_development.js
+static/js/map_development.min.js
 mayenv
