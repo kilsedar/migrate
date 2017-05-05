@@ -40,7 +40,7 @@
 </table>
 
 <script>
-  var ranking = [
+  /*var ranking = [
     {
       "username": "7dado88",
       "score": "24.70"
@@ -128,6 +128,53 @@
       $('tbody').append('<tr class="centered"><td><img id="star_left" src="{% static "css/images/star_s.png" %}">' + ranking[i].username + '<img id="star_right" src="{% static "css/images/star_s.png" %}"></td><td>' + ranking[i].score + '</td></tr>');
     else
       $('tbody').append('<tr class="centered"><td>' + ranking[i].username + '</td><td>' + ranking[i].score + '</td></tr>');
+  }*/
+
+  var ranking = [
+    {
+      "username": "7dado88",
+      "score": "24.70"
+    },
+    {
+      "username": "skywalker16",
+      "score": "24.10"
+    },
+    {
+      "username": "taniamhn",
+      "score": "23.59"
+    },
+    {
+      "username": "Monik",
+      "score": "23.50"
+    },
+    {
+      "username": "Tars4815",
+      "score": "22.29"
+    },
+    {
+      "username": "ValeP",
+      "score": "21.14"
+    },
+    {
+      "username": "simonebt92",
+      "score": "20.32"
+    },
+    {
+      "username": "aled96",
+      "score": "18.31"
+    },
+    {
+      "username": "giulia.petrillo",
+      "score": "17.89"
+    },
+    {
+      "username": "eR17",
+      "score": "14.24"
+    }
+  ];
+
+  for (var i=0; i<ranking.length; i++){
+    $('tbody').append('<tr class="centered"><td>' + ranking[i].username + '</td><td>' + ranking[i].score + '</td></tr>');
   }
 </script>
 {% endblock %}
