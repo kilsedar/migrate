@@ -49,9 +49,16 @@ function capitalizeFirstLetter(string) {
   })
 });*/
 
-var osm = new ol.layer.Tile({
+/*var osm = new ol.layer.Tile({
   source: new ol.source.OSM({
     "url" : "http://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
+  })
+});*/
+
+var osm = new ol.layer.Tile({
+  source: new ol.source.OSM({
+    attributions: [new ol.Attribution({html: '@ <a href="http://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors, '}), new ol.Attribution({html: '@ <a href="https://carto.com/attribution" target="_blank">CARTO</a>'})],
+    url : "http://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
   })
 });
 

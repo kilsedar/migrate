@@ -82,9 +82,9 @@ p, li {
   padding-top: 20px;
   text-align: center;
 }
-#challenge_tab {
+/*#challenge_tab {
   background-color: rgba(115, 34, 107, 1);
-}
+}*/
 #header_challenge_winners {
   font-weight: bold;
   font-size: 20px;
