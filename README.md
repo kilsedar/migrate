@@ -2,8 +2,6 @@
 
 MIGRATE - MIGRation pATterns in Europe is a Web mapping application aimed at educating and raising awareness about the migration phenomenon in Europe. This goal is achieved using a gamification approach, i.e. users interact with the application by playing a map-based game, where questions are asked and answers are provided, about a number of topics related to migration. According to their answers, users are awarded with points and badges and are ranked publicly, which allows to keep them motivated in using the application further. Users' answers help to understand the current knowledge and perception of migration-related issues.
 
-The game can be found at http://geomobile.como.polimi.it/migrate.
-
 ![screenshot](static/css/images/screenshot.png)
 
 ## Requirements
