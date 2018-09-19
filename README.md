@@ -72,7 +72,7 @@ This application was developed under the MYGEOSS Third Call For Innovative Apps 
 
 ## License
 
-The data used to create the questions for the trivia game was collected from open sources listed in the section [data](Link http://geomobile.como.polimi.it/migrate/data/) of the application.
+The data used to create the questions for the trivia game was collected from open sources listed in the section [data](http://geomobile.como.polimi.it/migrate/data/) of the application.
 The tools used during the development were free and open source software (FOSS) complying with the directions of the GEOSS Data-CORE.
 If you wish to modify the project or clone the app, you need to provide proper credits to this repository and keep the modified project open as well. This code is under the EU Public License (EUPL).
 This will allow further development of the applications in the future, even for commercial purposes, as long as their source code remains open.
