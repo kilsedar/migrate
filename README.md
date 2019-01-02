@@ -65,7 +65,7 @@ To set up a production server follow the instructions at https://docs.djangoproj
 
 ## Credits
 
-This application was developed under the MYGEOSS Third Call For Innovative Apps in the environmental and social domains project. The team can be found at http://geomobile.como.polimi.it/migrate/team.
+This application was developed under the MYGEOSS Third Call For Innovative Apps in the environmental and social domains project.
 
 
 ## License
